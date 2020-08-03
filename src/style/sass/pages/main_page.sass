@@ -1,0 +1,278 @@
+.company-card
+	+flex
+	margin: 0 -15px
+		top: 45px
+
+	&-item 
+		padding: 0 15px
+		width: 20%
+	
+	&-name 
+		font-size: 21px
+		color: $font-light-color
+		text-align: center
+		line-height: 32px
+
+	&-box
+		margin:
+			top: 5px
+		padding: 12px 15px
+		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+		border-radius: 6px
+
+		&.orange
+			background: -webkit-gradient(linear, left top, right top, from(#FFBF60), to(#FF9900))
+			background: -o-linear-gradient(left, #FFBF60 0%, #FF9900 100%)
+			bgrouacknd: linear-gradient(90deg, #FFBF60 0%, #FF9900 100%)
+			
+			.company-card-sale
+				&:after
+					border-left-color: #6B4101 
+
+				&-box
+					background-color: #A76C14
+		
+		&.green
+			background: -webkit-gradient(linear, left top, right top, from(#0BF2BA), to(#04A881))
+			background: -o-linear-gradient(left, #0BF2BA 0%, #04A881 100%)
+			background: linear-gradient(90deg, #0BF2BA 0%, #04A881 100%)
+
+			.company-card-sale
+				&:after
+					border-left-color: #04624D 
+
+				&-box
+					background-color: #108D71
+		
+		&.red
+			background: -webkit-gradient(linear, left top, right top, from(#FF7B73), to(#FF3024))
+			background: -o-linear-gradient(left, #FF7B73 0%, #FF3024 100%)
+			background: linear-gradient(90deg, #FF7B73 0%, #FF3024 100%)
+			
+			.company-card-sale
+				&:after
+					border-left-color: #92150E 
+
+				&-box
+					background-color: #B9342D
+
+	&-row
+		+flex
+		position: relative
+		padding: 13px 5px
+		border-bottom: 1px solid rgba(21, 23, 28, 0.1)
+		+align-items(center)
+		
+		&:last-child
+			border-bottom: 0
+	
+	&-title
+		margin:
+			right: 10px
+		min-width: 45px
+		max-width: 45px
+		font-size: 20px
+	
+	&-info
+		&-row
+			font-size: 14px
+			line-height: 22px
+
+	&-sale
+		position: absolute
+		top: 50%
+		right: -21px
+		+prefix(transform, translateY(-50%))
+		border:
+			top-left-radius: 40px
+			bottom-left-radius: 40px
+			bottom-right-radius: 3px
+		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: -4px
+			right: -4px
+			border: 4px solid transparent
+				left: 6px solid transparent
+			z-index: 0
+
+		&-box
+			+flex
+			position: relative
+			padding: 8px 26px 8px 20px
+			border:
+				top-left-radius: 40px
+				bottom-left-radius: 40px
+				bottom-right-radius: 3px
+			background-color: transparent
+			+flex-flow(column)
+			+justify-content(center)
+			z-index: 1
+
+		&-text
+			font-size: 7px
+			color: rgba(255, 255, 255, 0.6)
+		
+		&-value
+			font-size: 14px
+			font-weight: 700
+
+.prev-slider
+	margin: 0 -15px
+		top: 30px
+
+	&-elem
+		position: relative
+		margin: 0 15px
+		width: 100%
+		max-width: 240px
+		outline: none
+		
+		&-wrap
+			position: relative
+			background-color: $bg-default-color
+			border-radius: 6px
+
+		&-box
+			padding: 25px
+				bottom: 17px
+
+	&-new
+		position: absolute
+		top: 15px
+		right: -6px
+		border:
+			top-left-radius: 40px
+			bottom-left-radius: 40px
+			bottom-right-radius: 3px
+		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: -4px
+			right: -4px
+			border: 4px solid transparent
+				left: 6px solid #3E007B
+			z-index: 0
+
+		&-box
+			+flex
+			position: relative
+			padding: 10px 15px 10px 20px
+			border:
+				top-left-radius: 40px
+				bottom-left-radius: 40px
+				bottom-right-radius: 3px
+			background: -webkit-gradient(linear, left top, right top, from(#B995FE), to(#8444FC))
+			background: -o-linear-gradient(left, #B995FE 0%, #8444FC 100%)
+			background: linear-gradient(90deg, #B995FE 0%, #8444FC 100%)
+			z-index: 1
+
+		&-img
+			margin:
+				right: 10px
+
+	&-img
+		width: 100%
+		min-height: 240px
+		border-radius: 6px
+		overflow: hidden
+	
+	&-info
+		margin:
+			top: 17px
+
+	&-name,
+	&-about
+		font-size: 14px
+		line-height: 22px
+	
+	&-about
+		&-code
+			font-size: 10px
+			color: $font-light-color
+	
+	&-price
+		padding: 11px
+		background-color: #292C32
+		text-align: center
+		border:
+			bottom-left-radius: 6px
+			bottom-right-radius: 6px
+		
+		&-val
+			display: inline-block
+			position: relative
+			font-size: 18px
+			line-height: 28px
+
+		&-info
+			position: absolute
+			top: 3px
+			right: -20px
+			font-size: 8px
+			color: $font-light-color
+			text-transform: uppercase
+	
+	.slick-arrow
+		position: absolute
+		margin:
+			top: -12px
+		top: 50%
+		width: 13px
+		height: 24px
+		font-size: 0
+		background-color: transparent
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		border: 0
+		cursor: pointer
+
+		&.slick-disabled
+			opacity: .5
+
+		&.slick-prev
+			left: -7px
+			background-image: url(../img/icon/arrow-s-l.svg)
+		
+		&.slick-next
+			right: -7px
+			background-image: url(../img/icon/arrow-s-r.svg)
+
+.banner
+	display: inline-block
+	position: relative
+	width: 100% 
+	min-height: 100%
+	border-radius: 6px
+	overflow: hidden
+		
+	&-img
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: 0
+	
+	&-btn
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		padding: 10px 
+			bottom: 12px
+		font-size: 18px
+		line-height: 28px
+		color: $font-light-color
+		background-color: $bg-default-color
+		text-align: center
+		z-index: 1
