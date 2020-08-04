@@ -3,6 +3,7 @@ $white: #ffffff
 $font-light-color: #A5A7A9
 
 $bg-default-color: #1F2227
+$bg-dlight-color: #53565B
 
 $default-font: "Muli", sans-serif
 $default-transition: .35s
@@ -51,9 +52,124 @@ a
 
 .content
 	padding: 
-		left: 495px
+		left: 175px
 		right: 15px
 		bottom: 30px
+	+prefix(transition, $default-transition)
+
+	&-heading-wrap
+		+flex
+		margin:
+			top: 30px
+		+flex-wrap(wrap)
+		+align-items(flex-end)
+
+		&-elem
+			+flex
+			+align-items(flex-end)
+			&:nth-child(1)
+				width: 44.51%
+				
+			&:nth-child(2)
+				margin:
+					left: 1.73%
+				width: 53.76%
+		
+		&-info
+			width: 100%
+
+	&-heading
+		font-size: 33px
+		color: $white
+
+		&-price
+			+flex
+			font-size: 21px
+			color: $white
+
+			&-value
+				margin:
+					left: 10px
+				color: #9E6CFD
+		
+		&-btn
+			+flex
+			margin: 0 0 0 auto
+			font-size: 21px
+			color: $font-light-color
+			+align-items(center)
+			+prefix(transition, $default-transition)
+			cursor: pointer
+
+			&-img
+				margin:
+					right: 11px
+				
+				path,
+				rect
+					+prefix(transition, $default-transition)
+
+			&:hover
+				color: $accent-color
+
+				.content-heading-btn-img
+					.fill
+						fill: $accent-color
+
+					.stroke
+						stroke: $accent-color 
+
+		&-info
+			+flex
+			margin:
+				top: 10px
+
+			&-elem
+				margin:
+					right: 30px
+				font-size: 12px
+				color: $font-light-color
+			
+			&-text
+				font-weight: 600
+
+	&-elem
+		width: 100%
+		border-radius: 6px
+		background-color: $bg-default-color
+		overflow: hidden
+
+		&.content-elem-info
+			margin:
+				top: 30px
+			padding: 40px 30px	
+
+		&-heading
+			+flex
+			+align-items(center)
+			
+			&-text
+				font-size: 21px
+				line-height: 32px
+
+			&-btn
+				margin: 0 0 0 auto 
+					top: 6px
+				font-size: 16px
+				line-height: 25px
+				color: $font-light-color
+				cursor: pointer
+				+prefix(transition, $default-transition)
+
+				&:hover
+					color: $accent-color
+		
+		&-desc
+			margin:
+				top: 17px
+			font-size: 16px
+			line-height: 23px
+			color: $font-light-color
 
 	&-wrap
 		+flex
@@ -72,12 +188,30 @@ a
 					padding:
 						left: 30px
 					width: 32.6%
+		
+		&.content-product-wrap
+			margin:
+				top: 15px
+
+			.content-wrap-elem
+				&:first-child
+					width: 44.51%
+				
+				&:last-child
+					width: 53.76%
 
 .news
 	+flex
 	padding: 30px
 	background-color: $bg-default-color
 	border-radius: 6px
+	+prefix(transition, $default-transition)
+
+	&:hover
+		background-color: $bg-dlight-color
+
+		.news-heading-text
+			color: $accent-color
 
 	&-img-box
 		position: relative
@@ -105,11 +239,13 @@ a
 	
 	&-heading
 		+flex
+		color: $white
 		+align-items(center)
 
 		&-text
 			font-size: 21px
 			line-height: 32px
+			+prefix(transition, $default-transition)
 		
 		&-date
 			margin: 0 0 0 auto
@@ -123,4 +259,141 @@ a
 		font-size: 16px
 		line-height: 23px
 		color: $font-light-color
+
+.nav
+	margin:
+		top: 30px
+		left: -105px
+		right: -15px
+	padding:
+		left: 105px
+		right: 15px
+	background-color: $bg-default-color
+	+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+
+	&-list
+		+flex
+		list-style-type: none
+
+	&-link
+		display: inline-block
+		margin:
+			right: 40px
+		padding: 11px 0
+		font-size: 16px
+		line-height: 25px
+		color: $font-light-color
+		+prefix(transition, $default-transition)
+
+		&:hover
+			color: $accent-color
+
+.custom-select
+	width: 100%
+	
+.select2-container 
+	.select2-selection--single 
+		position: relative
+		height: 51px
+		background-color: #292C32
+		border: 0
+		border-radius: 40px
+		outline: none
+		
+		.select2-selection__rendered
+			padding: 
+				left: 29px
+				right: 38px
+			font-size: 16px
+			line-height: 51px
+			color: $white
+
+		.select2-selection__arrow
+			top: 50%
+			right: 20px
+			+prefix(transform, translateY(-50%))
+
+			b
+				border-color: #A5A7A9 transparent transparent transparent 
+				border-width: 6px 5px 0 5px
+
+.select2-container--default 
+	.select2-results__option--highlighted[aria-selected]
+		color: #000
+		background-color: $font-light-color
+	
+	.select2-results__option[aria-selected=true]
+		color: #000
+		background-color: $accent-color
+
+.select2-dropdown
+	background-color: #292C32
+	border: 0
+
+.table
+	padding:
+		bottom: 24px
+	background-color: $bg-default-color
+
+	&-row
+		+flex
+		border-bottom: 1px solid #292C32
+		cursor: pointer
+
+		&:last-child
+			border: 0
+
+		&:not(.table-heading):hover
+			.table-elem
+				color: $accent-color
+
+		&.table-heading
+			background-color: #292C32
+			border: 0
+
+			.table-elem
+				padding:
+					top: 16px
+					bottom: 14px
+				color: $font-light-color
+				text-transform: uppercase
+				cursor: default
+	
+	&-elem
+		padding: 16px 40px
+		font-size: 14px
+		color: $white
+		line-height: 20px
+		+prefix(transition, $default-transition)
+	
+	&.product-info-table
+
+		.table-elem
+			&:first-child
+			width: 40%
+
+			&:last-child
+				width: 60%
+	
+	&.more-info-table
+		border-radius: 6px
+		overflow: hidden
+
+		.table-row
+			&.table-heading
+				.table-elem
+					padding:
+						top: 23px
+						bottom: 17px
+
+		.table-elem
+			padding: 
+				top: 22px
+				left: 30px
+				right: 30px
+				bottom: 17px
+			width: 26.6%
+		
+			&:nth-child(4)
+				width: 20%
 

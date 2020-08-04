@@ -4,9 +4,60 @@
 		top: 50px
 	+align-items(center)
 
+	&-card
+		+flex
+		margin: 0 -15px
+		+align-items(center)
+
+		&-item
+			display: block
+			margin: 0 15px
+			padding: 18px 10px
+			width: 20% 
+			max-width: 258px
+			font-size: 16px
+			line-height: 25px
+			color: $white
+			+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+			text-align: center
+			border-radius: 6px
+			+prefix(transition, $default-transition)
+
+			&:hover
+				opacity: $default-opacity
+
+			&.orange
+				background: -webkit-gradient(linear, left top, right top, from(#FFBF60), to(#FF9900))
+				background: -o-linear-gradient(left, #FFBF60 0%, #FF9900 100%)
+				background: linear-gradient(90deg, #FFBF60 0%, #FF9900 100%)
+
+			&.green
+				background: -webkit-gradient(linear, left top, right top, from(#0BF2BA), to(#04A881))
+				background: -o-linear-gradient(left, #0BF2BA 0%, #04A881 100%)
+				background: linear-gradient(90deg, #0BF2BA 0%, #04A881 100%)
+
+			&.red
+				background: -webkit-gradient(linear, left top, right top, from(#FF7B73), to(#FF3024))
+				background: -o-linear-gradient(left, #FF7B73 0%, #FF3024 100%)
+				background: linear-gradient(90deg, #FF7B73 0%, #FF3024 100%)
+
+		&-add
+			margin:
+				left: 15px
+			width: 21px
+			height: 21px
+			background-image: url(../img/icon/plus.svg)
+			background-size: cover
+			background-position: center center
+			background-repeat: no-repeat
+			+prefix(transition, $default-transition)
+
+			&:hover
+				opacity: $default-opacity
+
 	&-info
 		+flex
-		padding: 20px 30px
+		padding: 11px 30px 12px 30px
 		width: 100%
 		max-width: 930px
 		font-size: 16px
@@ -33,6 +84,7 @@
 	&-button
 		+flex
 		margin: 0 0 0 auto
+		+justify-content(flex-end)
 		+align-items(center)
 	
 	&-link
@@ -111,3 +163,21 @@
 			max-height: 100%
 			object-fit: cover
 			+prefix(transition, $default-transition)
+
+	&.product-page
+		+flex-wrap(wrap)
+
+		.top-line-card
+			width: 85%
+			order: 1
+
+		.top-line-button
+			width: 15%
+			order: 2
+
+		.top-line-info
+			margin:
+				top: 30px
+			width: 100%
+			max-width: 100%
+			order: 3

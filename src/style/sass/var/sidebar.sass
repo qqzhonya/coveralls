@@ -43,6 +43,7 @@
 					stroke: $accent-color
 	
 	&-menu
+		display: none
 		position: fixed
 		padding:
 			top: 54px
@@ -57,7 +58,16 @@
 		background-color: $bg-default-color
 		overflow-y: auto
 
+		&-wrap
+			opacity: 0
+			+prefix(transition, $default-transition)
+
+			&.active
+				opacity: 1
+
 		.mCSB_inside
+			+prefix(transition, $default-transition)
+
 			.mCSB_container
 				margin: 0
 				padding:
@@ -97,16 +107,18 @@
 			position: relative
 			margin:
 				bottom: 15px
-			cursor: pointer
 
-			&:hover
-				.sidebar-nav-text,
-				.sidebar-nav-link
-					color: $accent-color
-				
-				.sidebar-nav-arrow-img
-					path
-						fill: $accent-color
+			&-wrap
+				cursor: pointer
+
+				&:hover
+					.sidebar-nav-text,
+					.sidebar-nav-link
+						color: $accent-color
+					
+					.sidebar-nav-arrow-img
+						path
+							fill: $accent-color
 
 		&-text,
 		&-link
@@ -132,3 +144,23 @@
 
 				path
 					+prefix(transition, $default-transition)
+		
+		&-dropdown
+			display: none
+			padding:
+				left: 20px
+
+			&-list
+				padding: 
+					top: 5px
+				list-style-type: disc
+				list-style-position: inside
+
+				li
+					margin:
+						top: 5px
+			
+			&-link
+				font-size: 16px
+				line-height: 25px
+				color: $white

@@ -1,11 +1,33 @@
+.main-page
+	.top-line-info
+			padding:
+				top: 16px
+				bottom: 18px
+
+	.sidebar-menu
+		display: block
+	
+	.content
+		padding:
+			left: 495px
+
 .company-card
 	+flex
+	position: relative
 	margin: 0 -15px
 		top: 45px
 
 	&-item 
+		position: relative
 		padding: 0 15px
 		width: 20%
+
+		&:hover
+			.company-card-box
+				opacity: .5
+			
+			.company-card-more
+				opacity: 1
 	
 	&-name 
 		font-size: 21px
@@ -14,11 +36,13 @@
 		line-height: 32px
 
 	&-box
+		position: relative
 		margin:
 			top: 5px
 		padding: 12px 15px
 		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
 		border-radius: 6px
+		+prefix(transition, $default-transition)
 
 		&.orange
 			background: -webkit-gradient(linear, left top, right top, from(#FFBF60), to(#FF9900))
@@ -72,11 +96,13 @@
 		min-width: 45px
 		max-width: 45px
 		font-size: 20px
+		color: $white
 	
 	&-info
 		&-row
 			font-size: 14px
 			line-height: 22px
+			color: $white
 
 	&-sale
 		position: absolute
@@ -119,6 +145,17 @@
 		&-value
 			font-size: 14px
 			font-weight: 700
+			color: $white
+
+	&-more
+		position: absolute
+		top: 50%
+		left: 50%
+		font-size: 18px
+		color: $accent-color
+		+prefix(transform, translate(-50%))
+		+prefix(transition, $default-transition)
+		opacity: 0
 
 .prev-slider
 	margin: 0 -15px
@@ -198,12 +235,22 @@
 			color: $font-light-color
 	
 	&-price
+		display: block
 		padding: 11px
+		color: $white
 		background-color: #292C32
 		text-align: center
 		border:
 			bottom-left-radius: 6px
 			bottom-right-radius: 6px
+		+prefix(transition, $default-transition)
+
+		&:hover
+			color: $accent-color
+			background-color: $bg-dlight-color
+
+			.prev-slider-price-info
+				color: $accent-color
 		
 		&-val
 			display: inline-block
@@ -218,6 +265,7 @@
 			font-size: 8px
 			color: $font-light-color
 			text-transform: uppercase
+			+prefix(transition, $default-transition)
 	
 	.slick-arrow
 		position: absolute
@@ -252,6 +300,11 @@
 	min-height: 100%
 	border-radius: 6px
 	overflow: hidden
+	
+	&:hover 
+		.banner-btn
+			color: $accent-color
+			background-color: $bg-dlight-color
 		
 	&-img
 		position: absolute
@@ -275,4 +328,5 @@
 		color: $font-light-color
 		background-color: $bg-default-color
 		text-align: center
+		+prefix(transition, $default-transition)
 		z-index: 1
