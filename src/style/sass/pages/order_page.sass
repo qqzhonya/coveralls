@@ -1,0 +1,201 @@
+.order
+	&-amount
+		&-table
+			padding: 
+					bottom: 0
+			.table
+				
+				&-row
+					&.active
+						background-color: #292C32
+						
+						.table-elem
+							color: $accent-color
+
+						.order-amount-table-input
+							background-color: #53565B
+							color: $accent-color
+
+						.order-amount-table-input-arrow
+							&-img
+								path
+									fill: #A5A7A9
+							
+							&:hover
+								.order-amount-table-input-arrow-img
+									path
+										fill: $white
+					
+			&-input
+				padding: 12px 10px 12px 15px
+				width: 100%
+				color: $font-light-color
+				background-color: #292C32
+				border: 0
+				border-radius: 6px
+				+prefix(transition, $default-transition)
+			
+				&:focus
+					color: $white
+			
+				&-wrap
+					position: relative
+					max-width: 80px
+
+				&-arrow
+					+flex
+					position: absolute
+					right: 5px
+					width: 9px
+					height: 20px
+					+align-items(center)
+					
+					&-img
+						width: 100%
+
+						path
+							+prefix(transition, $default-transition)
+
+					&:hover
+						.order-amount-table-input-arrow-img
+							path
+								fill: #A5A7A9
+
+					&.up
+						top: 0
+					
+					&.down
+						bottom: 0
+			
+			&-value
+				+flex
+
+			&-btn
+				margin:
+					left: 10px
+				width: 40px
+				height: 40px
+				background-color: #292C32
+				border: 0
+				border-radius: 6px
+				cursor: pointer
+				+prefix(transition, $default-transition)
+
+				&-img
+					path
+						+prefix(transition, $default-transition)
+
+				&.active
+					background-color: #53565B
+					.order-amount-table-btn-img
+						path
+							fill: $accent-color
+				
+				&:hover
+					background-color: #53565B
+
+					.order-amount-table-btn-img
+						path
+							fill: $accent-color
+
+		&-more
+			margin:
+				top: 10px	
+			padding: 10px
+				bottom: 11px
+			font-size: 18px
+			line-height: 28px
+			text-align: center
+			background-color: #292C32
+			cursor: pointer
+			+prefix(transition, $default-transition)
+
+			&-text
+				color: $accent-color
+			
+			&:hover
+				color: $accent-color
+	
+	&-list
+		margin:
+			top: 15px
+
+		&-top
+			+flex
+			padding: 40px 30px
+				bottom: 20px
+		
+			&-elem
+				+flex
+				width: 50%
+				+align-items(center)
+
+				&:nth-child(1)
+					width: 60%
+
+				&:nth-child(2)
+					width: 40%
+			
+		&-btn
+			margin:
+				left: 30px
+			font-size: 18px
+			line-height: 18px
+			color: $font-light-color
+			background-color: transparent
+			border: 0
+			+prefix(transition, $default-transition)
+			cursor: pointer
+
+			&:hover
+				color: $accent-color
+	
+		&-row
+			+flex
+			+justify-content(space-between)
+			cursor: pointer
+
+			&.order-list-heading
+				cursor: default
+				.order-list-elem
+					text-transform: uppercase
+
+		&-elem
+			position: relative
+			padding: 16px 10px 14px 10px
+			width: 100%
+			font-size: 14px
+			line-height: 20px
+			color: $font-light-color
+
+			&:nth-child(1)
+				max-width: 60px
+
+			&:nth-child(2)
+				max-width: 400px
+				text-transform: uppercase
+			
+			&:nth-child(3)
+				max-width: 90px
+			
+			&:nth-child(4)
+				max-width: 80px
+			
+			&:nth-child(5)
+				max-width: 130px
+			
+			&:nth-child(6)
+				max-width: 120px
+
+			&-arrow
+				position: absolute
+				margin:
+					top: -6px
+				top: 50%
+				right: 0
+				width: 7px
+				height: 13px
+				background-image: url(../img/icon/arrow-o-r.svg)
+				background-size: cover
+				background-position: center center
+				background-repeat: no-repeat

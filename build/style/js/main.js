@@ -139,15 +139,61 @@ $(function() {
 	
 	$('.content-hide-btn').click(function() {
 		$(this).toggleClass('active');
+		
 
 		if($(this).hasClass('active')) {
-			$(this).parent().parent().find('.content-elem-bottom').slideUp();
+			$(this).parent().parent().find('.content-hide').slideUp();
+			$(this).parent().addClass('hide');
+			$(this).text("Показать +")
 		} else {
-			$(this).parent().parent().find('.content-elem-bottom').slideDown();
+			$(this).parent().parent().find('.content-hide').slideDown();
+			$(this).parent().removeClass('hide');
+			$(this).text("Скрыть —")
 		}
+
+		if($(this).hasClass('product-parcel-hide-btn')) {
+			if($(this).hasClass('active')) {
+				$('.product-parcel-elem').addClass('active');
+			} else {
+				$('.product-parcel-elem').removeClass('active');
+			}
+		} 
+
 	});
 
 	//
 	// Block hide info
+	//
+	
+	//
+	// Product info tab
 	// 
+
+	$('ul.product-info-tab-nav').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.product-info-tab').find('div.product-info-tab-elem').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+	//
+	// Product info tab end
+	//
+
+	//
+	// Order amount row
+	//
+
+	$('.order-amount-table-btn').click(function() {
+		$(this).toggleClass('active');
+
+		if($(this).hasClass('active')) {
+			$(this).parent().parent().addClass('active');
+		} else {
+			$(this).parent().parent().removeClass('active');
+		}
+	});
+
+	//
+	// Order amount row end
+	//
 });

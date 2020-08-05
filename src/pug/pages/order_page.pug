@@ -1,0 +1,307 @@
+.wrapper
+	include ../var/sidebar.pug
+
+	.content
+		.top-line.product-page
+			.top-line-card
+				a(href="").top-line-card-item.orange ООО Столица
+				a(href="").top-line-card-item.green ООО Вектор
+				a(href="").top-line-card-item.green ООО Тристан
+				a(href="").top-line-card-item.orange ООО Лама
+				a(href="").top-line-card-item.red ИП Лавочкин
+				a(href="").top-line-card-add
+			.top-line-info 
+				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
+				.top-line-info-close
+					svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-info-close-img
+						rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+						rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+			.top-line-button
+				a(href="").top-line-link
+					svg(width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						rect(x="1" y="1" width="24" height="17.0667" rx="2" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="1.91412" y="0.866699" width="15.4602" height="1.73333" rx="0.866667" transform="rotate(37.1759 1.91412 0.866699)" fill="#A5A7A9").fill
+						rect(width="15.4602" height="1.73333" rx="0.866667" transform="matrix(-0.796784 0.604264 0.604264 0.796784 24.1801 0.866699)" fill="#A5A7A9").fill
+				a(href="").top-line-link.top-line-notification.active
+					svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						path(d="M22.8411 21.7618L22.769 21.831L22.8411 21.7617C20.7863 19.6188 19.6547 16.8039 19.6547 13.8351V11.498C19.6547 8.06943 17.393 5.16002 14.2837 4.18163V3.19727C14.2837 1.93046 13.2532 0.9 11.9864 0.9C10.7196 0.9 9.68912 1.93046 9.68912 3.19727V4.18163C6.57977 5.16002 4.31803 8.06938 4.31803 11.498V13.8351C4.31803 16.804 3.18649 19.6188 1.13164 21.7617C0.900786 22.0025 0.835909 22.3577 0.966767 22.6645C1.09762 22.9713 1.39896 23.1703 1.73248 23.1703H8.3172C8.69703 24.8455 10.1977 26.1 11.9864 26.1C13.7751 26.1 15.2757 24.8455 15.6556 23.1703H22.2403C22.5738 23.1703 22.8751 22.9712 23.006 22.6645C23.1368 22.3577 23.0719 22.0025 22.8411 21.7618ZM11.354 3.19727C11.354 2.84864 11.6378 2.56484 11.9864 2.56484C12.335 2.56484 12.6188 2.84864 12.6188 3.19727V3.8559C12.4103 3.83871 12.1994 3.82969 11.9864 3.82969C11.7734 3.82969 11.5625 3.83871 11.354 3.8559V3.19727ZM11.9864 24.4352C11.1259 24.4352 10.3848 23.914 10.0619 23.1703H13.9109C13.588 23.914 12.8468 24.4352 11.9864 24.4352ZM3.50859 21.5055C5.1145 19.2837 5.98287 16.6182 5.98287 13.8351V11.498C5.98287 8.1878 8.67614 5.49453 11.9864 5.49453C15.2966 5.49453 17.9899 8.1878 17.9899 11.498V13.8351C17.9899 16.6182 18.8583 19.2837 20.4642 21.5055H3.50859Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.2")
+					.top-line-notification-val
+						.top-line-notification-num 1
+				a(href="").top-line-account
+					.top-line-account-img-box
+						img(src="style/img/avatar.png", alt="").top-line-account-img
+		
+		nav.nav
+			ul.nav-list
+				li
+					a(href="").nav-link Заказы
+				li
+					a(href="").nav-link Отгрузки
+				li
+					a(href="").nav-link Возвраты
+				li
+					a(href="").nav-link Претензии
+				li
+					a(href="").nav-link Договора
+				li
+					a(href="").nav-link Взаиморасчеты
+		
+		.content-heading-wrap.proudct-heading-wrap
+			.content-heading-wrap-elem
+				.content-heading Костюм “Финикс” бежевый/олива
+			.content-heading-wrap-elem
+				.content-heading-price 
+					.content-heading-price-text Ваша цена: 
+					.content-heading-price-value 1 000 ₽
+				.content-heading-btn
+					svg(width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg").content-heading-btn-img
+						path(fill-rule="evenodd" clip-rule="evenodd" d="M3 2H18.75C19.3023 2 19.75 2.44772 19.75 3V15H21.75V3C21.75 1.34315 20.4069 0 18.75 0H3C1.34315 0 0 1.34315 0 3V21.8571C0 23.514 1.34315 24.8571 3 24.8571H16.4846C16.1942 24.6822 16 24.3638 16 24V22.8571H3C2.44772 22.8571 2 22.4094 2 21.8571V3C2 2.44772 2.44772 2 3 2Z" fill="#A5A7A9").fill
+						path(d="M27.614 22.1745C26.585 23.406 25.1063 24.6558 23.394 26.1031L23.3937 26.1033C22.8085 26.5978 22.1454 27.1584 21.457 27.7553M27.614 22.1745L27.7675 22.3028M27.614 22.1745L27.7675 22.3028C27.7675 22.3028 27.7675 22.3028 27.7675 22.3028M27.614 22.1745C28.7643 20.798 29.3 19.4928 29.3 18.0669C29.3 16.6816 28.8211 15.4035 27.9515 14.4679C27.0715 13.5213 25.8639 13 24.551 13C23.5697 13 22.671 13.3077 21.88 13.9144L20.8 14.703M27.7675 22.3028C26.7274 23.5476 25.2378 24.8066 23.5349 26.2458L23.5228 26.2561L23.5228 26.2561C22.9375 26.7506 22.2753 27.3104 21.5881 27.9064L21.457 27.7553M27.7675 22.3028C28.9399 20.8998 29.5 19.5508 29.5 18.0669C29.5 16.6357 29.0051 15.3076 28.098 14.3318L28.098 14.3318C27.1795 13.3437 25.9184 12.8 24.551 12.8C23.525 12.8 22.5836 13.1227 21.7583 13.7557C21.4091 14.0235 21.0888 14.3408 20.8 14.703M21.457 27.7553L21.5881 27.9064M21.457 27.7553C21.2753 27.913 21.0419 28 20.8 28C20.558 28 20.3246 27.913 20.1428 27.7551C19.456 27.1595 18.7939 26.5998 18.2098 26.1062L18.2068 26.1036C16.4941 24.6561 15.0151 23.406 13.9861 22.1747C12.8358 20.798 12.3 19.4928 12.3 18.0669C12.3 16.6816 12.779 15.4035 13.6486 14.4679C14.5286 13.5213 15.7361 13 17.0491 13C18.0304 13 18.9291 13.3077 19.7201 13.9144C20.0677 14.1811 20.387 14.4998 20.6742 14.8663L21.5881 27.9064M21.5881 27.9064C21.3698 28.0958 21.0898 28.2 20.8 28.2C20.5101 28.2 20.2301 28.0958 20.0117 27.9061C19.3261 27.3115 18.6649 26.7527 18.0807 26.2589L18.0791 26.2576L18.0791 26.2576L18.0777 26.2563L18.0761 26.255L18.0669 26.2472C16.3632 24.8074 14.873 23.5479 13.8326 22.3029L13.8326 22.3029C12.6602 20.8998 12.1 19.5508 12.1 18.0669C12.1 16.6357 12.595 15.3076 13.5021 14.3318L13.5021 14.3318C14.4206 13.3437 15.6815 12.8 17.0491 12.8C18.0752 12.8 19.0165 13.1227 19.8418 13.7557L19.8418 13.7558C20.1908 14.0235 20.5113 14.3407 20.8 14.703M21.5881 27.9064L20.8 14.703M14.9062 21.4162L14.9062 21.4162C15.8663 22.5653 17.299 23.777 18.9807 25.1985C18.9811 25.1987 18.9814 25.199 18.9817 25.1992L18.9831 25.2004L18.9848 25.2018C19.5341 25.6661 20.153 26.1893 20.7988 26.7476C21.4482 26.1882 22.0682 25.6641 22.6187 25.199M14.9062 21.4162L14.5271 15.2735C15.1778 14.5736 16.072 14.1876 17.0491 14.1876C17.7595 14.1876 18.4107 14.4107 18.9892 14.8543C19.508 15.2523 19.873 15.7588 20.0887 16.1174L20.0887 16.1175C20.2397 16.3685 20.5068 16.5186 20.8 16.5186C21.0932 16.5186 21.3602 16.3685 21.5113 16.1175C21.7271 15.7588 22.0921 15.2523 22.6108 14.8543C23.1892 14.4107 23.8404 14.1876 24.551 14.1876C25.528 14.1876 26.4223 14.5737 27.0729 15.2735C27.7343 15.9851 28.1043 16.9751 28.1043 18.0669C28.1043 19.2064 27.6808 20.2351 26.6939 21.4162C25.7336 22.5655 24.3008 23.7772 22.6187 25.199M14.9062 21.4162C13.9192 20.2351 13.4957 19.2064 13.4957 18.0669C13.4957 16.9751 13.8657 15.9851 14.5271 15.2735L14.9062 21.4162ZM22.6187 25.199L22.7478 25.3517L22.6187 25.199Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.4").fill.stroke
+						rect(x="17.6071" y="5.17856" width="1.7" height="13.4643" rx="0.85" transform="rotate(90 17.6071 5.17856)" fill="#A5A7A9").fill
+						rect(x="10" y="13" width="1.7" height="6" rx="0.85" transform="rotate(90 10 13)" fill="#A5A7A9").fill
+						rect(x="14" y="9" width="1.7" height="10" rx="0.85" transform="rotate(90 14 9)" fill="#A5A7A9").fill
+					.content-heading-btn-text В черновик 
+			.content-heading-info 
+					.content-heading-info-elem 
+						span.content-heading-info-text Скидка: 
+						span.content-heading-info-value Не распостроняется
+					.content-heading-info-elem 
+						span.content-heading-info-text Статус товара: 
+						span.content-heading-info-value Outlet
+	
+		.content-wrap.content-product-wrap
+			.content-wrap-elem
+				.product-search.content-elem
+					.product-search-top
+						.product-search-top-elem 
+							select.custom-select
+								option(value="0" disabled selected) Артикул
+								option(value="1") Артикул № 1
+								option(value="2") Артикул № 2
+								option(value="3") Артикул № 3
+						.product-search-top-elem
+							.product-search-text Содержит: 
+							select.custom-select
+								option(value="0" selected) КОС 598
+								option(value="1") КОС 600
+								option(value="2") КОС 358
+								option(value="3") КОС 700
+							.product-search-clear
+					.product-search-bottom
+						.table.product-search-table
+							.table-row.table-heading
+								.table-elem Артикул
+								.table-elem Наименование
+							a(href="").table-row 
+								.table-elem КОС598
+								.table-elem Костюм “Финикс” бежевый/олива
+							a(href="").table-row 
+								.table-elem КОС598
+								.table-elem Костюм “Финикс” бежевый/т. бежевый NEW
+							a(href="").table-row 
+								.table-elem КОС598
+								.table-elem Костюм “Финикс” св.серый/серый
+							a(href="").table-row 
+								.table-elem КОС598
+								.table-elem Костюм “Финикс” бежевый/т. серый NEW
+				
+			.content-wrap-elem
+				.content-elem
+					.table.order-amount-table
+						.table-row.table-heading
+							.table-elem Характеристика
+							.table-elem Остаток
+							.table-elem Цена
+							.table-elem Количество
+							.table-elem Пп / Дата
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 58.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 58.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						.table-row
+							.table-elem р. 48-50. рост 5/6
+							.table-elem 5.000
+							.table-elem 1 000 ₽
+							.table-elem.order-amount-table-value
+								.order-amount-table-input-wrap
+									input(type="input" value="0").order-amount-table-input
+									.order-amount-table-input-arrow.up
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+									.order-amount-table-input-arrow.down
+										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+							
+								button.order-amount-table-btn
+									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+							.table-elem 5.000 / 02.02.20
+						
+					.order-amount-more
+						span.order-amount-more-text + Добавить 
+						span.order-amount-more-value (2)
+		
+		.content-heading-wrap.proudct-heading-wrap
+			.content-heading-wrap-elem
+				.content-heading Заказ № 2435
+			.content-heading-wrap-elem
+				.content-heading-price 
+					.content-heading-price-text Сумма заказа: 
+					.content-heading-price-value 547 300 ₽
+			.content-heading-info 
+					.content-heading-info-elem 
+						span.content-heading-info-text Колечество едениц: 
+						span.content-heading-info-value 120
+					.content-heading-info-elem 
+						span.content-heading-info-text Общий вес: 
+						span.content-heading-info-value 25 кг.
+					.content-heading-info-elem 
+						span.content-heading-info-text Общий объем: 
+						span.content-heading-info-value 23 м.куб.
+		
+		.content-wrap.content-order-wrap
+			.content-wrap-elem
+				.order-list.content-elem
+					.order-list-top
+						.order-list-top-elem
+							.product-search-text Контрагент:
+							select.custom-select
+								option(value="0" selected) ООО “Тристан”
+								option(value="1") ООО “Тристан #2”
+								option(value="2") ООО “Тристан #3”
+								option(value="3") ООО “Тристан #4”
+						.order-list-top-elem
+							button.order-list-btn Добавить печатный каталог
+					.order-list-bottom
+						.order-list-row.order-list-heading
+							.order-list-elem №
+							.order-list-elem Наименование
+							.order-list-elem Цена
+							.order-list-elem Кол-во
+							.order-list-elem Стоимость
+							.order-list-elem Комп.
+						.order-list-row
+							.order-list-elem 
+								| 1
+								.order-list-elem-arrow
+							.order-list-elem КОС598 Костюм “Финикс” бежевый/т. бежевый NEW
+							.order-list-elem 18 300 ₽
+							.order-list-elem 4
+							.order-list-elem 181 300 ₽
+							.order-list-elem - 57
+						
+
+
+			.content-wrap-elem 
+	

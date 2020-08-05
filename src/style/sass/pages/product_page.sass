@@ -1,5 +1,5 @@
 .product
-	&-info
+	&-search
 	
 		&-top
 			+flex
@@ -101,6 +101,11 @@
 				height: 100%
 				max-height: 205px
 				outline: none
+				+prefix(transition, $default-transition)
+				opacity: .5
+			
+			.slick-current
+				opacity: 1
 
 			&-img
 				display: block
@@ -125,4 +130,187 @@
 			line-height: 28px
 			color: $font-light-color
 			text-align: center
+			+prefix(transition, $default-transition)
 
+			&:hover
+				color: $accent-color
+
+	&-parcel
+		margin:
+				top: 30px
+
+		&-wrap
+			+flex
+			+align-items(center)
+
+		&-elem
+			+flex
+			position: relative
+			margin:
+				right: 30px
+			padding: 40px
+			max-width: 370px
+			min-height: 244px
+			+prefix(transition, $default-transition)
+			+justify-content(center)
+			+flex-flow(column)
+
+
+			&.active
+				min-height: auto
+
+				.product-parcel-elem-name
+					position: relative
+					opacity: 1
+
+			&-name
+				position: absolute
+				top: 0
+				left: 0
+				font-size: 16px
+				line-height: 25px
+				color: $font-light-color
+				pointer-events: none
+				opacity: 0
+				
+		&-row
+			+flex
+			margin:
+				bottom: 15px
+			font-size: 16px
+			color: $white
+			+align-items(center)
+
+			&:last-child
+				margin: 0
+		
+		&-text
+			margin:
+				right: 5px
+			color: $font-light-color
+
+		&-btn
+			margin: 0 5px
+			width: 40px
+			height: 40px
+			font-size: 16px
+			line-height: 25px
+			color: $white
+			background-color: #292C32
+			border: 0
+			border-radius: 6px
+			+prefix(transition, $default-transition)
+			cursor: pointer
+
+			&:hover
+				color: $accent-color
+		
+		&-hide-btn
+			margin: 0 0 0 auto
+				right: 30px
+
+	&-info
+		padding: 0
+		margin:
+			top: 30px
+
+		.content-elem-heading
+			padding: 40px 30px 20px 30px
+			+prefix(transition, $default-transition)
+
+			&-text
+				+prefix(transition, $default-transition)
+
+			&.hide
+				padding: 40px 30px
+
+				.product-info-tab-nav
+					opacity: 0
+					pointer-events: none
+
+		&-tab
+			&-nav
+				+flex
+				margin:
+					left: 40px
+				+prefix(transition, $default-transition)
+
+			&-link
+				display: inline-block
+				padding: 0 30px
+				height: 40px
+				font-size: 12px
+				line-height: 37px
+				color: $font-light-color
+				text-align: center
+				border: 1px solid #292C32
+				+prefix(transition, $default-transition)
+				cursor: pointer
+
+				&:first-child
+					border-top-left-radius: 40px
+					border-bottom-left-radius: 40px 
+				
+				&:last-child
+					border-left: 0
+					border-top-right-radius: 40px
+					border-bottom-right-radius: 40px
+				
+				&.active
+					color: #9E6CFD
+					cursor: default
+
+				&:not(.active):hover
+					color: $accent-color
+			
+			&-elem
+				display: none
+
+				&.active
+					display: block
+
+		&-desc
+			display: none
+			padding:
+				bottom: 40px
+
+			p
+				margin:
+					top: 20px
+				padding: 0 30px
+				font-size: 14px
+				line-height: 20px
+				color: $font-light-color
+				
+				&:first-child
+					margin:
+						top: 0
+	
+		.content-properties
+			background-color: #292C32
+			+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+	
+		&-table
+			padding: 0 30px
+				bottom: 40px 
+
+			.table
+				padding: 30px
+				background-color: #292C32
+				border-radius: 6px
+				+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+
+				&-row
+					border-color: #53565B
+				
+				&-elem
+					padding:
+						left: 0
+						right: 0
+
+					&:first-child
+						width: 32%
+					
+					&:last-child
+						width: 68%
+		

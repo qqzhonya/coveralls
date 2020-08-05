@@ -137,6 +137,7 @@ a
 		width: 100%
 		border-radius: 6px
 		background-color: $bg-default-color
+		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
 		overflow: hidden
 
 		&.content-elem-info
@@ -151,18 +152,17 @@ a
 			&-text
 				font-size: 21px
 				line-height: 32px
+				+prefix(transition, $default-transition)
 
 			&-btn
 				margin: 0 0 0 auto 
 					top: 6px
-				font-size: 16px
-				line-height: 25px
-				color: $font-light-color
-				cursor: pointer
-				+prefix(transition, $default-transition)
-
-				&:hover
-					color: $accent-color
+				
+			&.hide
+				.content-elem-heading-text
+					font-size: 16px
+					line-height: 25px
+					color: $font-light-color
 		
 		&-desc
 			margin:
@@ -199,6 +199,46 @@ a
 				
 				&:last-child
 					width: 53.76%
+		
+		&.content-order-wrap
+			.content-wrap-elem
+				&:first-child
+					width: 63%
+				
+				&:last-child
+					width: 37%
+
+	&-hide-btn
+		font-size: 16px
+		line-height: 25px
+		color: $font-light-color
+		cursor: pointer
+		+prefix(transition, $default-transition)
+
+		&:hover
+			color: $accent-color
+
+	&-properties
+		+flex
+		padding: 30px
+		background-color: $bg-default-color
+		+align-items(center)
+
+		&-text
+			margin: 
+				right: 13px
+			font-size: 16px 
+			line-height: 25px
+			color: $font-light-color
+		
+		&-elem
+			margin: 0 7px
+			width: 100%
+			max-width: 40px
+
+		&-img
+			display: block
+			width: 100%
 
 .news
 	+flex
@@ -360,13 +400,15 @@ a
 				cursor: default
 	
 	&-elem
+		+flex
 		padding: 16px 40px
 		font-size: 14px
 		color: $white
 		line-height: 20px
 		+prefix(transition, $default-transition)
+		+align-items(center)
 	
-	&.product-info-table
+	&.product-search-table
 
 		.table-elem
 			&:first-child
@@ -397,3 +439,19 @@ a
 			&:nth-child(4)
 				width: 20%
 
+	&.order-amount-table
+		&-row
+			+align-items(center)
+
+		.table-elem
+			padding: 10px 30px
+			width: 17.5%
+
+			&:nth-child(1)
+				width: 20%
+
+			&:nth-child(4)
+				width: 25%
+			
+			&:nth-child(5)
+				width: 20%
