@@ -106,7 +106,8 @@ a
 					right: 11px
 				
 				path,
-				rect
+				rect,
+				circle
 					+prefix(transition, $default-transition)
 
 			&:hover
@@ -201,12 +202,17 @@ a
 					width: 53.76%
 		
 		&.content-order-wrap
+			margin:
+				top: 15px
+				
 			.content-wrap-elem
 				&:first-child
-					width: 63%
+					width: 63.7%
 				
 				&:last-child
-					width: 37%
+					padding:
+						left: 30px
+					width: 36.3%
 
 	&-hide-btn
 		font-size: 16px
@@ -339,6 +345,7 @@ a
 		border: 0
 		border-radius: 40px
 		outline: none
+		+prefix(transition, $default-transition)
 		
 		.select2-selection__rendered
 			padding: 
@@ -358,6 +365,9 @@ a
 				border-width: 6px 5px 0 5px
 
 .select2-container--default 
+	.select2-results__option
+		+prefix(transition, $default-transition)
+
 	.select2-results__option--highlighted[aria-selected]
 		color: #000
 		background-color: $font-light-color
@@ -365,6 +375,13 @@ a
 	.select2-results__option[aria-selected=true]
 		color: #000
 		background-color: $accent-color
+
+	&.select2-container--open 
+		.select2-selection--single 
+			.select2-selection__arrow 
+				b
+					border-color: transparent transparent #A5A7A9 transparent 
+					border-width: 0px 5px 6px 5px
 
 .select2-dropdown
 	background-color: #292C32
@@ -374,6 +391,10 @@ a
 	padding:
 		bottom: 24px
 	background-color: $bg-default-color
+
+	&-wrap
+		max-height: 427px
+		overflow-y: auto
 
 	&-row
 		+flex
@@ -443,12 +464,19 @@ a
 		&-row
 			+align-items(center)
 
+		.table-heading
+			.table-elem
+				padding: 
+					top: 21px
+					bottom: 19px
+
 		.table-elem
 			padding: 10px 30px
 			width: 17.5%
 
 			&:nth-child(1)
 				width: 20%
+				max-width: 175px
 
 			&:nth-child(4)
 				width: 25%

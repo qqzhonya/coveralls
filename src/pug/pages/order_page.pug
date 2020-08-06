@@ -2,14 +2,9 @@
 	include ../var/sidebar.pug
 
 	.content
-		.top-line.product-page
+		.top-line.order-page
 			.top-line-card
 				a(href="").top-line-card-item.orange ООО Столица
-				a(href="").top-line-card-item.green ООО Вектор
-				a(href="").top-line-card-item.green ООО Тристан
-				a(href="").top-line-card-item.orange ООО Лама
-				a(href="").top-line-card-item.red ИП Лавочкин
-				a(href="").top-line-card-add
 			.top-line-info 
 				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
 				.top-line-info-close
@@ -55,12 +50,15 @@
 					.content-heading-price-value 1 000 ₽
 				.content-heading-btn
 					svg(width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg").content-heading-btn-img
-						path(fill-rule="evenodd" clip-rule="evenodd" d="M3 2H18.75C19.3023 2 19.75 2.44772 19.75 3V15H21.75V3C21.75 1.34315 20.4069 0 18.75 0H3C1.34315 0 0 1.34315 0 3V21.8571C0 23.514 1.34315 24.8571 3 24.8571H16.4846C16.1942 24.6822 16 24.3638 16 24V22.8571H3C2.44772 22.8571 2 22.4094 2 21.8571V3C2 2.44772 2.44772 2 3 2Z" fill="#A5A7A9").fill
-						path(d="M27.614 22.1745C26.585 23.406 25.1063 24.6558 23.394 26.1031L23.3937 26.1033C22.8085 26.5978 22.1454 27.1584 21.457 27.7553M27.614 22.1745L27.7675 22.3028M27.614 22.1745L27.7675 22.3028C27.7675 22.3028 27.7675 22.3028 27.7675 22.3028M27.614 22.1745C28.7643 20.798 29.3 19.4928 29.3 18.0669C29.3 16.6816 28.8211 15.4035 27.9515 14.4679C27.0715 13.5213 25.8639 13 24.551 13C23.5697 13 22.671 13.3077 21.88 13.9144L20.8 14.703M27.7675 22.3028C26.7274 23.5476 25.2378 24.8066 23.5349 26.2458L23.5228 26.2561L23.5228 26.2561C22.9375 26.7506 22.2753 27.3104 21.5881 27.9064L21.457 27.7553M27.7675 22.3028C28.9399 20.8998 29.5 19.5508 29.5 18.0669C29.5 16.6357 29.0051 15.3076 28.098 14.3318L28.098 14.3318C27.1795 13.3437 25.9184 12.8 24.551 12.8C23.525 12.8 22.5836 13.1227 21.7583 13.7557C21.4091 14.0235 21.0888 14.3408 20.8 14.703M21.457 27.7553L21.5881 27.9064M21.457 27.7553C21.2753 27.913 21.0419 28 20.8 28C20.558 28 20.3246 27.913 20.1428 27.7551C19.456 27.1595 18.7939 26.5998 18.2098 26.1062L18.2068 26.1036C16.4941 24.6561 15.0151 23.406 13.9861 22.1747C12.8358 20.798 12.3 19.4928 12.3 18.0669C12.3 16.6816 12.779 15.4035 13.6486 14.4679C14.5286 13.5213 15.7361 13 17.0491 13C18.0304 13 18.9291 13.3077 19.7201 13.9144C20.0677 14.1811 20.387 14.4998 20.6742 14.8663L21.5881 27.9064M21.5881 27.9064C21.3698 28.0958 21.0898 28.2 20.8 28.2C20.5101 28.2 20.2301 28.0958 20.0117 27.9061C19.3261 27.3115 18.6649 26.7527 18.0807 26.2589L18.0791 26.2576L18.0791 26.2576L18.0777 26.2563L18.0761 26.255L18.0669 26.2472C16.3632 24.8074 14.873 23.5479 13.8326 22.3029L13.8326 22.3029C12.6602 20.8998 12.1 19.5508 12.1 18.0669C12.1 16.6357 12.595 15.3076 13.5021 14.3318L13.5021 14.3318C14.4206 13.3437 15.6815 12.8 17.0491 12.8C18.0752 12.8 19.0165 13.1227 19.8418 13.7557L19.8418 13.7558C20.1908 14.0235 20.5113 14.3407 20.8 14.703M21.5881 27.9064L20.8 14.703M14.9062 21.4162L14.9062 21.4162C15.8663 22.5653 17.299 23.777 18.9807 25.1985C18.9811 25.1987 18.9814 25.199 18.9817 25.1992L18.9831 25.2004L18.9848 25.2018C19.5341 25.6661 20.153 26.1893 20.7988 26.7476C21.4482 26.1882 22.0682 25.6641 22.6187 25.199M14.9062 21.4162L14.5271 15.2735C15.1778 14.5736 16.072 14.1876 17.0491 14.1876C17.7595 14.1876 18.4107 14.4107 18.9892 14.8543C19.508 15.2523 19.873 15.7588 20.0887 16.1174L20.0887 16.1175C20.2397 16.3685 20.5068 16.5186 20.8 16.5186C21.0932 16.5186 21.3602 16.3685 21.5113 16.1175C21.7271 15.7588 22.0921 15.2523 22.6108 14.8543C23.1892 14.4107 23.8404 14.1876 24.551 14.1876C25.528 14.1876 26.4223 14.5737 27.0729 15.2735C27.7343 15.9851 28.1043 16.9751 28.1043 18.0669C28.1043 19.2064 27.6808 20.2351 26.6939 21.4162C25.7336 22.5655 24.3008 23.7772 22.6187 25.199M14.9062 21.4162C13.9192 20.2351 13.4957 19.2064 13.4957 18.0669C13.4957 16.9751 13.8657 15.9851 14.5271 15.2735L14.9062 21.4162ZM22.6187 25.199L22.7478 25.3517L22.6187 25.199Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.4").fill.stroke
-						rect(x="17.6071" y="5.17856" width="1.7" height="13.4643" rx="0.85" transform="rotate(90 17.6071 5.17856)" fill="#A5A7A9").fill
-						rect(x="10" y="13" width="1.7" height="6" rx="0.85" transform="rotate(90 10 13)" fill="#A5A7A9").fill
-						rect(x="14" y="9" width="1.7" height="10" rx="0.85" transform="rotate(90 14 9)" fill="#A5A7A9").fill
-					.content-heading-btn-text В черновик 
+						path(fill-rule="evenodd" clip-rule="evenodd" d="M3 2H18.75C19.3023 2 19.75 2.44772 19.75 3V11.4552C20.0954 11.414 20.447 11.3928 20.8036 11.3928C21.1233 11.3928 21.4391 11.4099 21.75 11.4431V3C21.75 1.34315 20.4069 0 18.75 0H3C1.34315 0 0 1.34315 0 3V21.8571C0 23.514 1.34315 24.8571 3 24.8571H13.3336C12.9464 24.2379 12.634 23.567 12.4092 22.8571H3C2.44772 22.8571 2 22.4094 2 21.8571V3C2 2.44772 2.44772 2 3 2Z" fill="#A5A7A9").fill
+						circle(cx="20.8036" cy="20.1964" r="7.80357" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="17.6072" y="5.17847" width="1.7" height="13.4643" rx="0.85" transform="rotate(90 17.6072 5.17847)" fill="#A5A7A9").fill
+						rect(x="11.3928" y="13" width="1.7" height="7.25" rx="0.85" transform="rotate(90 11.3928 13)" fill="#A5A7A9").fill
+						rect(x="14.5" y="9" width="1.7" height="10.3571" rx="0.85" transform="rotate(90 14.5 9)" fill="#A5A7A9").fill
+						rect(x="19.79" y="15.5" width="2" height="8" rx="1" fill="#A5A7A9").fill
+						rect(x="23.6001" y="19.5696" width="2" height="6" rx="1" transform="rotate(45 23.6001 19.5696)" fill="#A5A7A9").fill
+						rect(x="16.5" y="20.9839" width="2" height="6" rx="1" transform="rotate(-45 16.5 20.9839)" fill="#A5A7A9").fill
+					.content-heading-btn-text Загрузить xls
 			.content-heading-info 
 					.content-heading-info-elem 
 						span.content-heading-info-text Скидка: 
@@ -114,140 +112,160 @@
 							.table-elem Цена
 							.table-elem Количество
 							.table-elem Пп / Дата
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+						.table-wrap
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 58.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 58.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 58.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 58.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
-							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						.table-row
-							.table-elem р. 48-50. рост 5/6
-							.table-elem 5.000
-							.table-elem 1 000 ₽
-							.table-elem.order-amount-table-value
-								.order-amount-table-input-wrap
-									input(type="input" value="0").order-amount-table-input
-									.order-amount-table-input-arrow.up
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
 
-									.order-amount-table-input-arrow.down
-										svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
-											path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
+							.table-row
+								.table-elem р. 48-50. рост 5/6
+								.table-elem 5.000
+								.table-elem 1 000 ₽
+								.table-elem.order-amount-table-value
+									.order-amount-table-input-wrap
+										input(type="text" value="0").order-amount-table-input
+										.order-amount-table-input-arrow.plus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+										.order-amount-table-input-arrow.minus
+											svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+												path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+								
+									button.order-amount-table-btn
+										svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
+											path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
+								.table-elem 5.000 / 02.02.20
 							
-								button.order-amount-table-btn
-									svg(width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-btn-img
-										path(fill-rule="evenodd" clip-rule="evenodd" d="M13.7952 0.265077C13.4418 -0.0883587 12.8687 -0.0883589 12.5153 0.265076L5.41912 7.36126L1.54498 3.48711C1.19154 3.13368 0.618512 3.13368 0.265076 3.48711C-0.0883589 3.84055 -0.0883588 4.41358 0.265077 4.76702L4.75226 9.2542C4.88175 9.38369 5.04072 9.46574 5.20757 9.50034C5.50792 9.57832 5.84052 9.49967 6.0758 9.26438L13.7952 1.54498C14.1486 1.19154 14.1486 0.618512 13.7952 0.265077Z" fill="#C4C4C4")
-							.table-elem 5.000 / 02.02.20
-						
 					.order-amount-more
 						span.order-amount-more-text + Добавить 
 						span.order-amount-more-value (2)
@@ -291,17 +309,375 @@
 							.order-list-elem Кол-во
 							.order-list-elem Стоимость
 							.order-list-elem Комп.
-						.order-list-row
-							.order-list-elem 
-								| 1
-								.order-list-elem-arrow
-							.order-list-elem КОС598 Костюм “Финикс” бежевый/т. бежевый NEW
-							.order-list-elem 18 300 ₽
-							.order-list-elem 4
-							.order-list-elem 181 300 ₽
-							.order-list-elem - 57
-						
+						.order-list-item
+							.order-list-row.order-list-main-row
+								.order-list-elem 
+									| 1
+									.order-list-elem-arrow
+								.order-list-elem КОС598 Костюм “Финикс” бежевый/т. бежевый NEW
+								.order-list-elem 18 300 ₽
+								.order-list-elem 4
+								.order-list-elem 181 300 ₽
+								.order-list-elem.error - 57
+								.order-list-elem-delete
+									svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+										rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+										rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+							.order-list-sublist
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem.error - 57
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+						.order-list-item
+							.order-list-row.order-list-main-row
+								.order-list-elem 
+									| 2
+									.order-list-elem-arrow
+								.order-list-elem КОС598 Костюм “Финикс” бежевый/т. бежевый NEW
+								.order-list-elem 18 300 ₽
+								.order-list-elem 4
+								.order-list-elem 181 300 ₽
+								.order-list-elem Укомп.
+								.order-list-elem-delete
+									svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+										rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+										rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+							.order-list-sublist
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem.error - 57
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+						.order-list-item
+							.order-list-row.order-list-main-row
+								.order-list-elem 
+									| 3
+									.order-list-elem-arrow
+								.order-list-elem КОС598 Костюм “Финикс” бежевый/т. бежевый NEW
+								.order-list-elem 18 300 ₽
+								.order-list-elem 4
+								.order-list-elem 181 300 ₽
+								.order-list-elem Укомп.
+								.order-list-elem-delete
+									svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+										rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+										rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+							.order-list-sublist
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem.error - 57
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+								.order-list-row
+									.order-list-elem 
+									.order-list-elem р. 48-50. рост 5/6
+									.order-list-elem 1 000 ₽
+									.order-list-elem 
+										.order-amount-table-input-wrap
+											input(type="text" value="0").order-amount-table-input
+											.order-amount-table-input-arrow.plus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M3.71679 0.986589C4.11715 0.482264 4.88285 0.482265 5.28321 0.986589L7.9757 4.37825C8.49596 5.0336 8.02925 6 7.19249 6L1.80751 6C0.970754 6 0.504041 5.0336 1.0243 4.37824L3.71679 0.986589Z" fill="#53565B")
+
+											.order-amount-table-input-arrow.minus
+												svg(width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg").order-amount-table-input-arrow-img
+													path(d="M5.28321 5.01341C4.88285 5.51774 4.11715 5.51774 3.71679 5.01341L1.0243 1.62176C0.504042 0.966397 0.970754 -1.64313e-07 1.80751 -2.37464e-07L7.19249 -7.08234e-07C8.02925 -7.81386e-07 8.49596 0.966397 7.9757 1.62176L5.28321 5.01341Z" fill="#53565B")
+									.order-list-elem 1 000 ₽
+									.order-list-elem Укомп.
+									.order-list-elem-delete
+										svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-elem-delete-img
+											rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+											rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+				.order-list-buttons
+					button.order-list-submit 
+						.order-list-submit-text Оформить заказ
+
+					.order-list-buttons-wrap
+						.order-list-buttons-item.later
+							svg(width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+								path(fill-rule="evenodd" clip-rule="evenodd" d="M3 4.5H18.75C19.3023 4.5 19.75 4.94772 19.75 5.5V14.0173C20.2318 13.9356 20.727 13.8931 21.2321 13.8931C21.406 13.8931 21.5786 13.8981 21.75 13.908V5.5C21.75 3.84315 20.4069 2.5 18.75 2.5H3C1.34315 2.5 0 3.84315 0 5.5V24.3571C0 26.014 1.34315 27.3571 3 27.3571H13.762C13.3748 26.7379 13.0625 26.067 12.8377 25.3571H3C2.44772 25.3571 2 24.9094 2 24.3571V5.5C2 4.94772 2.44772 4.5 3 4.5Z" fill="#A5A7A9")
+								circle(cx="21.2321" cy="22.6961" r="7.80357" stroke="#A5A7A9" stroke-width="2")
+								rect(x="19.6786" y="18.0356" width="1.7" height="6.21429" rx="0.85" fill="#A5A7A9")
+								rect(x="24.8571" y="22.6001" width="1.7" height="5.17857" rx="0.85" transform="rotate(90 24.8571 22.6001)" fill="#A5A7A9")
+								rect(x="6" y="8" width="2" height="2" rx="1" transform="rotate(90 6 8)" fill="#A5A7A9")
+								rect(x="6" y="12" width="2" height="2" rx="1" transform="rotate(90 6 12)" fill="#A5A7A9") 
+								rect(x="6" y="16" width="2" height="2" rx="1" transform="rotate(90 6 16)" fill="#A5A7A9")
+								rect(x="6" y="20" width="2" height="2" rx="1" transform="rotate(90 6 20)" fill="#A5A7A9")
+								rect(x="10" y="8" width="2" height="2" rx="1" transform="rotate(90 10 8)" fill="#A5A7A9")
+								rect(x="10" y="12" width="2" height="2" rx="1" transform="rotate(90 10 12)" fill="#A5A7A9")
+								rect(x="10" y="16" width="2" height="2" rx="1" transform="rotate(90 10 16)" fill="#A5A7A9")
+								rect(x="14" y="16" width="2" height="2" rx="1" transform="rotate(90 14 16)" fill="#A5A7A9")
+								rect(x="10" y="20" width="2" height="2" rx="1" transform="rotate(90 10 20)" fill="#A5A7A9")
+								rect(x="14" y="8" width="2" height="2" rx="1" transform="rotate(90 14 8)" fill="#A5A7A9")
+								rect(x="14" y="12" width="2" height="2" rx="1" transform="rotate(90 14 12)" fill="#A5A7A9")
+								rect(x="18" y="8" width="2" height="2" rx="1" transform="rotate(90 18 8)" fill="#A5A7A9")
+								rect(x="18" y="12" width="2" height="2" rx="1" transform="rotate(90 18 12)" fill="#A5A7A9")
+								rect(x="5" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+								rect(x="10" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+								rect(x="15" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+						.order-list-buttons-item.mail
+							svg(width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+								path(fill-rule="evenodd" clip-rule="evenodd" d="M37.4649 2H18.5787L26.6432 9.10183L37.4649 2ZM16.7388 3.03554L14.7128 15.9112C14.6173 16.518 15.0864 17.0667 15.7007 17.0667H35.6268C36.1191 17.0667 36.5382 16.7084 36.6147 16.2221L38.5935 3.64601L27.2621 11.0824C27.2165 11.1123 27.1693 11.138 27.1209 11.1596C26.7546 11.4186 26.2422 11.4065 25.8863 11.0931L16.7789 3.07285C16.7651 3.06071 16.7517 3.04827 16.7388 3.03554ZM14.7931 2.53369C15.0227 1.07482 16.2798 0 17.7567 0H37.6829C39.5257 0 40.9328 1.6459 40.6464 3.46631L38.5904 16.533C38.3608 17.9918 37.1037 19.0667 35.6268 19.0667H15.7007C13.8579 19.0667 12.4507 17.4208 12.7371 15.6004L14.7931 2.53369Z" fill="#A5A7A9")
+								rect(x="3.7" y="4" width="8" height="2" rx="1" fill="#A5A7A9")
+								rect(y="8" width="11" height="2" rx="1" fill="#A5A7A9")
+								rect(x="5.30003" y="12" width="5" height="2" rx="1" fill="#A5A7A9")
+						.order-list-buttons-item.print
+							svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+								path(fill-rule="evenodd" clip-rule="evenodd" d="M21 7H3C2.44772 7 2 7.44772 2 8V17C2 17.5523 2.44772 18 3 18H21C21.5523 18 22 17.5523 22 17V8C22 7.44772 21.5523 7 21 7ZM3 5C1.34315 5 0 6.34315 0 8V17C0 18.6569 1.34315 20 3 20H21C22.6569 20 24 18.6569 24 17V8C24 6.34315 22.6569 5 21 5H3Z" fill="#A5A7A9")
+								rect(x="4" y="13" width="16" height="7" fill="#1F2227").notfill
+								path(fill-rule="evenodd" clip-rule="evenodd" d="M17 2H7C6.44772 2 6 2.44772 6 3V5C6 5.55228 6.44772 6 7 6H17C17.5523 6 18 5.55228 18 5V3C18 2.44772 17.5523 2 17 2ZM7 0C5.34315 0 4 1.34315 4 3V5C4 6.65685 5.34315 8 7 8H17C18.6569 8 20 6.65685 20 5V3C20 1.34315 18.6569 0 17 0H7Z" fill="#A5A7A9")
+								rect(x="3" y="7" width="18" height="7" fill="#1F2227").notfill
+								path(fill-rule="evenodd" clip-rule="evenodd" d="M17 15H7C6.44772 15 6 15.4477 6 16V24C6 24.5523 6.44772 25 7 25H17C17.5523 25 18 24.5523 18 24V16C18 15.4477 17.5523 15 17 15ZM7 13C5.34315 13 4 14.3431 4 16V24C4 25.6569 5.34315 27 7 27H17C18.6569 27 20 25.6569 20 24V16C20 14.3431 18.6569 13 17 13H7Z" fill="#A5A7A9")
+								rect(x="16" y="17" width="2" height="8" rx="1" transform="rotate(90 16 17)" fill="#A5A7A9")
+								rect(x="16" y="21" width="2" height="8" rx="1" transform="rotate(90 16 21)" fill="#A5A7A9")
+								rect(x="20" y="9" width="2" height="3" rx="1" transform="rotate(90 20 9)" fill="#A5A7A9")
+						.order-list-buttons-item.save
+							svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+								path(d="M1 3.5C1 2.39543 1.89543 1.5 3 1.5H16C19.866 1.5 23 4.63401 23 8.5V21.5C23 22.6046 22.1046 23.5 21 23.5H3C1.89543 23.5 1 22.6046 1 21.5V3.5Z" stroke="#A5A7A9" stroke-width="2").stroke
+								rect(x="4" y="13.5" width="2" height="10" rx="1" fill="#A5A7A9")
+								rect(x="18" y="13.5" width="2" height="10" rx="1" fill="#A5A7A9")
+								rect(x="4" y="15.5" width="2" height="16" rx="1" transform="rotate(-90 4 15.5)" fill="#A5A7A9")
+								rect(x="6" y="9.5" width="2" height="12" rx="1" transform="rotate(-90 6 9.5)" fill="#A5A7A9")
+								rect(x="8" y="9.5" width="2" height="8" rx="1" transform="rotate(180 8 9.5)" fill="#A5A7A9")
+								rect(x="18" y="9.5" width="2" height="8" rx="1" transform="rotate(180 18 9.5)" fill="#A5A7A9")
+								rect(x="15" y="6.5" width="2" height="3" rx="1" transform="rotate(-180 15 6.5)" fill="#A5A7A9")
 
 
 			.content-wrap-elem 
-	
+				.content-properties.content-elem
+					.content-properties-text Свойства:
+					.content-properties-elem
+						img(src="style/img/properties/properties-1.png", alt="").content-properties-img
+					.content-properties-elem 
+						img(src="style/img/properties/properties-2.png", alt="").content-properties-img
+				
+				.order-product-prev.content-elem
+					.order-product-prev-wrap
+						.order-product-prev-slider
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+							.order-product-prev-slider-elem
+								.order-product-prev-slider-img-box
+									img(src="style/img/product/product-5.jpg", alt="").order-product-prev-slider-img
+					.order-product-btn-wrap
+						a(href="").order-product-btn Детали
+						a(href="").order-product-btn Сертификаты

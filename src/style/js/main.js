@@ -95,8 +95,7 @@ $(function() {
 	$('.custom-select').each(function() {
 		$('.custom-select').select2({
 			minimumResultsForSearch: Infinity,
-			width: 'resolve',
-			closeOnSelect: false
+			width: 'resolve'
 		});
 	});
 
@@ -195,5 +194,62 @@ $(function() {
 
 	//
 	// Order amount row end
+	//
+
+	//
+	// Order amount input
+	//
+
+	$('.order-amount-table-input-arrow').click(function() {
+		if($(this).hasClass('minus')) {
+			var $input = $(this).parent().find('input');
+			var count = parseInt($input.val()) - 1;
+			count = count < 1 ? 0 : count;
+			$input.val(count);
+			$input.change();
+			return false;
+		} else if($(this).hasClass('plus')) {
+			var $input = $(this).parent().find('input');
+			$input.val(parseInt($input.val()) + 1);
+			$input.change();
+			return false;
+		}
+	})
+
+	//
+	// Order amount input end
+	//
+
+	//
+	// Order list 
+	//
+
+	$('.order-list-main-row').click(function() {
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+
+		$('.order-list-sublist').slideUp();
+
+		if($(this).parent().hasClass('active')) {
+			$(this).parent().find('.order-list-sublist').slideDown();
+		}
+	});
+
+	//
+	// Order list end
+	//
+
+	//
+	// Order prev slider
+	//
+
+	$('.order-product-prev-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+	});
+
+	//
+	// Order prev slider end 
 	//
 });
