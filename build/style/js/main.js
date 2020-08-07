@@ -252,4 +252,22 @@ $(function() {
 	//
 	// Order prev slider end 
 	//
+
+	//
+	// Orders list 
+	//
+
+	$('.orders-list-title').click(function() {
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+
+		$('.orders-list-info').slideUp();
+
+		if($(this).parent().hasClass('active')) {
+			$(this).parent().find('.orders-list-info').slideDown();
+		}
+	})
+
+	//
+	// Orders list end
+	//
 });
