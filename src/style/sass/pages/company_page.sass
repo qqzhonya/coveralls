@@ -1,0 +1,237 @@
+.company
+	&-head 
+		margin:
+			top: 30px
+
+		&-elem
+			&:nth-child(1)
+				width: 72.14%
+			
+			&:nth-child(2)
+				width: 27.86%
+		
+		&-wrap
+			+flex
+
+		&-item
+			position: relative
+			margin:
+				right: 30px
+			width: 33.33%
+
+			&:last-child
+				margin: 0
+			
+			&.red
+				.company-card-sale
+					top: 15px
+					right: -5px
+					+prefix(transform, translate(0))
+					
+					&-box
+						background-color: #B9342D
+
+					&::after
+						border-left: 6px solid #86140E
+				
+				.highlight 
+					background-color: #B9342D
+			
+			&.yellow
+				.company-card-sale
+					top: 15px
+					right: -5px
+					+prefix(transform, translate(0))
+					
+					&-box
+						background-color: #A76C14
+
+					&::after
+						border-left: 6px solid #683F01
+				
+				.highlight 
+					background-color: #A76C14
+
+			.content-elem
+				padding: 20px 30px
+
+			&.documents
+				.content-elem
+					padding: 0
+				
+				.company-head-item-title
+					padding: 20px 30px
+					color: $font-light-color
+
+			&-title
+				font-size: 21px
+				line-height: 32px
+			
+		&-info
+			margin:
+				top: 30px
+			padding:
+				bottom: 5px
+			border-bottom: 1px solid #292C32
+
+			&-row
+				+flex
+				margin:
+					bottom: 5px
+				+justify-content(space-between)
+				+align-items(center)
+			
+			&-elem
+				&.l
+					font-size: 16px
+					line-height: 25px
+
+				&.highlight
+					margin:
+						left: -30px
+					padding: 10px 30px
+					width: 100%
+					max-width: 258px
+					background-color: transparent
+					+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+					border:
+						top-right-radius: 40px
+						bottom-right-radius: 40px
+			
+			&-title,
+			&-val
+				display: block
+				text-align: right
+
+			&-title
+				font-size: 10px
+				line-height: 15px
+				color: rgba(255, 255, 255, 0.6)
+			
+			&-val
+				font-size: 14px
+				line-height: 22px
+		
+		&-sale 
+			padding:
+				top: 20px
+
+			&-title
+				font-size: 10px
+				font-weight: 700
+				line-height: 15px
+				color: $white
+
+			&-progressbar-wrap
+				margin:
+					top: 5px
+				width: 100%
+			
+			&-progressbar
+				width: 100%
+				background-color: #292C32
+				border-radius: 6px
+				+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+				overflow: hidden
+
+				&-line
+					display: inline-block
+					padding: 5px 
+					width: 15%
+					background-color: #53565B
+				
+				&-val
+					+flex
+					width: 100%
+					+justify-content(flex-end)
+					+align-items(center)
+					white-space: nowrap
+
+					&-money
+						margin:
+							right: 10px
+						font-size: 10px
+						line-height: 15px
+						color: rgba(255, 255, 255, 0.6)
+					
+					&-percent
+						font-size: 14px
+						line-height: 20px
+						color: $accent-color
+				
+				&-money
+					+flex
+					margin:
+						top: 5px
+					font-size: 10px
+					line-height: 15px
+					color: rgba(255, 255, 255, 0.6)
+					+justify-content(space-between)
+		
+		&-list
+			padding: 0px 30px 
+			list-style-type: none
+
+			&-elem
+				+flex
+				margin:
+					bottom: 10px
+				+align-items(center)
+
+			&-img
+				display: block
+				margin:
+					right: 10px
+				width: 16px
+				height: 20px
+
+			&-link
+				font-size: 12px
+				line-height: 18px
+				color: $font-light-color
+	
+		&-btn
+			display: block
+			margin:
+				top: 28px
+			padding: 11px 10px
+			width: 100%
+			font-size: 18px
+			line-height: 28px
+			color: $font-light-color
+			text-align: center
+			background-color: #292C32
+	
+		&-nav
+			margin:
+				top: 30px
+				left: -105px
+			padding:
+				left: 105px
+			background-color: #1F2227
+			+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+			border:
+				top-right-radius: 6px
+				bottom-right-radius: 6px
+
+			&-list
+				+flex
+				list-style-type: none
+				
+				li
+					margin:
+						right: 30px
+
+					&:last-child
+						margin: 0
+
+			&-link
+				display: block
+				padding: 11px 0
+				font-size: 16px
+				line-height: 25px
+				color: $font-light-color
+				+prefix(transition, $default-transition)
+
+				&:hover
+					color: $accent-color
