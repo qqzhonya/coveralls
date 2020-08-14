@@ -7,6 +7,7 @@
     <meta name="description" content="Coveralls">
     <meta name="keywords" content="test, test1, test2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/fullcalendar.min.css">
     <link rel="stylesheet" href="./style/css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="./style/css/select2.min.css">
     <link rel="stylesheet" href="./style/css/slick.css">
@@ -334,17 +335,17 @@
                       <div class="company-head-info-elem r"><span class="company-head-info-title">Дата погашения</span><span class="company-head-info-val">21.02.20</span></div>
                     </div>
                   </div>
-                  <div class="company-head-sale">
-                    <div class="company-head-sale-title">До скидки 6 %</div>
-                    <div class="company-head-sale-progressbar-wrap">
-                      <div class="company-head-sale-progressbar">
-                        <div class="company-head-sale-progressbar-line">
-                          <div class="company-head-sale-progressbar-val"><span class="company-head-sale-progressbar-val-money">(0)</span><span class="company-head-sale-progressbar-val-percent">0%</span></div>
+                  <div class="company-head-sale sale">
+                    <div class="sale-title">До скидки 6 %</div>
+                    <div class="sale-progressbar-wrap">
+                      <div class="sale-progressbar">
+                        <div class="sale-progressbar-line">
+                          <div class="sale-progressbar-val"><span class="sale-progressbar-val-money">(0)</span><span class="sale-progressbar-val-percent">0%</span></div>
                         </div>
                       </div>
-                      <div class="company-head-sale-progressbar-money">
-                        <div class="company-head-sale-progressbar-min">120 000</div>
-                        <div class="company-head-sale-progressbar-max">250 000</div>
+                      <div class="sale-progressbar-money">
+                        <div class="sale-progressbar-min">120 000</div>
+                        <div class="sale-progressbar-max">250 000</div>
                       </div>
                     </div>
                   </div>
@@ -368,17 +369,17 @@
                       <div class="company-head-info-elem r"><span class="company-head-info-title">Дата погашения</span><span class="company-head-info-val">21.02.20</span></div>
                     </div>
                   </div>
-                  <div class="company-head-sale">
-                    <div class="company-head-sale-title">До скидки 6 %</div>
-                    <div class="company-head-sale-progressbar-wrap">
-                      <div class="company-head-sale-progressbar">
-                        <div class="company-head-sale-progressbar-line">
-                          <div class="company-head-sale-progressbar-val"><span class="company-head-sale-progressbar-val-money">(0)</span><span class="company-head-sale-progressbar-val-percent">0%</span></div>
+                  <div class="company-head-sale sale">
+                    <div class="sale-title">До скидки 6 %</div>
+                    <div class="sale-progressbar-wrap">
+                      <div class="sale-progressbar">
+                        <div class="sale-progressbar-line">
+                          <div class="sale-progressbar-val"><span class="sale-progressbar-val-money">(0)</span><span class="sale-progressbar-val-percent">0%</span></div>
                         </div>
                       </div>
-                      <div class="company-head-sale-progressbar-money">
-                        <div class="company-head-sale-progressbar-min">120 000</div>
-                        <div class="company-head-sale-progressbar-max">250 000</div>
+                      <div class="sale-progressbar-money">
+                        <div class="sale-progressbar-min">120 000</div>
+                        <div class="sale-progressbar-max">250 000</div>
                       </div>
                     </div>
                   </div>
@@ -406,7 +407,49 @@
               </nav>
             </div>
           </div>
-          <div class="company-head-elem"> </div>
+          <div class="company-head-elem"> 
+            <div class="company-head-about content-elem">
+              <div class="company-head-about-info">
+                <div class="company-head-about-title">ООО "Лама"</div>
+                <div class="company-head-about-wrap"><a class="company-head-about-add" href=""> <img class="company-head-about-add-img" src="style/img/icon/doc-add.svg" alt="">Добавить заказ </a>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">Город</span><span class="company-head-about-text-bottom">Пермь</span></div>
+                </div>
+                <div class="company-head-about-text-wrap">
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">ИНН </span><span class="company-head-about-text-bottom">5903 1023 45</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">Телефон</span><span class="company-head-about-text-bottom">8 908 123 45 67</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">БИК </span><span class="company-head-about-text-bottom">04 57 71 603</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">E-mail</span><span class="company-head-about-text-bottom">Company@mail.ru</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">Р/сч</span><span class="company-head-about-text-bottom">1234 5678 9123 4567 8912</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">Адрес</span><span class="company-head-about-text-bottom">Пермь, ул. Ленина 1-101</span></div>
+                  <div class="company-head-about-text"><span class="company-head-about-text-top">К/сч</span><span class="company-head-about-text-bottom">1234 5678 9123 4567 8912</span></div>
+                </div>
+              </div>
+              <div class="company-head-about-btn-wrap"><a class="company-head-about-btn" href="">Договора</a><a class="company-head-about-btn" href="">Редактировать</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="company-sale sale">
+          <div class="sale-head">
+            <div class="sale-title">Скидка 6 %</div>
+            <div class="sale-lacks">Не хватает 51 710 до скидки 10 %</div>
+          </div>
+          <div class="sale-progressbar-wrap">
+            <div class="sale-progressbar">
+              <div class="sale-progressbar-line">
+                <div class="sale-progressbar-val"><span class="sale-progressbar-val-money">(195 400)</span><span class="sale-progressbar-val-percent">73%</span></div>
+              </div>
+            </div>
+            <div class="sale-progressbar-money">
+              <div class="sale-progressbar-min">120 000</div>
+              <div class="sale-progressbar-max">250 000</div>
+            </div>
+          </div>
+        </div>
+        <div class="company-calendar-wrap">
+          <div class="company-calendar-box content-elem">
+            <div class="company-calendar" id="calendar"></div>
+          </div>
+          <div class="company-consultant"></div>
         </div>
       </div>
     </div>
@@ -415,6 +458,8 @@
     <script src="./style/js/plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="./style/js/plugin/select2.min.js"></script>
     <script src="./style/js/plugin/select2-ru.js"></script>
+    <script src="./style/js/plugin/fullcalendar.min.js"></script>
+    <script src="./style/js/plugin/fullcalendar.locales-all.min.js"></script>
     <script src="./style/js/main.js"></script>
   </body>
 </html>

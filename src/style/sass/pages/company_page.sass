@@ -1,5 +1,6 @@
 .company
 	&-head 
+		+flex
 		margin:
 			top: 30px
 
@@ -8,6 +9,8 @@
 				width: 72.14%
 			
 			&:nth-child(2)
+				padding:
+					left: 30px
 				width: 27.86%
 		
 		&-wrap
@@ -112,61 +115,35 @@
 				font-size: 14px
 				line-height: 22px
 		
-		&-sale 
+		&-sale
 			padding:
 				top: 20px
 
-			&-title
-				font-size: 10px
-				font-weight: 700
-				line-height: 15px
-				color: $white
-
-			&-progressbar-wrap
-				margin:
-					top: 5px
-				width: 100%
-			
-			&-progressbar
-				width: 100%
-				background-color: #292C32
-				border-radius: 6px
-				+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
-				overflow: hidden
-
-				&-line
-					display: inline-block
-					padding: 5px 
-					width: 15%
-					background-color: #53565B
-				
-				&-val
-					+flex
-					width: 100%
-					+justify-content(flex-end)
-					+align-items(center)
-					white-space: nowrap
-
-					&-money
-						margin:
-							right: 10px
-						font-size: 10px
-						line-height: 15px
-						color: rgba(255, 255, 255, 0.6)
-					
-					&-percent
-						font-size: 14px
-						line-height: 20px
-						color: $accent-color
-				
-				&-money
-					+flex
-					margin:
-						top: 5px
+			.sale
+				&-title
 					font-size: 10px
 					line-height: 15px
-					color: rgba(255, 255, 255, 0.6)
-					+justify-content(space-between)
+				
+				&-progressbar
+
+					&-line
+						padding: 5px 
+						width: 15%
+					
+					&-val
+						&-money
+							margin:
+								right: 10px
+							font-size: 10px
+							line-height: 15px
+						
+						&-percent
+							font-size: 14px
+							line-height: 20px
+					
+					&-money
+						font-size: 10px
+						line-height: 15px
 		
 		&-list
 			padding: 0px 30px 
@@ -227,7 +204,7 @@
 
 			&-link
 				display: block
-				padding: 11px 0
+				padding: 12px 0 13px 0
 				font-size: 16px
 				line-height: 25px
 				color: $font-light-color
@@ -235,3 +212,174 @@
 
 				&:hover
 					color: $accent-color
+
+		&-about
+			background: -webkit-gradient(linear, left top, right top, from(#FFBF60), to(#FF9900))
+			background: -o-linear-gradient(left, #FFBF60 0%, #FF9900 100%)
+			background: linear-gradient(90deg, #FFBF60 0%, #FF9900 100%)
+			
+			&-info
+				padding: 0 30px
+					top: 20px
+
+			&-title
+				font-size: 21px
+				line-height: 32px
+			
+			&-wrap
+				+flex
+				margin:
+					top: 15px
+				
+				.company-head-about-text
+					margin: 0 0 0 auto
+
+			&-add
+				+flex
+				margin:
+					left: -30px
+				padding: 10px 30px
+				width: 100%
+				max-width: 260px
+				font-size: 16px
+				line-height: 25px
+				color: $white 
+				background-color: #A76C14
+				border:
+					top-right-radius: 30px
+					bottom-right-radius: 30px
+				+align-items(center)
+
+				&-img
+					margin:
+						right: 10px
+
+			&-text-wrap
+				+flex
+				margin: 0 -2px
+					top: 13px  
+				+justify-content(space-between)
+				+flex-wrap(wrap)
+
+			&-text
+				padding: 2px	
+				width: 50%
+
+				&:nth-child(even)
+					text-align: right
+
+				span
+					display: block
+				
+				&-top
+					font-size: 12px
+					line-height: 18px
+					color: rgba(255, 255, 255, 0.6)
+				
+				&-bottom
+					font-size: 14px
+					line-height: 22px
+					color: $white
+
+			&-btn-wrap
+				+flex
+				margin:
+					top: 19px
+
+			&-btn
+				display: block
+				padding: 11px 10px
+				width: 50%
+				font-size: 18px
+				line-height: 28px
+				color: $white
+				text-align: center
+				background-color: #A76C14
+				+prefix(transition, $default-transition)
+
+				&:hover
+					opacity: $default-opacity
+
+	&-sale
+		margin:
+			top: 30px
+		
+		.sale
+			&-progressbar
+				&-line
+					width: 73%
+
+	&-calendar
+		&-wrap
+			+flex
+			margin:
+				top: 30px
+
+			.fc th
+				text-align: left
+
+			.fc .fc-toolbar.fc-header-toolbar
+				padding: 0 5px
+
+			.fc-toolbar-title
+				font-size: 33px
+				font-weight: 400
+				line-height: 51px
+				text-transform: capitalize
+		
+			.fc-theme-standard .fc-scrollgrid,
+			.fc-theme-standard th
+				border: 0
+
+			.fc-col-header-cell-cushion 
+				font-size: 14px
+				line-height: 20px
+				font-weight: 400
+				color: $font-light-color
+				text-transform: uppercase
+			
+			.fc-theme-standard td
+				border: 0
+			
+			.fc-daygrid-day
+				padding: 5px
+
+			.fc-daygrid-day-frame
+					padding: 15px 10px
+					background-color: #292C32
+					border-radius: 6px
+			
+			.fc-day-other
+				.fc-daygrid-day-top
+					opacity: 1
+					
+				.fc-daygrid-day-frame
+					opacity: .3
+
+			.fc .fc-daygrid-day.fc-day-today
+				background-color: transparent
+				.fc-daygrid-day-number
+					color: $accent-color
+
+			.fc-daygrid-day-top
+				+flex-flow(row)
+
+		&-box
+			padding: 30px 25px
+			width: 100%
+			max-width: 1410px			
+		
+		&-consultant
+			width: 100%
+			max-width: 320px
+		
+		
+		
+		
+		
+	
+
+
+
+
+

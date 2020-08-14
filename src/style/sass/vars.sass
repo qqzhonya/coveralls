@@ -592,3 +592,70 @@ a
 				&:nth-child(6)
 					margin:
 						right: 4.49%
+	
+.sale
+
+	&-head
+		+flex
+		+justify-content(space-between)
+		+align-items(flex-end)
+
+	&-title
+		font-size: 16px
+		font-weight: 700
+		line-height: 25px
+		color: $white
+	
+	&-lacks
+		font-size: 14px
+		font-weight: 400
+		line-height: 22px
+		color: $font-light-color
+	
+	&-progressbar-wrap
+		margin:
+			top: 5px
+		width: 100%
+
+	&-progressbar
+		width: 100%
+		background-color: #292C32
+		border-radius: 6px
+		+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1))
+		overflow: hidden
+
+		&-line
+			display: inline-block
+			padding: 5px 20px 4px 20px
+			width: 15%
+			background-color: #53565B
+		
+		&-val
+			+flex
+			width: 100%
+			+justify-content(flex-end)
+			+align-items(center)
+			white-space: nowrap
+		
+			&-money
+				margin:
+					right: 15px
+				font-size: 14px
+				line-height: 22px
+				color: rgba(255, 255, 255, 0.6)
+			
+			&-percent
+				font-size: 21px
+				line-height: 31px
+				color: $accent-color
+
+		&-money
+			+flex
+			margin:
+				top: 5px
+			font-size: 14px
+			line-height: 22px
+			color: rgba(255, 255, 255, 0.6)
+			+justify-content(space-between)
+
+		

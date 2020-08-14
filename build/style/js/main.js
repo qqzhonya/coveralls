@@ -270,4 +270,61 @@ $(function() {
 	//
 	// Orders list end
 	//
+
+	//
+	// Orders list more
+	//
+	
+	$('.orders-list-more').on('click', function (e) {
+		e.stopPropagation();
+	});
+
+	$(window).click(function() {
+		$('.orders-list-more').removeClass('active');
+		$('.orders-list-more-dropdown').removeClass('active');
+	});
+
+	$('.orders-list-more').click(function() {
+		$(this).toggleClass('active');
+
+		var bottomSpace = $(this).offset().top + $(this).outerHeight();
+		var dropdown = $(this).next('.orders-list-more-dropdown');
+		$(dropdown).removeClass('active');
+
+		if($(this).hasClass('active')) {
+			$(dropdown).addClass('active');
+			$(document).find('.orders-list-more').not($(this)).removeClass('active');
+			$(document).find('.orders-list-more-dropdown').not($(this).next('.orders-list-more-dropdown')).removeClass('active');
+
+			if ((bottomSpace + $(dropdown).outerHeight()) > $(".content").height()) {
+				$(dropdown).css('top', $(dropdown).height() * (-1));
+			}
+		} 
+		
+	});
+
+	//
+	// Orders list more end 
+	//
 });
+
+//
+// Calendar
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+	var calendarEl = document.getElementById('calendar');
+	var calendar = new FullCalendar.Calendar(calendarEl, {
+		initialView: 'dayGridMonth',
+		locale: 'ru',
+		height: 936,
+		dayHeaderFormat: {
+			weekday: 'long'
+		},
+	});
+	calendar.render();
+});
+
+//
+// Calendar end
+//
