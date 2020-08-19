@@ -179,8 +179,27 @@
 
 		.company-calendar-wrap
 			.company-calendar-box.content-elem
+				form(action="").company-search-wrap
+					.company-search-input-wrap
+						input(type="text" placeholder="Поиск").company-search-input
+						img(src="style/img/icon/cross.svg", alt="").company-search-input-clear
+					button.company-search-btn.gradient-btn
+						img(src="style/img/icon/search.svg", alt="").company-search-btn-img
 				.company-calendar#calendar
 			.company-consultant
-			
+				.company-consultant-wrap.content-elem
+					.company-consultant-info
+						.company-consultant-img-box
+							img(src="style/img/consultant.jpg", alt="").company-consultant-img
+						.company-consultant-name Приходько Катерина Павловна
+						.company-consultant-position Персональный менеджер
+						a(href="tel:+89081234567").company-consultant-phone 8 908 123 45 67
+						a(href="tel:+89081234567").company-consultant-phone 8 908 123 45 67
+						.company-consultant-time
+							.company-consultant-time-title Режим работы
+							.company-consultant-time-val Пн-Пт, 9:00 - 18:00 МСК
+					a(href="mailto:test@text.com").company-consultant-mail
+						img(src="style/img/icon/mail-send.svg", alt="").company-consultant-mail-img
+						| Написать
 
 						

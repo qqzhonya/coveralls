@@ -165,7 +165,6 @@
 		position: relative
 		margin: 0 15px
 		width: 100%
-		max-width: 240px
 		outline: none
 		
 		&-wrap
@@ -213,12 +212,24 @@
 		&-img
 			margin:
 				right: 10px
-
-	&-img
+	
+	&-img-box
+		position: relative
+		padding:
+			bottom: 152%
 		width: 100%
-		min-height: 240px
 		border-radius: 6px
 		overflow: hidden
+
+	&-img
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		
 	
 	&-info
 		margin:
@@ -280,6 +291,7 @@
 		background-position: center center
 		background-repeat: no-repeat
 		border: 0
+		z-index: 10
 		cursor: pointer
 
 		&.slick-disabled
@@ -315,6 +327,7 @@
 		width: 100%
 		height: 100%
 		z-index: 0
+		object-fit: cover
 	
 	&-btn
 		position: absolute

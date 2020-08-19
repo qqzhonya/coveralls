@@ -1,0 +1,47 @@
+@media screen and (max-width: 1665px)
+	.sidebarOpen
+		.product
+			&-parcel
+				&-wrap
+					+flex-wrap(wrap)
+				
+				&-elem
+					margin: 0
+					max-width: 100%
+
+					&:nth-child(1)
+						margin:
+							bottom: 30px
+						order: 2
+					
+					&:nth-child(2)
+						order: 3
+				
+				&-row
+					+justify-content(center)
+
+				&-hide-btn
+					margin:
+						bottom: 15px
+					order: 1
+
+
+@media screen and (max-width: 1530px)
+	.sidebarOpen
+		.product
+			&-search
+				&-top
+					+flex-wrap(wrap)
+
+					&-elem
+						&:first-child
+							max-width: 100%
+						
+						&:last-child
+							padding:
+								left: 0
+								top: 30px
+			
+
+		
+		

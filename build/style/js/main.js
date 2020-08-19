@@ -16,18 +16,20 @@ $(function() {
 
 		$('.sidebar-menu').animate({width: 'toggle'});
 
+		$('.prev-slider').slick('refresh');
+		$('.order-product-prev-slider').slick('refresh');
+
+
 		if($(this).hasClass('active')) {
 			setTimeout(function() {
 				$('.sidebar-menu-wrap').addClass('active');
 			}, 350);
 			$('.content').css('padding-left','495px');
+			$('body').addClass("sidebarOpen");
 		} else {
 			$('.sidebar-menu-wrap').removeClass('active');
 			$('.content').css('padding-left','175px');
-
-			$('.prev-slider').slick({
-				slidesToShow: 5,
-			});
+			$('body').removeClass("sidebarOpen");
 		}
 	});
 
@@ -69,6 +71,18 @@ $(function() {
 
 	//
 	// Custom scrollbar end
+	//
+
+	//
+	// Top line info close
+	//
+
+	$('.top-line-info-close').click(function() {
+		$('.top-line-info').slideUp();
+	});
+
+	//
+	// Top line info close end
 	//
 
 	//
@@ -156,8 +170,7 @@ $(function() {
 			} else {
 				$('.product-parcel-elem').removeClass('active');
 			}
-		} 
-
+		}
 	});
 
 	//
@@ -306,25 +319,53 @@ $(function() {
 	//
 	// Orders list more end 
 	//
-});
 
-//
-// Calendar
-//
+	//
+	// Clear search 
+	//
 
-document.addEventListener('DOMContentLoaded', function() {
-	var calendarEl = document.getElementById('calendar');
-	var calendar = new FullCalendar.Calendar(calendarEl, {
-		initialView: 'dayGridMonth',
-		locale: 'ru',
-		height: 936,
-		dayHeaderFormat: {
-			weekday: 'long'
-		},
+	$('.company-search-input-clear').click(function() {
+		$(".company-search-input").val("");
+		$(".company-search-input").focus();
 	});
-	calendar.render();
-});
 
-//
-// Calendar end
-//
+	//
+	// Clear search end
+	//
+
+	//
+	//  Calendar
+	//
+
+	function initCalendar() {
+		var calendarEl = document.getElementById('calendar');
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			initialView: 'dayGridMonth',
+			locale: 'ru',
+			height: 936,
+			dayHeaderFormat: {
+				weekday: 'long'
+			},
+			headerToolbar: {
+				left: 'title',
+				right: 'timeGridDay,timeGridWeek,dayGridMonth'
+			},
+			handleWindowResize: true
+		});
+
+		calendar.render();
+
+		if($('.sidebar-menu-btn').hasClass('active')) {
+			calendar.updateSize();
+		}
+	}
+
+	if($('#calendar').length) {
+		initCalendar();
+	} 
+
+	//
+	// Calendar end
+	//
+
+});

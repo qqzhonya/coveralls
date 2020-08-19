@@ -38,6 +38,18 @@
 			background-repeat: no-repeat
 			cursor: pointer
 
+		&-table-wrap
+			overflow-y: auto
+			
+		&-table
+			min-width: 450px 
+	
+	&-more-info-table-wrap
+		overflow-y: auto
+
+		.more-info-table
+			min-width: 550px
+
 	&-slider-block
 		margin:
 			top: 30px
@@ -58,6 +70,8 @@
 		&-elem 
 			width: 100%
 			outline: none
+			border-radius: 6px
+			overflow: hidden
 			
 		&-img
 			width: 100%
@@ -102,6 +116,8 @@
 				max-height: 205px
 				outline: none
 				+prefix(transition, $default-transition)
+				border-radius: 6px
+				overflow: hidden
 				opacity: .5
 			
 			.slick-current
@@ -162,6 +178,11 @@
 				.product-parcel-elem-name
 					position: relative
 					opacity: 1
+				
+				.product-parcel-elem-hide-btn
+					margin:
+						top: -12px
+					top: 50%
 
 			&-name
 				position: absolute
@@ -172,11 +193,18 @@
 				color: $font-light-color
 				pointer-events: none
 				opacity: 0
-				
+			
+			.product-parcel-elem-hide-btn
+				display: none
+				position: absolute
+				margin: 0
+				top: 20px
+				right: 20px
+
 		&-row
 			+flex
 			margin:
-				bottom: 15px
+				bottom: 10px
 			font-size: 16px
 			color: $white
 			+align-items(center)
@@ -190,7 +218,7 @@
 			color: $font-light-color
 
 		&-btn
-			margin: 0 5px
+			margin: 5px
 			width: 40px
 			height: 40px
 			font-size: 16px
@@ -207,7 +235,8 @@
 		
 		&-hide-btn
 			margin: 0 0 0 auto
-				right: 30px
+				right: 15px
+			min-width: 85px
 
 	&-info
 		padding: 0
