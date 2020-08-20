@@ -18,7 +18,8 @@ $(function() {
 
 		$('.prev-slider').slick('refresh');
 		$('.order-product-prev-slider').slick('refresh');
-
+		$('.product-slider').slick('refresh');
+		$('.product-slider-nav').slick('refresh');
 
 		if($(this).hasClass('active')) {
 			setTimeout(function() {
@@ -141,6 +142,21 @@ $(function() {
 		vertical: true,
 		verticalSwiping: true,
 	});
+
+	if($('.sidebar-menu-btn').hasClass('active')) {
+		$('.product-slider-nav').slick({
+			responsive: [
+				{
+					breakpoint: 1300,
+					settings: {
+						vertical: false,
+						verticalSwiping: false,
+					}
+				},
+			],
+		});
+		console.log('hi')
+	}
 
 	//
 	// Product slider nav

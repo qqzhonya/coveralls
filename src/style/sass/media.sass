@@ -25,6 +25,45 @@
 						bottom: 15px
 					order: 1
 
+	.company
+		&-head
+
+			&-item
+				.content-elem
+					padding:
+						left: 15px
+						right: 15px
+						
+				.company-card-sale
+					&-box
+						padding:
+							right: 15px
+				
+				&-title
+					padding:
+						right: 45px
+					font-size: 18px
+			
+				&.documents
+					.company-head-item-title
+						padding: 
+							left: 15px
+							right: 15px
+					
+					.company-head-list
+						padding: 
+							left: 15px
+							right: 15px
+
+@media screen and (max-width: 1610px)
+	.sidebarOpen
+		.product
+			&-slider
+				&-buttons
+					+flex-wrap(wrap)
+				
+				&-link
+					width: 100%
 
 @media screen and (max-width: 1530px)
 	.sidebarOpen
@@ -42,6 +81,289 @@
 								left: 0
 								top: 30px
 			
+			&-info
+				.content-elem
+					&-heading
+						+flex-wrap(wrap)
+					
+					&-heading
+						order: 1
+					
+						&-btn
+							order: 2
 
+				&-tab
+					&-nav
+						margin: 0
+							top: 20px
+						width: 100%
+						order: 3
+					
+					&-link
+						width: 50%
+	
+		.table
+
+			&.product-search-table
+				.table-elem
+					&:nth-child(1)
+						width: 25%
+					
+					&:nth-child(2)
+						width: 75%
+
+			&.more-info-table
+				.table-elem
+					&:nth-child(1)
+						width: 33.2%
+
+					&:nth-child(2),
+					&:nth-child(3)
+						width: 20% 
+
+					&:nth-child(4)
+						width: 26.6%
+
+	.product
+		&-parcel
+			&-wrap
+				+flex-wrap(wrap)
+			
+			&-elem
+				margin: 0
+				max-width: 100%
+
+				&:nth-child(1)
+					margin:
+						bottom: 30px
+					order: 2
+				
+				&:nth-child(2)
+					order: 3
+			
+			&-row
+				+justify-content(center)
+
+			&-hide-btn
+				margin:
+					bottom: 15px
+				order: 1
+
+	.order
+		&-list
+			&-elem
+				&:nth-child(2)
+					width: 30.83%
+
+				&:nth-child(3)
+					width: 12.17%
+				
+				&:nth-child(6)
+					width: 14.01%
+				
+				&-delete
+					right: 10px
+
+@media screen and (max-width: 1450px)
+	.table
+		&.product-search-table
+			.table-elem
+				padding:
+					left: 20px
+					right: 20px
+
+				&:nth-child(1)
+					width: 25%
+				
+				&:nth-child(2)
+					width: 75%
+
+		&.more-info-table
+			.table-elem
+				padding:
+					left: 20px
+					right: 20px
+
+				&:nth-child(1)
+					width: 33.2%
+
+				&:nth-child(2),
+				&:nth-child(3)
+					width: 20% 
+
+				&:nth-child(4)
+					width: 26.6%
+
+@media screen and (max-width: 1420px)
+	.company
+		&-head
+			+flex-wrap(wrap)
 		
+			&-elem
+				&:nth-child(1)
+					width: 100%
+
+				&:nth-child(2)
+					padding: 0
+						top: 30px
+					width: 100%
+			
+			&-about
+				&-text-wrap
+					+justify-content(flex-start)
+				
+				&-text
+					width: 20%
+					text-align: left
+					
+					&:nth-child(even)
+						text-align: left
+
+@media screen and (max-width: 1370px)
+	.orders
+		&-heading
+			+flex-wrap(wrap)
+
+			&-elem
+				&:nth-child(1)
+					width: 100%
+
+				&:nth-child(2)
+					margin:
+						top: 20px
+					width: 100%
+
+@media screen and (max-width: 1320px)
+	.product
+		&-slider
+			&-buttons
+				+flex-wrap(wrap)
+			
+			&-link
+				width: 100%
+
+@media screen and (max-width: 1280px)
+	.content
+		padding:
+			left: 100px
+
+	.company
+		&-calendar-wrap
+			+flex-wrap(wrap)
 		
+		&-calendar-box
+			margin:
+				top: 30px
+			order: 2
+		
+		&-consultant
+			
+			padding: 0
+			max-width: 100%
+			order: 1
+
+			&-info
+				+flex
+				+justify-content(center)
+				+align-items(flex-start)
+
+			&-img-box
+				margin: 0
+					right: 30px
+				padding: 0
+				height: 195px
+
+			&-contact
+				+flex
+				+align-items(center)
+
+			&-phone
+				margin: 0 15px
+@media screen and (max-width: 1230px)
+	.product
+		&-search
+			&-top
+				+flex-wrap(wrap)
+
+				&-elem
+					&:first-child
+						max-width: 100%
+					
+					&:last-child
+						padding:
+							left: 0
+							top: 30px
+
+		&-info
+			.content-elem
+				&-heading
+					+flex-wrap(wrap)
+				
+				&-heading
+					order: 1
+				
+					&-btn
+						order: 2
+
+			&-tab
+				&-nav
+					margin: 0
+						top: 20px
+					width: 100%
+					order: 3
+				
+				&-link
+					width: 50%
+
+@media screen and (max-width: 1100px)
+	.orders
+		&-heading
+			&-elem
+				&:nth-child(1)
+					+flex-wrap(wrap)
+
+			&-item
+				padding: 5px 0
+					right: 50px
+				width: 100%
+
+				&:nth-child(3)
+					padding:
+						right: 50px
+			
+			&-text
+				min-width: 90px
+			
+			&-clean
+				position: absolute
+				top: 15px
+				right: 0
+
+@media screen and (max-width: 1050px)
+	.company
+		&-head
+			&-wrap
+				margin: 0 -15px
+				+flex-wrap(wrap)
+			
+			&-item
+				margin: 0
+				padding: 0 15px
+				width: 50%
+
+				&:nth-child(3)
+					padding:
+						top: 30px
+					width: 100%
+			
+				.company-card-sale
+					right: 9px
+
+			&-list
+				+flex
+				margin: 0 -5px
+				+flex-wrap(wrap)
+
+				&-elem
+					padding: 0 5px
+					width: 33.33%

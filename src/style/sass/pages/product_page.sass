@@ -26,14 +26,17 @@
 		&-text
 			margin:
 				right: 10px
+			white-space: nowrap
 			
 		&-clear
 			margin:
 				left: 30px
-			width: 21px
-			height: 21px
+			width: 100%
+			min-width: 16px
+			max-width: 16px
+			height: 16px
 			background-image: url(../img/icon/cross.svg)
-			background-size: cover
+			background-size: 100% auto
 			background-position: center center
 			background-repeat: no-repeat
 			cursor: pointer
@@ -42,13 +45,13 @@
 			overflow-y: auto
 			
 		&-table
-			min-width: 450px 
+			min-width: 435px 
 	
 	&-more-info-table-wrap
 		overflow-y: auto
 
 		.more-info-table
-			min-width: 550px
+			min-width: 580px
 
 	&-slider-block
 		margin:
@@ -140,8 +143,7 @@
 		&-link
 			display: inline-block
 			padding: 11px 10px
-			width: 100% 
-			max-width: 205px
+			width: 33.33%
 			font-size: 18px
 			line-height: 28px
 			color: $font-light-color
@@ -254,8 +256,7 @@
 				padding: 40px 30px
 
 				.product-info-tab-nav
-					opacity: 0
-					pointer-events: none
+					display: none
 
 		&-tab
 			&-nav
@@ -342,4 +343,4 @@
 					
 					&:last-child
 						width: 68%
-		
+

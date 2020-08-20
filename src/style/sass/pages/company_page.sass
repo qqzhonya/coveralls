@@ -25,12 +25,13 @@
 			&:last-child
 				margin: 0
 			
+			.company-card-sale
+				top: 15px
+				right: -5px
+				+prefix(transform, translate(0))
+			
 			&.red
-				.company-card-sale
-					top: 15px
-					right: -5px
-					+prefix(transform, translate(0))
-					
+				.company-card-sale					
 					&-box
 						background-color: #B9342D
 
@@ -41,11 +42,7 @@
 					background-color: #B9342D
 			
 			&.yellow
-				.company-card-sale
-					top: 15px
-					right: -5px
-					+prefix(transform, translate(0))
-					
+				.company-card-sale					
 					&-box
 						background-color: #A76C14
 
@@ -236,6 +233,7 @@
 				
 				.company-head-about-text
 					margin: 0 0 0 auto
+					text-align: right 
 
 			&-add
 				+flex
