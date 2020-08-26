@@ -5,9 +5,21 @@
 	+align-items(center)
 
 	&-card
-		+flex
 		margin: 0 -15px
-		+align-items(center)
+		overflow-y: auto
+		-ms-overflow-style: none
+		scrollbar-width: none
+
+		&::-webkit-scrollbar
+			display: none
+
+		&-wrap
+			+flex
+			position: relative
+			padding:
+				right: 30px
+			min-width: 880px
+			+align-items(center)
 
 		&-item
 			display: block
@@ -42,6 +54,12 @@
 				background: linear-gradient(90deg, #FF7B73 0%, #FF3024 100%)
 
 		&-add
+			display: block
+			position: absolute
+			margin:
+				top: -11px
+			top: 50%
+			right: 0
 			margin:
 				left: 15px
 			width: 21px
@@ -165,14 +183,18 @@
 			+prefix(transition, $default-transition)
 
 	&.product-page
+		+justify-content(space-between)
 		+flex-wrap(wrap)
 
 		.top-line-card
-			width: 85%
+			padding:
+				right: 30px
+			width: 84%
 			order: 1
 
 		.top-line-button
-			width: 15%
+			margin: 0
+			width: 16%
 			order: 2
 
 		.top-line-info

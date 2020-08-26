@@ -124,6 +124,17 @@
 					&:nth-child(4)
 						width: 26.6%
 
+	.company
+		&-card
+			&-row
+				padding:
+					right: 40px
+
+			&-sale
+				&-box
+					padding:
+						right: 15px
+
 	.product
 		&-parcel
 			&-wrap
@@ -163,6 +174,40 @@
 				
 				&-delete
 					right: 10px
+
+@media screen and (max-width: 1480px)
+	.sidebarOpen
+
+		.content-wrap 
+			&.content-main-wrap
+				+flex-wrap(wrap)
+			
+				.content-wrap-elem
+					&:first-child
+						width: 100%
+
+					&:last-child
+						padding: 0
+						width: 100%
+		
+		.banner
+			display: block
+			margin: 0 auto
+				top: 30px
+			max-width: 450px
+
+			&-img-box
+				padding:
+					bottom: 100%
+		
+		.prev-slider
+			padding: 0 20px
+			
+			.slick-prev
+				left: 10px
+			
+			.slick-next
+				right: 10px
 
 @media screen and (max-width: 1450px)
 	.table
@@ -247,6 +292,15 @@
 		padding:
 			left: 100px
 
+		&-heading-wrap 
+			+flex-wrap(wrap)
+
+			&-elem
+				&:nth-child(1),
+				&:nth-child(2)
+					margin: 0
+					width: 100%
+
 	.company
 		&-calendar-wrap
 			+flex-wrap(wrap)
@@ -279,6 +333,15 @@
 
 			&-phone
 				margin: 0 15px
+
+	.top-line
+		&.product-page
+			.top-line-card
+				width: 75%
+			
+			.top-line-button
+				width: 25%
+
 @media screen and (max-width: 1230px)
 	.product
 		&-search
@@ -315,6 +378,14 @@
 				&-link
 					width: 50%
 
+	.order
+		&-product
+			&-btn-wrap
+				+flex-wrap(wrap)
+			
+			&-btn 
+				width: 100%
+
 @media screen and (max-width: 1100px)
 	.orders
 		&-heading
@@ -339,7 +410,7 @@
 				top: 15px
 				right: 0
 
-@media screen and (max-width: 1050px)
+@media screen and (max-width: 1080px)
 	.company
 		&-head
 			&-wrap
@@ -367,3 +438,16 @@
 				&-elem
 					padding: 0 5px
 					width: 33.33%
+
+	.content-wrap
+		&.content-order-wrap
+			+flex-wrap(wrap)
+
+			.content-wrap-elem
+				&:first-child,
+				&:last-child
+					width: 100%
+
+				&:last-child
+					padding: 0
+						top: 30px

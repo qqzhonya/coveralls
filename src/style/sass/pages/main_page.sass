@@ -1,21 +1,32 @@
 .main-page
 	.top-line-info
-			padding:
-				top: 16px
-				bottom: 18px
+		margin:
+			right: 30px
+		padding:
+			top: 16px
+			bottom: 18px
 
 	.sidebar-menu
 		display: block
 	
 	.content
 		padding:
-			left: 495px
+			left: 415px
 
 .company-card
-	+flex
 	position: relative
 	margin: 0 -15px
 		top: 45px
+	overflow-y: auto
+	-ms-overflow-style: none
+  scrollbar-width: none
+
+	&::-webkit-scrollbar
+  	display: none
+	
+	&-wrap
+		+flex
+		min-width: 1330px
 
 	&-item 
 		position: relative
@@ -309,7 +320,6 @@
 	display: inline-block
 	position: relative
 	width: 100% 
-	min-height: 100%
 	border-radius: 6px
 	overflow: hidden
 	
@@ -317,7 +327,13 @@
 		.banner-btn
 			color: $accent-color
 			background-color: $bg-dlight-color
-		
+	
+	&-img-box
+		position: relative
+		padding:
+			bottom: 133%
+		width: 100% 
+
 	&-img
 		position: absolute
 		top: 0
