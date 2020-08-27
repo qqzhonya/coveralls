@@ -279,6 +279,44 @@
 					width: 100%
 
 @media screen and (max-width: 1320px)
+	.sidebarOpen
+		.content-wrap
+			&.content-product-wrap
+				+flex-wrap(wrap)
+
+				.content-wrap-elem
+					&:first-child,
+					&:last-child
+						width: 100%
+					
+					&:last-child
+						margin:
+							top: 30px
+				
+				.product-parcel
+					padding:
+						top: 30px
+
+					&-wrap
+						+justify-content(space-between)
+
+					&-elem
+						margin: 0
+						max-width: 48%
+					
+						&:nth-child(1)
+							order: 1
+						
+						&:nth-child(2)
+							order: 2
+					
+					&-hide-btn
+						position: absolute
+						top: 0 
+						right: 0
+						order: 3
+						z-index: 10
+
 	.product
 		&-slider
 			&-buttons
@@ -300,6 +338,10 @@
 				&:nth-child(2)
 					margin: 0
 					width: 100%
+				
+				&:nth-child(2)
+					margin:
+						top: 15px
 
 	.company
 		&-calendar-wrap
@@ -343,6 +385,7 @@
 				width: 25%
 
 @media screen and (max-width: 1230px)
+
 	.product
 		&-search
 			&-top
@@ -387,6 +430,19 @@
 				width: 100%
 
 @media screen and (max-width: 1100px)
+	.sidebarOpen
+		.top-line
+			&.product-page
+				.top-line-button
+					margin: 0 0 0 auto
+					order: 1
+
+				.top-line-card
+					margin:
+						top: 30px
+					width: 100% 
+					order: 2
+
 	.orders
 		&-heading
 			&-elem
@@ -411,6 +467,7 @@
 				right: 0
 
 @media screen and (max-width: 1080px)
+
 	.company
 		&-head
 			&-wrap
@@ -440,6 +497,17 @@
 					width: 33.33%
 
 	.content-wrap
+		&.content-main-wrap
+			+flex-wrap(wrap)
+		
+			.content-wrap-elem
+				&:first-child
+					width: 100%
+
+				&:last-child
+					padding: 0
+					width: 100%			
+
 		&.content-order-wrap
 			+flex-wrap(wrap)
 
@@ -451,3 +519,349 @@
 				&:last-child
 					padding: 0
 						top: 30px
+	
+	.banner
+		display: block
+		margin: 0 auto
+			top: 30px
+		max-width: 450px
+
+		&-img-box
+			padding:
+				bottom: 100%
+	
+	.prev-slider
+		padding: 0 20px
+		.slick-arrow
+			&.slick-prev
+				left: 10px
+			
+			&.slick-next
+				right: 10px
+
+@media screen and (max-width: 991px)
+	.sidebar
+		display: none
+	
+	.top-line
+		padding:
+			top: 25px
+			
+		&-menu-btn
+			display: block
+		
+		&.product-page
+			.top-line-button
+				order: 2
+
+			.top-line-card
+				margin:
+					top: 15px
+				width: 100%
+				order: 3
+		
+		&.order-page
+			+flex-wrap(wrap)
+			.top-line-menu-btn
+				margin:
+					right: 20px
+
+			.top-line-card
+				width: auto
+				order: 2 
+
+			.top-line-button
+				order: 3
+
+			.top-line-info
+				margin: 0
+					top: 15px
+				order: 4
+				width: 100%
+				max-width: 100%
+
+	.main-page
+		.sidebar
+			&-menu
+				display: none
+
+		.top-line
+			+flex-wrap(wrap)
+
+			&-button
+				order: 2
+
+			&-info
+				margin: 0
+					top: 15px
+				width: 100%
+				order: 3
+
+	.content
+		padding:
+			left: 15px !important
+	
+	.content-wrap
+		&.content-product-wrap
+			+flex-wrap(wrap)
+
+			.content-wrap-elem
+				&:last-child,
+				&:first-child
+					width: 100%
+				
+				&:last-child
+					margin:
+						top: 30px
+		
+	.product
+		&-search
+			&-top
+				padding: 20px 15px
+
+				&-elem
+					&:last-child
+						padding:
+							top: 15px
+
+			&-clear
+				margin:
+					left: 15px
+
+		&-slider
+			margin:
+				right: 50px
+
+			.slick-arrow
+
+				&.slick-prev
+					left: -20px
+				
+				&.slick-next
+					right: -20px
+
+		&-parcel
+			padding:
+				top: 30px
+
+			&-wrap
+				+justify-content(space-between)
+
+			&-elem
+				margin: 0
+				max-width: 48%
+			
+				&:nth-child(1)
+					margin: 0
+					order: 1
+				
+				&:nth-child(2)
+					order: 2
+			
+			&-row
+				+justify-content(flex-start)
+
+			&-hide-btn
+				position: absolute
+				top: 0 
+				right: 0
+				order: 3
+				z-index: 10
+
+	.orders
+		&-heading
+			&-search
+				+flex-wrap(wrap)
+
+				.product-search-text
+					width: 50%
+					order: 1
+
+				.product-search-clear
+					margin: 0 0 0 auto
+					order: 2
+
+				&-select
+					&-wrap
+						margin:
+							top: 15px
+						width: 100%
+						order: 3
+						
+				&-elem
+					+flex-wrap(wrap)
+
+					&:nth-child(1),
+					&:nth-child(2)
+						width: 100%
+					
+					&:nth-child(2)
+						margin:
+							top: 15px
+
+@media screen and (max-width: 760px)
+	.order
+		&-list
+			&-top
+				+flex-wrap(wrap)
+
+				&-elem
+					&:nth-child(1),
+					&:nth-child(2)
+						width: 100%
+					
+					&:nth-child(2)
+						margin:
+							top: 15px
+			
+			&-btn
+				margin: 0
+
+@media screen and (max-width: 690px)
+	.news
+		+flex-wrap(wrap)
+
+		&-img-box
+			margin: 0 auto
+		
+		&-text
+			margin:
+				top: 30px
+	
+	.product-parcel
+		padding:
+			top: 30px
+
+		&-wrap
+			+justify-content(flex-start)
+
+		&-elem
+			margin: 0
+			max-width: 100%
+		
+			&:nth-child(1)
+				margin: 
+					bottom: 30px
+				order: 1
+			
+			&:nth-child(2)
+				margin:
+				order: 2
+		
+		&-row
+			+justify-content(center)
+
+		&-hide-btn
+			position: absolute
+			top: 0 
+			right: 0
+			order: 3
+			z-index: 10
+
+@media screen and (max-width: 640px)
+	.content
+		&-heading
+			font-size: 26px
+
+	.product
+		&-slider-wrap
+			+flex-wrap(wrap)
+		
+		&-slider
+			margin: 0
+			width: 100%
+			max-width: 100%
+		
+			&-nav
+				margin:
+					top: 15px
+				width: 100%
+				max-width: 100% 
+
+				&-elem
+					margin: 0
+					padding: 5px
+					width: 100%
+					max-width: 100%
+
+@media screen and (max-width: 600px)
+	.orders
+		&-heading
+			&-search
+				&-select
+					&-elem
+						&:nth-child(1),
+						&:nth-child(2)
+							width: 50%
+
+@media screen and (max-width: 500px)
+	.content
+		&-heading
+			&-wrap
+				&-elem
+					+flex-wrap(wrap)
+			
+			&-price,
+			&-btn
+				width: 100%
+			
+			&-btn
+				margin:
+					top: 10px
+			
+			&-info
+				+flex-wrap(wrap)
+
+				&-elem
+					margin: 
+						top: 5px
+						bottom: 5px
+
+@media screen and (max-width: 480px)
+
+	.news
+		&-heading
+			+flex-wrap(wrap)
+		
+			&-text
+				width: 100%
+			
+			&-date
+				margin: 0
+					top: 10px
+
+	.order
+		&-list
+			&-buttons
+				+flex-wrap(wrap)
+			
+				&-wrap
+					margin:
+						top: 15px
+					width: 100%
+				
+				&-item
+					width: 100%
+
+					&:first-child
+						margin:
+							left: 0
+
+			&-submit
+				max-width: 100%
+			
+@media screen and (max-width: 430px)
+	.top-line
+		&.order-page
+			.top-line-button
+				order: 2
+
+			.top-line-card
+				margin:
+					top: 15px
+				order: 3
+				width: 100% 
+
+				&-item
+					max-width: 100%
+					

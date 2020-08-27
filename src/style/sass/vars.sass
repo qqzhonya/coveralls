@@ -334,6 +334,8 @@ a
 		+align-items(center)
 
 		&-text
+			margin:
+				right: 15px
 			font-size: 21px
 			line-height: 32px
 			+prefix(transition, $default-transition)
@@ -365,6 +367,7 @@ a
 	&-list
 		+flex
 		list-style-type: none
+		+flex-wrap(wrap)
 
 	&-link
 		display: inline-block

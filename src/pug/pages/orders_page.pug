@@ -3,13 +3,18 @@
 
 	.content
 		.top-line.product-page
+			.top-line-menu-btn
+				span
+				span
+				span
 			.top-line-card
-				a(href="").top-line-card-item.orange ООО Столица
-				a(href="").top-line-card-item.green ООО Вектор
-				a(href="").top-line-card-item.green ООО Тристан
-				a(href="").top-line-card-item.orange ООО Лама
-				a(href="").top-line-card-item.red ИП Лавочкин
-				a(href="").top-line-card-add
+				.top-line-card-wrap
+					a(href="").top-line-card-item.orange ООО Столица
+					a(href="").top-line-card-item.green ООО Вектор
+					a(href="").top-line-card-item.green ООО Тристан
+					a(href="").top-line-card-item.orange ООО Лама
+					a(href="").top-line-card-item.red ИП Лавочкин
+					a(href="").top-line-card-add
 			.top-line-info 
 				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
 				.top-line-info-close
@@ -103,263 +108,264 @@
 			
 		.orders-list-wrap.content-elem
 			.table.orders-list-table
-				.table-row.table-heading
-					.table-elem №
-					.table-elem Наименование
-					.table-elem Контрагент
-					.table-elem Номер
-					.table-elem Дата создания
-					.table-elem Статус
-					.table-elem Инфо
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 1
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-						.orders-list-info-row
-							.orders-list-info-elem ФРО
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 2
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 3
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 4
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 5
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 6
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-				.orders-list-item
-					.table-row.orders-list-title
-						.table-elem 
-							| 7
-							.table-arrow
-						.table-elem Заказ № 1232 от 02.02.2020
-						.table-elem ООО “Вектор”
-						.table-elem 1232
-						.table-elem 02.02.20
-						.table-elem Подтверждён
-						.table-elem 
-							button.orders-list-more Подробно
-							.orders-list-more-dropdown
-								a(href="").orders-list-more-dropdown-link Повторить
-								a(href="").orders-list-more-dropdown-link Детали заказа
-								a(href="").orders-list-more-dropdown-link Скачать документы
-								a(href="").orders-list-more-dropdown-link Скачать сертификаты
-								a(href="").orders-list-more-dropdown-link Печать документов
-								a(href="").orders-list-more-dropdown-link Печать сертификатов
-					.orders-list-info
-						.orders-list-info-row
-							.orders-list-info-elem ЭС
-							.orders-list-info-elem 
-								.orders-list-info-about Счёт № 12 от 02.02.2020
-								.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
-								.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
-							.orders-list-info-elem.orders-list-info-doc-wrap
-								a(href="").orders-list-info-doc.sc
-								a(href="").orders-list-info-doc.upd
-								a(href="").orders-list-info-doc.sf
-								a(href="").orders-list-info-doc.kor
-							.orders-list-info-elem
-								a(href="").orders-list-info-link Сертификаты
-								a(href="").orders-list-info-link Скачать все
-					
+				.orders-list-table-wrap
+					.table-row.table-heading
+						.table-elem №
+						.table-elem Наименование
+						.table-elem Контрагент
+						.table-elem Номер
+						.table-elem Дата создания
+						.table-elem Статус
+						.table-elem Инфо
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 1
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+							.orders-list-info-row
+								.orders-list-info-elem ФРО
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 2
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 3
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 4
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 5
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 6
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 7
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+						
