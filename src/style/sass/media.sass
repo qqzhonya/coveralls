@@ -254,15 +254,18 @@
 					width: 100%
 			
 			&-about
+				&-wrap
+					.company-head-about-text
+						text-align: right
+
 				&-text-wrap
 					+justify-content(flex-start)
-				
+
+					.company-head-about-text
+						text-align: left
+
 				&-text
 					width: 20%
-					text-align: left
-					
-					&:nth-child(even)
-						text-align: left
 
 @media screen and (max-width: 1370px)
 	.orders
@@ -377,6 +380,19 @@
 				margin: 0 15px
 
 	.top-line
+		&.main-page
+			+flex-wrap(wrap)
+
+			.top-line-button
+				order: 2
+
+			.top-line-info
+				margin: 0
+					top: 15px
+				width: 100%
+				max-width: 100%
+				order: 3
+				
 		&.product-page
 			.top-line-card
 				width: 75%
@@ -539,9 +555,28 @@
 			&.slick-next
 				right: 10px
 
+@media screen and (min-width: 991px)
+	.sidebar
+		display: block !important
+
 @media screen and (max-width: 991px)
 	.sidebar
 		display: none
+
+		.mCSB_inside 
+			.mCSB_container
+				padding: 0 15px
+
+		&-menu-btn
+			display: none
+		
+		&-btn
+			margin:
+				bottom: 40px
+
+			&:nth-child(2)
+				margin:
+					top: 40px
 	
 	.top-line
 		padding:
@@ -550,6 +585,22 @@
 		&-menu-btn
 			display: block
 		
+		&-card
+			&-item
+				padding: 10px
+
+		&.main-page
+			+flex-wrap(wrap)
+
+			.top-line-button
+				order: 2
+
+			.top-line-info
+				margin: 0
+					top: 15px
+				width: 100%
+				order: 3
+
 		&.product-page
 			.top-line-button
 				order: 2
@@ -584,18 +635,6 @@
 		.sidebar
 			&-menu
 				display: none
-
-		.top-line
-			+flex-wrap(wrap)
-
-			&-button
-				order: 2
-
-			&-info
-				margin: 0
-					top: 15px
-				width: 100%
-				order: 3
 
 	.content
 		padding:
@@ -699,6 +738,31 @@
 						margin:
 							top: 15px
 
+	.company
+		&-head
+			&-nav
+				margin:
+					left: -15px
+					right: -15px
+				padding: 0 15px
+				border-radius: 0
+			
+				&-list
+					+flex-wrap(wrap)
+			
+			&-about
+				&-info
+					padding: 
+						left: 15px
+						right: 15px
+
+		&-calendar-box
+			padding: 15px
+		
+		&-consultant
+			&-info
+				padding: 15px
+
 @media screen and (max-width: 760px)
 	.order
 		&-list
@@ -716,6 +780,14 @@
 			
 			&-btn
 				margin: 0
+
+	.company
+		&-head
+			&-about
+				&-text
+					padding: 5px
+					width: 100%
+					max-width: 150px
 
 @media screen and (max-width: 690px)
 	.news
@@ -758,6 +830,12 @@
 			order: 3
 			z-index: 10
 
+	.company
+		&-consultant
+			&-contact
+				+flex-wrap(wrap)
+				+justify-content(center)
+
 @media screen and (max-width: 640px)
 	.content
 		&-heading
@@ -784,6 +862,17 @@
 					width: 100%
 					max-width: 100%
 
+	.company
+		&-head
+			&-item
+				padding:
+					top: 30px
+				width: 100%
+
+				&:nth-child(1)
+					padding:
+						top: 0
+
 @media screen and (max-width: 600px)
 	.orders
 		&-heading
@@ -793,6 +882,22 @@
 						&:nth-child(1),
 						&:nth-child(2)
 							width: 50%
+
+	.company
+		&-search
+			&-btn
+				max-width: 50px
+
+	.fc .fc-toolbar
+		+flex-wrap(wrap)
+
+	.fc-toolbar-chunk
+		width: 100%
+		text-align: center
+		
+		&:last-child
+			margin:
+				top: 15px
 
 @media screen and (max-width: 500px)
 	.content
@@ -817,7 +922,27 @@
 						top: 5px
 						bottom: 5px
 
+	.company
+		&-consultant
+			&-info
+				+flex-wrap(wrap)
+			
+			&-img-box
+				margin: 0
+
 @media screen and (max-width: 480px)
+
+	.sidebar
+		&-heading
+			font-size: 24px
+		
+		&-search
+			margin:
+				top: 15px
+		
+		&-nav
+			margin:
+				top: 30px
 
 	.news
 		&-heading

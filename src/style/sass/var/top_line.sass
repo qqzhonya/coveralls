@@ -10,6 +10,7 @@
 		width: 100%
 		max-width: 30px
 		height: 20px
+		z-index: 120
 
 		span
 			display: block
@@ -222,6 +223,14 @@
 			max-height: 100%
 			object-fit: cover
 			+prefix(transition, $default-transition)
+
+	&.main-page
+		.top-line-info
+			margin:
+				right: 30px
+			padding:
+				top: 16px
+				bottom: 18px
 
 	&.product-page
 		+justify-content(space-between)
