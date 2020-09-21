@@ -247,11 +247,13 @@
 			&-elem
 				&:nth-child(1)
 					width: 100%
+					order: 2
 
 				&:nth-child(2)
 					padding: 0
-						top: 30px
+						bottom: 30px
 					width: 100%
+					order: 1
 			
 			&-about
 				&-wrap
@@ -989,4 +991,9 @@
 
 				&-item
 					max-width: 100%
-					
+	
+	.company
+		&-calendar-wrap
+			.fc-toolbar-title
+				font-size: 24px
+				line-height: normal

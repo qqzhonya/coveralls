@@ -25,6 +25,8 @@ $(function() {
 			});
 			$('.prev-slider').slick('refresh');
 		}
+
+		initScrollnotion();
 	});
 
 	$(window).resize(function() {
@@ -37,6 +39,8 @@ $(function() {
 			$('body').removeClass("sidebarOpen");
 			$('.prev-slider').slick('refresh');
 		}
+
+		initScrollnotion();
 	}); 
 
 	$('.sidebar-menu-btn').click(function() {
@@ -86,26 +90,6 @@ $(function() {
 
 	//
 	// Mobile menu end
-	//
-
-	//
-	// Adaptive view when sidebar open
-	//
-	
-	// $(window).resize(function() {
-	// 	if($('body').hasClass('sidebarOpen')) {
-	// 		if($(window).width() < 1220) {
-	// 			$('.prev-slider').slick({
-					
-	// 			});
-	// 			$('body').css({'background-color' : '#fff'})
-	// 		}
-			
-	// 	};
-	// });
-
-	//
-	// Adaptive view when sidebar open end 
 	//
 
 	//
@@ -307,7 +291,8 @@ $(function() {
 	$('ul.product-info-tab-nav').on('click', 'li:not(.active)', function() {
     $(this)
       .addClass('active').siblings().removeClass('active')
-      .closest('div.product-info-tab').find('div.product-info-tab-elem').removeClass('active').eq($(this).index()).addClass('active');
+			.closest('div.product-info-tab').find('div.product-info-tab-elem').removeClass('active').eq($(this).index()).addClass('active');
+		initScrollnotion();
   });
 
 	//
@@ -477,13 +462,13 @@ $(function() {
 			locale: 'ru',
 			height: 936,
 			dayHeaderFormat: {
-				weekday: 'long'
+				weekday: 'short'
 			},
 			headerToolbar: {
 				left: 'title',
 				right: 'timeGridDay,timeGridWeek,dayGridMonth'
 			},
-			handleWindowResize: true
+			handleWindowResize: true,
 		});
 
 		calendar.render();
@@ -501,4 +486,38 @@ $(function() {
 	// Calendar end
 	//
 
+	//
+	// Arrow help 
+	//
+
+	function  initScrollnotion() {
+		var element = $('.scroll-elem');
+
+		element.each(function() {
+			if($(this).prop('scrollWidth') > $(this).prop('clientWidth')) {
+				$(this).find('.table-more-info-arrow').addClass('active');
+				$(this).find('.top-line-card-more-info').addClass('active');
+			} else {
+				$(this).find('.table-more-info-arrow').removeClass('active');
+				$(this).find('.top-line-card-more-info').removeClass('active');
+			};
+
+			element.scroll(function() {
+				var scrollPosition = $(this).scrollLeft();
+				var scrollBoxSize  = $(this).width() / 100;
+
+				if(scrollPosition > scrollBoxSize) {
+					$(this).find('.table-more-info-arrow').removeClass('active');
+					$(this).find('.top-line-card-more-info').removeClass('active');
+				} else {
+					$(this).find('.table-more-info-arrow').addClass('active');
+					$(this).find('.top-line-card-more-info').addClass('active');
+				}
+			});
+		});
+	}
+	
+	//
+	// Arrow help end
+	//
 });

@@ -7,7 +7,8 @@
 				span
 				span
 				span
-			.top-line-card
+			.top-line-card.scroll-elem
+				.top-line-card-more-info
 				.top-line-card-wrap
 					a(href="").top-line-card-item.orange ООО Столица
 					a(href="").top-line-card-item.green ООО Вектор
@@ -92,7 +93,8 @@
 								option(value="2") КОС 358
 								option(value="3") КОС 700
 							.product-search-clear
-					.product-search-bottom.product-search-table-wrap
+					.product-search-bottom.product-search-table-wrap.scroll-elem
+						.table-more-info-arrow
 						.table.product-search-table
 							.table-row.table-heading
 								.table-elem Артикул
@@ -110,48 +112,9 @@
 								.table-elem КОС598
 								.table-elem Костюм “Финикс” бежевый/т. серый NEW
 			
-				.product-slider-block.content-elem
-					.product-slider-wrap
-						.product-slider
-							.product-slider-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
-							.product-slider-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
-							.product-slider-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
-							.product-slider-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
-							
-						.product-slider-nav
-							.product-slider-nav-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
-							.product-slider-nav-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
-							.product-slider-nav-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
-							.product-slider-nav-elem
-								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
-
-					.product-slider-buttons
-						a(href="").product-slider-link Сертификаты
-						a(href="").product-slider-link Заказать
-						a(href="").product-slider-link Добавить в КП
-
-				.product-addinfo.content-elem.content-elem-info
-					.content-elem-heading 
-						.content-elem-heading-text Доп. материал
-						.content-elem-heading-btn.content-hide-btn Скрыть —
-					.content-elem-bottom.content-elem-desc.content-hide
-						| Сообщаем вам что согласно Постановлению Правительства 
-						| Российской Федерации № 216 от 29.02.2020 дата запрета 
-						| оборота немаркированной обуви перенесена на 1 июля 2020 
-						| года. Сообщаем вам что согласно Постановлению Правительства 
-						| Российской Федерации № 216 от 29.02.2020 дата запрета 
-						| оборота немаркированной обуви перенесена на 1 июля 2020 года.
-
-			.content-wrap-elem
-				.content-elem
-					.product-more-info-table-wrap
+				.content-elem.product-more-info-block
+					.product-more-info-table-wrap.scroll-elem
+						.table-more-info-arrow
 						.table.more-info-table
 							.table-row.table-heading
 								.table-elem Характеристика
@@ -193,6 +156,47 @@
 								.table-elem 5.000
 								.table-elem 1 000 ₽
 								.table-elem 5.000 / 02.02.20
+				
+				.product-addinfo.content-elem.content-elem-info
+					.content-elem-heading 
+						.content-elem-heading-text Доп. материал
+						.content-elem-heading-btn.content-hide-btn Скрыть —
+					.content-elem-bottom.content-elem-desc.content-hide
+						| Сообщаем вам что согласно Постановлению Правительства 
+						| Российской Федерации № 216 от 29.02.2020 дата запрета 
+						| оборота немаркированной обуви перенесена на 1 июля 2020 
+						| года. Сообщаем вам что согласно Постановлению Правительства 
+						| Российской Федерации № 216 от 29.02.2020 дата запрета 
+						| оборота немаркированной обуви перенесена на 1 июля 2020 года.
+
+			.content-wrap-elem
+				
+				.product-slider-block.content-elem
+					.product-slider-wrap
+						.product-slider
+							.product-slider-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
+							.product-slider-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
+							.product-slider-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
+							.product-slider-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-img
+							
+						.product-slider-nav
+							.product-slider-nav-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
+							.product-slider-nav-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
+							.product-slider-nav-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
+							.product-slider-nav-elem
+								img(src="style/img/product/product-5.jpg", alt="").product-slider-nav-img
+
+					.product-slider-buttons
+						a(href="").product-slider-link Сертификаты
+						a(href="").product-slider-link Заказать
+						a(href="").product-slider-link Добавить в КП
 
 				.product-parcel
 					.product-parcel-wrap
@@ -275,7 +279,8 @@
 								| немаркированной обуви перенесена на 1 июля 2020 года.
 
 						.product-info-table-wrap.product-info-tab-elem
-							.table.product-info-table
+							.table.product-info-table.scroll-elem
+								.table-more-info-arrow
 								.table-wrap
 									.table-row
 										.table-elem Стандарт

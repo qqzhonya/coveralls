@@ -247,10 +247,10 @@ a
 
 			.content-wrap-elem
 				&:first-child
-					width: 44.51%
+					width: 53.76%
 				
 				&:last-child
-					width: 53.76%
+					width: 44.51%
 		
 		&.content-order-wrap
 			margin:
@@ -435,10 +435,33 @@ a
 	background-color: #292C32
 	border: 0
 
+.scroll-elem
+	position: relative
+
 .table
 	padding:
 		bottom: 24px
 	background-color: $bg-default-color
+
+	&-more-info-arrow
+		position: absolute
+		display: block
+		right: 10px 
+		bottom: 10px
+		width: 25px
+		height: 25px
+		background-image: url(../img/icon/arrow-n-r.svg)
+		background-size: 10px 16px
+		background-position: center center
+		background-repeat: no-repeat
+		background-color: $bg-default-color
+		border-radius: 3px
+		opacity: 0
+		+prefix(transition, $default-transition)
+		z-index: 10
+
+		&.active
+			opacity: 1
 
 	&-wrap
 		max-height: 427px
