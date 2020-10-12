@@ -439,6 +439,25 @@ $(function() {
 	//
 
 	//
+	// Table heading dropdown
+	//
+
+	$('.table-elem-toggle').click(function() {
+		$(this).toggleClass('active');
+
+		if($(this).hasClass('active')) {
+			$(this).parent().find('.table-heading-dropdown').show();
+		} else {
+			$(this).parent().find('.table-heading-dropdown').hide();
+		}
+	});
+
+	//
+	// Table heading dropdown end 
+	//
+
+
+	//
 	// Clear search 
 	//
 

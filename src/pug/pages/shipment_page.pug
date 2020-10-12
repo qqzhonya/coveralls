@@ -1,0 +1,406 @@
+.wrapper
+	include ../var/sidebar.pug
+
+	.content.shipment
+		.top-line.product-page
+			.top-line-menu-btn
+				span
+				span
+				span
+			.top-line-card.scroll-elem
+				.top-line-card-more-info
+				.top-line-card-wrap
+					a(href="").top-line-card-item.orange ООО Столица
+					a(href="").top-line-card-item.green ООО Вектор
+					a(href="").top-line-card-item.green ООО Тристан
+					a(href="").top-line-card-item.orange ООО Лама
+					a(href="").top-line-card-item.red ИП Лавочкин
+					a(href="").top-line-card-add
+			.top-line-info 
+				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
+				.top-line-info-close
+					svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-info-close-img
+						rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+						rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+			.top-line-button
+				a(href="").top-line-link
+					svg(width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						rect(x="1" y="1" width="24" height="17.0667" rx="2" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="1.91412" y="0.866699" width="15.4602" height="1.73333" rx="0.866667" transform="rotate(37.1759 1.91412 0.866699)" fill="#A5A7A9").fill
+						rect(width="15.4602" height="1.73333" rx="0.866667" transform="matrix(-0.796784 0.604264 0.604264 0.796784 24.1801 0.866699)" fill="#A5A7A9").fill
+				a(href="").top-line-link.top-line-notification.active
+					svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						path(d="M22.8411 21.7618L22.769 21.831L22.8411 21.7617C20.7863 19.6188 19.6547 16.8039 19.6547 13.8351V11.498C19.6547 8.06943 17.393 5.16002 14.2837 4.18163V3.19727C14.2837 1.93046 13.2532 0.9 11.9864 0.9C10.7196 0.9 9.68912 1.93046 9.68912 3.19727V4.18163C6.57977 5.16002 4.31803 8.06938 4.31803 11.498V13.8351C4.31803 16.804 3.18649 19.6188 1.13164 21.7617C0.900786 22.0025 0.835909 22.3577 0.966767 22.6645C1.09762 22.9713 1.39896 23.1703 1.73248 23.1703H8.3172C8.69703 24.8455 10.1977 26.1 11.9864 26.1C13.7751 26.1 15.2757 24.8455 15.6556 23.1703H22.2403C22.5738 23.1703 22.8751 22.9712 23.006 22.6645C23.1368 22.3577 23.0719 22.0025 22.8411 21.7618ZM11.354 3.19727C11.354 2.84864 11.6378 2.56484 11.9864 2.56484C12.335 2.56484 12.6188 2.84864 12.6188 3.19727V3.8559C12.4103 3.83871 12.1994 3.82969 11.9864 3.82969C11.7734 3.82969 11.5625 3.83871 11.354 3.8559V3.19727ZM11.9864 24.4352C11.1259 24.4352 10.3848 23.914 10.0619 23.1703H13.9109C13.588 23.914 12.8468 24.4352 11.9864 24.4352ZM3.50859 21.5055C5.1145 19.2837 5.98287 16.6182 5.98287 13.8351V11.498C5.98287 8.1878 8.67614 5.49453 11.9864 5.49453C15.2966 5.49453 17.9899 8.1878 17.9899 11.498V13.8351C17.9899 16.6182 18.8583 19.2837 20.4642 21.5055H3.50859Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.2")
+					.top-line-notification-val
+						.top-line-notification-num 1
+				a(href="").top-line-account
+					.top-line-account-img-box
+						img(src="style/img/avatar.png", alt="").top-line-account-img
+		
+		nav.nav
+			ul.nav-list
+				li
+					a(href="").nav-link Заказы
+				li.active
+					a(href="").nav-link Отгрузки
+				li
+					a(href="").nav-link Возвраты
+				li
+					a(href="").nav-link Претензии
+				li
+					a(href="").nav-link Договора
+				li
+					a(href="").nav-link Взаиморасчеты
+		
+		.orders-heading
+			.orders-heading-elem
+				.orders-heading-item
+					.orders-heading-text Контрагент:
+					select(style="width: 100%").custom-select
+						option(value="0" selected) ООО “Вектор”
+						option(value="1") ООО “Вектор”
+						option(value="2") ООО “Вектор”
+						option(value="3") ООО “Вектор”
+				.orders-heading-item
+					.orders-heading-text Договор:
+					select(style="width: 100%").custom-select
+						option(value="0" selected) По умолчанию
+						option(value="1") По умолчанию № 1
+						option(value="2") По умолчанию № 2
+						option(value="3") По умолчанию № 3
+				.orders-heading-item
+					.orders-heading-text Период:
+					select(style="width: 100%").custom-select
+						option(value="0" selected) 01.01.2020 - 31.01.2020
+						option(value="1") 01.01.2020 - 31.01.2020
+						option(value="2") 01.01.2020 - 31.01.2020
+						option(value="3") 01.01.2020 - 31.01.2020
+				.orders-heading-clean
+			.orders-heading-elem
+				.content-heading-btn
+					svg(width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg").content-heading-btn-img
+						path(d="M10.8337 20.6667H7.50033C7.04033 20.6667 6.66699 20.2933 6.66699 19.8333C6.66699 19.3733 7.04033 19 7.50033 19H10.8337C11.2937 19 11.667 19.3733 11.667 19.8333C11.667 20.2933 11.2937 20.6667 10.8337 20.6667Z" fill="#A5A7A9").fill
+						path(d="M37.9176 20.6665H35.8342C35.3742 20.6665 35.0009 20.2932 35.0009 19.8332C35.0009 19.3732 35.3742 18.9998 35.8342 18.9998H37.2259L38.3492 13.0132C38.3342 9.94984 35.7176 7.33317 32.5009 7.33317H27.0292L24.3776 18.9998H29.1676C29.6276 18.9998 30.0009 19.3732 30.0009 19.8332C30.0009 20.2932 29.6276 20.6665 29.1676 20.6665H23.3342C23.0809 20.6665 22.8409 20.5515 22.6826 20.3532C22.5242 20.1565 22.4642 19.8965 22.5209 19.6498L25.5509 6.3165C25.6376 5.93484 25.9742 5.6665 26.3642 5.6665H32.5009C36.6359 5.6665 40.0009 9.0315 40.0009 13.1665L38.7359 19.9865C38.6626 20.3815 38.3192 20.6665 37.9176 20.6665Z" fill="#A5A7A9").fill
+						path(d="M32.4997 23.9998C30.203 23.9998 28.333 22.1315 28.333 19.8332C28.333 17.5348 30.203 15.6665 32.4997 15.6665C34.7963 15.6665 36.6663 17.5348 36.6663 19.8332C36.6663 22.1315 34.7963 23.9998 32.4997 23.9998ZM32.4997 17.3332C31.1213 17.3332 29.9997 18.4548 29.9997 19.8332C29.9997 21.2115 31.1213 22.3332 32.4997 22.3332C33.878 22.3332 34.9997 21.2115 34.9997 19.8332C34.9997 18.4548 33.878 17.3332 32.4997 17.3332Z" fill="#A5A7A9").fill
+						path(d="M14.1667 23.9998C11.87 23.9998 10 22.1315 10 19.8332C10 17.5348 11.87 15.6665 14.1667 15.6665C16.4633 15.6665 18.3333 17.5348 18.3333 19.8332C18.3333 22.1315 16.4633 23.9998 14.1667 23.9998ZM14.1667 17.3332C12.7883 17.3332 11.6667 18.4548 11.6667 19.8332C11.6667 21.2115 12.7883 22.3332 14.1667 22.3332C15.545 22.3332 16.6667 21.2115 16.6667 19.8332C16.6667 18.4548 15.545 17.3332 14.1667 17.3332Z" fill="#A5A7A9").fill
+						path(d="M10.833 5.66667H4.16634C3.70634 5.66667 3.33301 5.29334 3.33301 4.83334C3.33301 4.37333 3.70634 4 4.16634 4H10.833C11.293 4 11.6663 4.37333 11.6663 4.83334C11.6663 5.29334 11.293 5.66667 10.833 5.66667Z" fill="#A5A7A9").fill
+						path(d="M10.8337 10.6667H2.50033C2.04033 10.6667 1.66699 10.2933 1.66699 9.83333C1.66699 9.37333 2.04033 9 2.50033 9H10.8337C11.2937 9 11.667 9.37333 11.667 9.83333C11.667 10.2933 11.2937 10.6667 10.8337 10.6667Z" fill="#A5A7A9").fill
+						path(d="M10.8333 15.6667H0.833333C0.373333 15.6667 0 15.2933 0 14.8333C0 14.3733 0.373333 14 0.833333 14H10.8333C11.2933 14 11.6667 14.3733 11.6667 14.8333C11.6667 15.2933 11.2933 15.6667 10.8333 15.6667Z" fill="#A5A7A9").fill
+						path(d="M23.3337 20.6665H17.5003C17.0403 20.6665 16.667 20.2932 16.667 19.8332C16.667 19.3732 17.0403 18.9998 17.5003 18.9998H22.6687L26.4553 2.33317H7.50033C7.04033 2.33317 6.66699 1.95984 6.66699 1.49984C6.66699 1.03984 7.04033 0.666504 7.50033 0.666504H27.5003C27.7537 0.666504 27.9937 0.781504 28.152 0.979838C28.3103 1.1765 28.3703 1.4365 28.3137 1.68317L24.147 20.0165C24.0603 20.3982 23.722 20.6665 23.3337 20.6665Z" fill="#A5A7A9").fill
+					.content-heading-btn-text Создать заявку
+			
+		.orders-heading-search
+			.orders-heading-search-elem
+				.product-search-text Поиск по: 
+				.orders-heading-search-select-wrap
+					.orders-heading-search-select-elem
+						select(style="width: 100%").custom-select
+							option(value="0" selected) Статус
+							option(value="1") Статус №2
+							option(value="2") Статус №3
+							option(value="3") Статус №4
+					.orders-heading-search-select-elem
+						select(style="width: 100%").custom-select
+							option(value="0" selected) Статус
+							option(value="1") Статус №2
+							option(value="2") Статус №3
+							option(value="3") Статус №4
+				.product-search-clear
+			.orders-heading-search-elem
+				.orders-heading-search-btn.gradient-btn
+					.gradient-btn-text Поиск
+			
+		.orders-list-wrap.content-elem
+			.table.orders-list-table.scroll-elem
+				.table-more-info-arrow
+				.orders-list-table-wrap
+					.table-row.table-heading
+						.table-elem №
+						.table-elem 
+							.table-elem-toggle 
+								| Наименование
+								svg(width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg").table-elem-toggle-arrow
+									path(d="M7.00726 8.11117L12.7923 2.32601C12.9262 2.1922 13 2.01359 13 1.82313C13 1.63268 12.9262 1.45406 12.7923 1.32026L12.3664 0.894224C12.0888 0.616998 11.6378 0.616998 11.3606 0.894224L6.5027 5.75217L1.63936 0.888833C1.50545 0.755029 1.32694 0.681152 1.13659 0.681152C0.946033 0.681152 0.767522 0.755029 0.633507 0.888833L0.207681 1.31487C0.0737714 1.44878 -4.1357e-08 1.62729 -4.9682e-08 1.81774C-5.8007e-08 2.0082 0.0737714 2.18681 0.207681 2.32062L5.99802 8.11117C6.13236 8.24529 6.31171 8.31896 6.50238 8.31854C6.69378 8.31896 6.87303 8.24529 7.00726 8.11117Z" fill="#A5A7A9")
+							.table-heading-dropdown
+								.table-heading-dropdown-wrap
+									a(href="").table-heading-dropdown-link ООО Столица
+									a(href="").table-heading-dropdown-link ООО Вектор
+									a(href="").table-heading-dropdown-link ООО Тристан
+									a(href="").table-heading-dropdown-link ООО Лама
+									a(href="").table-heading-dropdown-link ООО Лавочкин
+						.table-elem 
+							.table-elem-toggle 
+								| Контрагент
+								svg(width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg").table-elem-toggle-arrow
+									path(d="M7.00726 8.11117L12.7923 2.32601C12.9262 2.1922 13 2.01359 13 1.82313C13 1.63268 12.9262 1.45406 12.7923 1.32026L12.3664 0.894224C12.0888 0.616998 11.6378 0.616998 11.3606 0.894224L6.5027 5.75217L1.63936 0.888833C1.50545 0.755029 1.32694 0.681152 1.13659 0.681152C0.946033 0.681152 0.767522 0.755029 0.633507 0.888833L0.207681 1.31487C0.0737714 1.44878 -4.1357e-08 1.62729 -4.9682e-08 1.81774C-5.8007e-08 2.0082 0.0737714 2.18681 0.207681 2.32062L5.99802 8.11117C6.13236 8.24529 6.31171 8.31896 6.50238 8.31854C6.69378 8.31896 6.87303 8.24529 7.00726 8.11117Z" fill="#A5A7A9")
+							.table-heading-dropdown
+								.table-heading-dropdown-wrap
+									a(href="").table-heading-dropdown-link ООО Столица
+									a(href="").table-heading-dropdown-link ООО Вектор
+									a(href="").table-heading-dropdown-link ООО Тристан
+									a(href="").table-heading-dropdown-link ООО Лама
+									a(href="").table-heading-dropdown-link ООО Лавочкин
+						.table-elem Желаемая дата 
+						.table-elem Номер
+						.table-elem Дата отгрузки
+						.table-elem Статус
+						.table-elem Инфо
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 1
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Рассмотрение
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+							.orders-list-info-row
+								.orders-list-info-elem ФРО
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 2
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Ответ получен
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 3
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Закрыт
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 4
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 5
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem.error На рассмотрении
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 6
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem Подтверждён
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+					.orders-list-item
+						.table-row.orders-list-title
+							.table-elem 
+								| 7
+								.table-arrow
+							.table-elem Заказ № 1232 от 02.02.2020
+							.table-elem ООО “Вектор”
+							.table-elem 02.02.20
+							.table-elem 1232
+							.table-elem 02.02.20
+							.table-elem В ожидании
+							.table-elem 
+								button.orders-list-more Подробно
+								.orders-list-more-dropdown
+									a(href="").orders-list-more-dropdown-link Повторить
+									a(href="").orders-list-more-dropdown-link Детали заказа
+									a(href="").orders-list-more-dropdown-link Скачать документы
+									a(href="").orders-list-more-dropdown-link Скачать сертификаты
+									a(href="").orders-list-more-dropdown-link Печать документов
+									a(href="").orders-list-more-dropdown-link Печать сертификатов
+						.orders-list-info
+							.orders-list-info-row
+								.orders-list-info-elem ЭС
+								.orders-list-info-elem 
+									.orders-list-info-about Счёт № 12 от 02.02.2020
+									.orders-list-info-about Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020
+									.orders-list-info-about Счёт Фактура № 243 от 10.02.2020
+								.orders-list-info-elem.orders-list-info-doc-wrap
+									a(href="").orders-list-info-doc.sc
+									a(href="").orders-list-info-doc.upd
+									a(href="").orders-list-info-doc.sf
+									a(href="").orders-list-info-doc.kor
+								.orders-list-info-elem
+									a(href="").orders-list-info-link Сертификаты
+									a(href="").orders-list-info-link Скачать все
+		

@@ -1,0 +1,109 @@
+.wrapper
+	include ../var/sidebar.pug
+
+	.content
+		.top-line.product-page
+			.top-line-menu-btn
+				span
+				span
+				span
+			.top-line-card.scroll-elem
+				.top-line-card-more-info
+				.top-line-card-wrap
+					a(href="").top-line-card-item.orange ООО Столица
+					a(href="").top-line-card-item.green ООО Вектор
+					a(href="").top-line-card-item.green ООО Тристан
+					a(href="").top-line-card-item.orange ООО Лама
+					a(href="").top-line-card-item.red ИП Лавочкин
+					a(href="").top-line-card-add
+			.top-line-info 
+				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
+				.top-line-info-close
+					svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-info-close-img
+						rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+						rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+			.top-line-button
+				a(href="").top-line-link
+					svg(width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						rect(x="1" y="1" width="24" height="17.0667" rx="2" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="1.91412" y="0.866699" width="15.4602" height="1.73333" rx="0.866667" transform="rotate(37.1759 1.91412 0.866699)" fill="#A5A7A9").fill
+						rect(width="15.4602" height="1.73333" rx="0.866667" transform="matrix(-0.796784 0.604264 0.604264 0.796784 24.1801 0.866699)" fill="#A5A7A9").fill
+				a(href="").top-line-link.top-line-notification.active
+					svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						path(d="M22.8411 21.7618L22.769 21.831L22.8411 21.7617C20.7863 19.6188 19.6547 16.8039 19.6547 13.8351V11.498C19.6547 8.06943 17.393 5.16002 14.2837 4.18163V3.19727C14.2837 1.93046 13.2532 0.9 11.9864 0.9C10.7196 0.9 9.68912 1.93046 9.68912 3.19727V4.18163C6.57977 5.16002 4.31803 8.06938 4.31803 11.498V13.8351C4.31803 16.804 3.18649 19.6188 1.13164 21.7617C0.900786 22.0025 0.835909 22.3577 0.966767 22.6645C1.09762 22.9713 1.39896 23.1703 1.73248 23.1703H8.3172C8.69703 24.8455 10.1977 26.1 11.9864 26.1C13.7751 26.1 15.2757 24.8455 15.6556 23.1703H22.2403C22.5738 23.1703 22.8751 22.9712 23.006 22.6645C23.1368 22.3577 23.0719 22.0025 22.8411 21.7618ZM11.354 3.19727C11.354 2.84864 11.6378 2.56484 11.9864 2.56484C12.335 2.56484 12.6188 2.84864 12.6188 3.19727V3.8559C12.4103 3.83871 12.1994 3.82969 11.9864 3.82969C11.7734 3.82969 11.5625 3.83871 11.354 3.8559V3.19727ZM11.9864 24.4352C11.1259 24.4352 10.3848 23.914 10.0619 23.1703H13.9109C13.588 23.914 12.8468 24.4352 11.9864 24.4352ZM3.50859 21.5055C5.1145 19.2837 5.98287 16.6182 5.98287 13.8351V11.498C5.98287 8.1878 8.67614 5.49453 11.9864 5.49453C15.2966 5.49453 17.9899 8.1878 17.9899 11.498V13.8351C17.9899 16.6182 18.8583 19.2837 20.4642 21.5055H3.50859Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.2")
+					.top-line-notification-val
+						.top-line-notification-num 1
+				a(href="").top-line-account
+					.top-line-account-img-box
+						img(src="style/img/avatar.png", alt="").top-line-account-img
+		
+		nav.nav
+			ul.nav-list
+				li
+					a(href="").nav-link Заказы
+				li
+					a(href="").nav-link Отгрузки
+				li
+					a(href="").nav-link Возвраты
+				li
+					a(href="").nav-link Претензии
+				li
+					a(href="").nav-link Договора
+				li
+					a(href="").nav-link Взаиморасчеты
+	
+		.claim-success
+			.claim-success-wrap
+				.claim-succes-img
+					img(src="style/img/icon/success.svg", alt="")
+				.claim-success-text
+					| Спасибо, пртензия  № 145 принята к рассмотрению.
+				.order-list-buttons-wrap
+					.order-list-buttons-item.later
+						svg(width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+							path(fill-rule="evenodd" clip-rule="evenodd" d="M3 4.5H18.75C19.3023 4.5 19.75 4.94772 19.75 5.5V14.0173C20.2318 13.9356 20.727 13.8931 21.2321 13.8931C21.406 13.8931 21.5786 13.8981 21.75 13.908V5.5C21.75 3.84315 20.4069 2.5 18.75 2.5H3C1.34315 2.5 0 3.84315 0 5.5V24.3571C0 26.014 1.34315 27.3571 3 27.3571H13.762C13.3748 26.7379 13.0625 26.067 12.8377 25.3571H3C2.44772 25.3571 2 24.9094 2 24.3571V5.5C2 4.94772 2.44772 4.5 3 4.5Z" fill="#A5A7A9")
+							circle(cx="21.2321" cy="22.6961" r="7.80357" stroke="#A5A7A9" stroke-width="2")
+							rect(x="19.6786" y="18.0356" width="1.7" height="6.21429" rx="0.85" fill="#A5A7A9")
+							rect(x="24.8571" y="22.6001" width="1.7" height="5.17857" rx="0.85" transform="rotate(90 24.8571 22.6001)" fill="#A5A7A9")
+							rect(x="6" y="8" width="2" height="2" rx="1" transform="rotate(90 6 8)" fill="#A5A7A9")
+							rect(x="6" y="12" width="2" height="2" rx="1" transform="rotate(90 6 12)" fill="#A5A7A9") 
+							rect(x="6" y="16" width="2" height="2" rx="1" transform="rotate(90 6 16)" fill="#A5A7A9")
+							rect(x="6" y="20" width="2" height="2" rx="1" transform="rotate(90 6 20)" fill="#A5A7A9")
+							rect(x="10" y="8" width="2" height="2" rx="1" transform="rotate(90 10 8)" fill="#A5A7A9")
+							rect(x="10" y="12" width="2" height="2" rx="1" transform="rotate(90 10 12)" fill="#A5A7A9")
+							rect(x="10" y="16" width="2" height="2" rx="1" transform="rotate(90 10 16)" fill="#A5A7A9")
+							rect(x="14" y="16" width="2" height="2" rx="1" transform="rotate(90 14 16)" fill="#A5A7A9")
+							rect(x="10" y="20" width="2" height="2" rx="1" transform="rotate(90 10 20)" fill="#A5A7A9")
+							rect(x="14" y="8" width="2" height="2" rx="1" transform="rotate(90 14 8)" fill="#A5A7A9")
+							rect(x="14" y="12" width="2" height="2" rx="1" transform="rotate(90 14 12)" fill="#A5A7A9")
+							rect(x="18" y="8" width="2" height="2" rx="1" transform="rotate(90 18 8)" fill="#A5A7A9")
+							rect(x="18" y="12" width="2" height="2" rx="1" transform="rotate(90 18 12)" fill="#A5A7A9")
+							rect(x="5" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+							rect(x="10" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+							rect(x="15" y="0.5" width="2" height="6" rx="1" fill="#A5A7A9")
+					.order-list-buttons-item.mail
+						svg(width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+							path(fill-rule="evenodd" clip-rule="evenodd" d="M37.4649 2H18.5787L26.6432 9.10183L37.4649 2ZM16.7388 3.03554L14.7128 15.9112C14.6173 16.518 15.0864 17.0667 15.7007 17.0667H35.6268C36.1191 17.0667 36.5382 16.7084 36.6147 16.2221L38.5935 3.64601L27.2621 11.0824C27.2165 11.1123 27.1693 11.138 27.1209 11.1596C26.7546 11.4186 26.2422 11.4065 25.8863 11.0931L16.7789 3.07285C16.7651 3.06071 16.7517 3.04827 16.7388 3.03554ZM14.7931 2.53369C15.0227 1.07482 16.2798 0 17.7567 0H37.6829C39.5257 0 40.9328 1.6459 40.6464 3.46631L38.5904 16.533C38.3608 17.9918 37.1037 19.0667 35.6268 19.0667H15.7007C13.8579 19.0667 12.4507 17.4208 12.7371 15.6004L14.7931 2.53369Z" fill="#A5A7A9")
+							rect(x="3.7" y="4" width="8" height="2" rx="1" fill="#A5A7A9")
+							rect(y="8" width="11" height="2" rx="1" fill="#A5A7A9")
+							rect(x="5.30003" y="12" width="5" height="2" rx="1" fill="#A5A7A9")
+					.order-list-buttons-item.print
+						svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+							path(fill-rule="evenodd" clip-rule="evenodd" d="M21 7H3C2.44772 7 2 7.44772 2 8V17C2 17.5523 2.44772 18 3 18H21C21.5523 18 22 17.5523 22 17V8C22 7.44772 21.5523 7 21 7ZM3 5C1.34315 5 0 6.34315 0 8V17C0 18.6569 1.34315 20 3 20H21C22.6569 20 24 18.6569 24 17V8C24 6.34315 22.6569 5 21 5H3Z" fill="#A5A7A9")
+							rect(x="4" y="13" width="16" height="7" fill="#1F2227").notfill
+							path(fill-rule="evenodd" clip-rule="evenodd" d="M17 2H7C6.44772 2 6 2.44772 6 3V5C6 5.55228 6.44772 6 7 6H17C17.5523 6 18 5.55228 18 5V3C18 2.44772 17.5523 2 17 2ZM7 0C5.34315 0 4 1.34315 4 3V5C4 6.65685 5.34315 8 7 8H17C18.6569 8 20 6.65685 20 5V3C20 1.34315 18.6569 0 17 0H7Z" fill="#A5A7A9")
+							rect(x="3" y="7" width="18" height="7" fill="#1F2227").notfill
+							path(fill-rule="evenodd" clip-rule="evenodd" d="M17 15H7C6.44772 15 6 15.4477 6 16V24C6 24.5523 6.44772 25 7 25H17C17.5523 25 18 24.5523 18 24V16C18 15.4477 17.5523 15 17 15ZM7 13C5.34315 13 4 14.3431 4 16V24C4 25.6569 5.34315 27 7 27H17C18.6569 27 20 25.6569 20 24V16C20 14.3431 18.6569 13 17 13H7Z" fill="#A5A7A9")
+							rect(x="16" y="17" width="2" height="8" rx="1" transform="rotate(90 16 17)" fill="#A5A7A9")
+							rect(x="16" y="21" width="2" height="8" rx="1" transform="rotate(90 16 21)" fill="#A5A7A9")
+							rect(x="20" y="9" width="2" height="3" rx="1" transform="rotate(90 20 9)" fill="#A5A7A9")
+					.order-list-buttons-item.save
+						svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg").order-list-buttons-item-img
+							path(d="M1 3.5C1 2.39543 1.89543 1.5 3 1.5H16C19.866 1.5 23 4.63401 23 8.5V21.5C23 22.6046 22.1046 23.5 21 23.5H3C1.89543 23.5 1 22.6046 1 21.5V3.5Z" stroke="#A5A7A9" stroke-width="2").stroke
+							rect(x="4" y="13.5" width="2" height="10" rx="1" fill="#A5A7A9")
+							rect(x="18" y="13.5" width="2" height="10" rx="1" fill="#A5A7A9")
+							rect(x="4" y="15.5" width="2" height="16" rx="1" transform="rotate(-90 4 15.5)" fill="#A5A7A9")
+							rect(x="6" y="9.5" width="2" height="12" rx="1" transform="rotate(-90 6 9.5)" fill="#A5A7A9")
+							rect(x="8" y="9.5" width="2" height="8" rx="1" transform="rotate(180 8 9.5)" fill="#A5A7A9")
+							rect(x="18" y="9.5" width="2" height="8" rx="1" transform="rotate(180 18 9.5)" fill="#A5A7A9")
+							rect(x="15" y="6.5" width="2" height="3" rx="1" transform="rotate(-180 15 6.5)" fill="#A5A7A9")

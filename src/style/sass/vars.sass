@@ -369,6 +369,11 @@ a
 		list-style-type: none
 		+flex-wrap(wrap)
 
+		li
+			&.active
+				.nav-link 
+					color: $accent-color
+
 	&-link
 		display: inline-block
 		margin:
@@ -500,7 +505,70 @@ a
 		line-height: 20px
 		+prefix(transition, $default-transition)
 		+align-items(center)
+
+		&-toggle
+			position: relative
+			cursor: pointer
+			+prefix(transition, $default-transition)
+			z-index: 11
+
+			&-arrow
+				+prefix(transition, $default-transition)
+				path
+					+prefix(transition, $default-transition)
+
+			&:hover
+				color: $accent-color
+
+				.table-elem-toggle-arrow
+					path
+						fill: $accent-color
+			
+			&.active
+				color: $accent-color
+
+				.table-elem-toggle-arrow
+					+prefix(transform, rotate(180deg))
+					path
+						fill: $accent-color
 	
+			&-arrow
+				margin:
+					left: 20px
+
+		&.error
+			color: #FF0000
+
+	&-heading
+		&-dropdown
+			display: none
+			position: absolute
+			padding:
+				top: 50px
+			top: 0
+			left: -25%
+			width: 100%
+			max-width: 250px
+			z-index: 10
+
+			&-wrap
+				padding: 25px 30px
+				background-color: #292C32
+				+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+			
+			&-link
+				display: block
+				padding: 5px 0
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				color: $white
+				text-align: center
+				+prefix(transition, $default-transition)
+
+				&:hover
+					color: $accent-color
+
 	&-arrow
 		position: absolute
 		margin:
