@@ -39,3 +39,378 @@
 			&:nth-child(8)
 				width: 7.51%
 
+	&-heading
+		+flex
+		margin:
+			top: 20px
+		+align-items(flex-start)
+
+		&-elem
+			&:nth-child(1)
+				+flex
+				width: 69.65%
+				+align-items(flex-start)
+			
+			&:nth-child(2)
+				width: 30.35%
+	
+		&-back-btn
+			display: block
+			margin:
+				right: 15px
+			width: 42px
+			height: 42px
+			border-radius: 100px
+			background-image: url(../img/icon/arrow-b-l.svg)
+			background-size: 18px 18px
+			background-position: left 40% center
+			background-repeat: no-repeat
+			background-color: #292C32
+			+prefix(transition, $default-transition)
+
+			&:hover
+				opacity: $default-opacity
+
+		&-select
+			+flex
+			margin:
+				top: 5px
+			font-size: 21px
+			font-weight: 400
+			line-height: 30px
+			+align-items(center)
+		
+		&-info
+			&-wrap 
+				+flex
+				margin:
+					top: 30px
+			
+			&-elem
+				margin:
+					right: 78px
+				font-size: 16px
+				font-weight: 400
+				line-height: 23px
+				color: $white
+
+				&:last-child 
+					margin: 0
+
+				span
+					color: $font-light-color
+
+	&-title
+		+flex
+		font-size: 33px
+		font-weight: 400
+		line-height: 42px
+		color: $white
+
+	&-product
+		font-size: 12px
+		font-weight: 400
+		color: $font-light-color
+	
+		&-input
+			padding: 15px 30px
+			margin:
+				left: 10px
+			width: 100%
+			max-width: 415px
+			font-size: 16px
+			font-weight: 400
+			color: white
+			background-color: $bg-default-color
+			border: 0
+			border-radius: 100px
+			
+	&-form
+		margin:
+			top: 30px
+
+		&-wrap
+			+flex
+			margin: 0 -15px
+
+		&-elem
+			padding: 0 15px
+			width: 50%
+
+			&-title
+				+flex
+				margin:
+					bottom: 8px
+				max-width: 675px
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				text-transform: uppercase
+				color: $font-light-color
+
+				&-time
+					margin: 0 0 0 auto
+					text-transform: none
+
+		&-item
+			margin:
+				top: 30px
+
+		&-row
+			+flex
+
+		&-input-wrap
+			+flex
+			width: 100%
+			max-width: 675px
+			+align-items(center)
+
+		&-input,
+		&-textarea
+			width: 100%
+			font-size: 16px
+			font-weight: 400 
+			line-height: 24px
+			color: $white
+			background-color: #292c33
+			border: 0
+		
+		&-input
+			padding: 13px 19px
+			max-width: 675px
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			color: $white
+			background-color: #292c33
+			border: 0
+			border-radius: 100px
+		
+		&-textarea
+			padding: 10px 19px
+			min-height: 250px
+			border-radius: 6px
+			resize: vertical
+		
+		&-map-btn
+			+flex 
+			position: relative
+			margin:
+				left: 20px
+			min-width: 110px
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			color: $font-light-color
+			+align-items(center)
+			+prefix(transition, $default-transition)
+
+			&-img
+				margin:
+					right: 8px
+				width: 17px
+
+				path
+					+prefix(transition, $default-transition)
+			
+			&:hover
+				color: $accent-color
+
+				.shipment-form-map-btn-img
+					path
+						fill: $accent-color
+
+		&-btn
+			padding: 11px 10px
+			margin:
+				left: 12px
+			width: 100% 
+			max-width: 160px
+			font-size: 16px
+			font-weight: 400 
+			line-height: 24px
+			color: $white
+			border: 2px solid transparent
+			border-radius: 100px
+			text-align: center
+			cursor: pointer
+			+prefix(transition, $default-transition)
+
+			&.shipment-form-accept-btn
+				border-color: #9E6CFD
+
+				&:hover
+					background-color: rgba(158, 108, 253, .2)
+			
+			&.shipment-form-urgently-btn
+				border-color: #FF4444
+
+				&:hover
+					background-color: rgba(255, 68, 68, .2)
+		
+		&-info
+			padding: 18px
+			background-color: #292c33
+			border-radius: 6px
+
+			.shipment-form-wrap
+				margin: 0 -28px
+					top: 20px
+				
+			.shipment-form-elem
+				padding: 0 28px
+
+			&-input-wrap
+				+flex
+
+				span
+					display: block
+					margin:
+						right: 13px
+					font-size: 16px
+					font-weight: 400
+					line-height: 24px
+					color: $white
+					white-space: nowrap
+
+			&-input
+				width: 100%
+				font-size: 16px
+				color: $white
+				border: 0
+					bottom: 2px solid #919191
+				background-color: transparent
+
+			&-text
+				padding: 17px 16px
+				p
+					font-size: 16px
+					font-weight: 400
+					line-height: 24px
+					color: $white
+
+		&-doc
+			margin: 0
+				top: 13px
+			+align-items(center)
+
+			&-input
+				display: none
+
+			&-label	
+				position: relative
+				padding:
+					left: 28px
+				font-size: 16px
+				font-weight: 400
+				line-height: 23px
+				color: $font-light-color
+				cursor: pointer
+				+prefix(transition, $default-transition)
+				
+				&:hover
+					opacity: $default-opacity
+				
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					top: 0
+					left: 0
+					width: 21px
+					height: 19px 
+					background-image: url(../img/icon/clip.svg)
+					background-size: 100% auto
+					background-position: center center
+					background-repeat: no-repeat
+
+			&-btn
+				margin: 0 0 0 auto
+				width: 32px
+				+prefix(transition, $default-transition)
+
+				&:hover
+					opacity: $default-opacity
+			
+			&-file
+				display: none
+				+align-items(center)
+
+				&-name
+					font-size: 14px
+					font-weight: 400
+
+				&-delete
+					margin:
+						left: 15px
+					width: 12px
+					height: 12px
+					background-image: url(../img/icon/cross.svg)
+					background-size: 100% auto
+					background-position: center center
+					background-repeat: no-repeat
+					cursor: pointer
+					+prefix(transition, $default-transition)
+
+					&:hover
+						opacity: $default-opacity
+			
+				&.active
+					+flex
+
+		&-date
+			position: relative
+			width: 100%
+			max-width: 290px
+
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				right: 20px
+				width: 25px
+				height: 25px
+				background-image: url(../img/icon/calendar.svg)
+				background-size: 100% auto
+				background-position: center center
+				background-repeat: no-repeat
+				z-index: 2
+				+prefix(transform, translateY(-60%))
+
+			&-input
+				position: relative
+				padding:
+					right: 46px
+				z-index: 1
+				+prefix(transition, $default-transition)
+				
+				&:focus
+					border: 
+						radius: 25px
+						bottom-left-radius: 0
+						bottom-right-radius: 0
+					+box-shadow(0px 0px 10px rgba(0, 0, 0, 0.2))
+		
+		&-notion
+			margin:
+				top: 15px
+			font-size: 14px 
+			font-weight: 400
+			line-height: 20px
+			color: $font-light-color
+			text-transform: uppercase
+
+		&-submit
+			margin: 0 0 0 auto
+				top: 5px
+			max-width: 290px
+		
+		&-bottom
+			margin:
+				top: 35px
+			+align-items(center)
+
+		&.shipment-form-pickup
+			.shipment-form-textarea
+				min-height: 105px

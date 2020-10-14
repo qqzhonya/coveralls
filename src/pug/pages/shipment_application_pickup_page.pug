@@ -1,0 +1,188 @@
+.wrapper
+	include ../var/sidebar.pug
+
+	.content.shipment
+		.top-line.product-page
+			.top-line-menu-btn
+				span
+				span
+				span
+			.top-line-card.scroll-elem
+				.top-line-card-more-info
+				.top-line-card-wrap
+					a(href="").top-line-card-item.orange ООО Столица
+					a(href="").top-line-card-item.green ООО Вектор
+					a(href="").top-line-card-item.green ООО Тристан
+					a(href="").top-line-card-item.orange ООО Лама
+					a(href="").top-line-card-item.red ИП Лавочкин
+					a(href="").top-line-card-add
+			.top-line-info 
+				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
+				.top-line-info-close
+					svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-info-close-img
+						rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+						rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+			.top-line-button
+				a(href="").top-line-link
+					svg(width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						rect(x="1" y="1" width="24" height="17.0667" rx="2" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="1.91412" y="0.866699" width="15.4602" height="1.73333" rx="0.866667" transform="rotate(37.1759 1.91412 0.866699)" fill="#A5A7A9").fill
+						rect(width="15.4602" height="1.73333" rx="0.866667" transform="matrix(-0.796784 0.604264 0.604264 0.796784 24.1801 0.866699)" fill="#A5A7A9").fill
+				a(href="").top-line-link.top-line-notification.active
+					svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						path(d="M22.8411 21.7618L22.769 21.831L22.8411 21.7617C20.7863 19.6188 19.6547 16.8039 19.6547 13.8351V11.498C19.6547 8.06943 17.393 5.16002 14.2837 4.18163V3.19727C14.2837 1.93046 13.2532 0.9 11.9864 0.9C10.7196 0.9 9.68912 1.93046 9.68912 3.19727V4.18163C6.57977 5.16002 4.31803 8.06938 4.31803 11.498V13.8351C4.31803 16.804 3.18649 19.6188 1.13164 21.7617C0.900786 22.0025 0.835909 22.3577 0.966767 22.6645C1.09762 22.9713 1.39896 23.1703 1.73248 23.1703H8.3172C8.69703 24.8455 10.1977 26.1 11.9864 26.1C13.7751 26.1 15.2757 24.8455 15.6556 23.1703H22.2403C22.5738 23.1703 22.8751 22.9712 23.006 22.6645C23.1368 22.3577 23.0719 22.0025 22.8411 21.7618ZM11.354 3.19727C11.354 2.84864 11.6378 2.56484 11.9864 2.56484C12.335 2.56484 12.6188 2.84864 12.6188 3.19727V3.8559C12.4103 3.83871 12.1994 3.82969 11.9864 3.82969C11.7734 3.82969 11.5625 3.83871 11.354 3.8559V3.19727ZM11.9864 24.4352C11.1259 24.4352 10.3848 23.914 10.0619 23.1703H13.9109C13.588 23.914 12.8468 24.4352 11.9864 24.4352ZM3.50859 21.5055C5.1145 19.2837 5.98287 16.6182 5.98287 13.8351V11.498C5.98287 8.1878 8.67614 5.49453 11.9864 5.49453C15.2966 5.49453 17.9899 8.1878 17.9899 11.498V13.8351C17.9899 16.6182 18.8583 19.2837 20.4642 21.5055H3.50859Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.2")
+					.top-line-notification-val
+						.top-line-notification-num 1
+				a(href="").top-line-account
+					.top-line-account-img-box
+						img(src="style/img/avatar.png", alt="").top-line-account-img
+		
+		nav.nav
+			ul.nav-list
+				li
+					a(href="").nav-link Заказы
+				li.active
+					a(href="").nav-link Отгрузки
+				li
+					a(href="").nav-link Возвраты
+				li
+					a(href="").nav-link Претензии
+				li
+					a(href="").nav-link Договора
+				li
+					a(href="").nav-link Взаиморасчеты
+		
+		.shipment-heading
+			.shipment-heading-elem 
+				a(href="").shipment-heading-back-btn
+				.shipment-heading-info
+					.shipment-title
+						span Заявка на отгрузку № 145 от 04.05.2020 по Заказу № 145 от 04.05.2020
+					.shipment-heading-select
+						span Основание:
+						.base-select-wrap
+							select(style="width: 100%").base-select
+								option(value="0" selected) Заказ № 123 от 02.02.20202
+								option(value="1") Заказ № 124 от 02.02.20202
+								option(value="2") Заказ № 125 от 02.02.20202
+								option(value="3") Заказ № 126 от 02.02.20202
+					.shipment-heading-info-wrap 
+						.shipment-heading-info-elem
+							| Количество единиц: 
+							span 120
+						.shipment-heading-info-elem
+							| Общий вес: 
+							span 25 кг
+						.shipment-heading-info-elem
+							| Общий обьем: 
+							span 73 м3
+
+			.shipment-heading-elem 
+				.shipment-product
+					span Название:
+					input(type="text" value="Кремень").shipment-product-input
+		
+		.nav-tab
+			span Вид отгрузки:
+			.nav-tab-wrap
+				a(href="").nav-tab-elem.gradient-btn.active
+					.gradient-btn-text Самовывоз
+				a(href="").nav-tab-elem.gradient-btn
+					.gradient-btn-text Доставка
+				a(href="").nav-tab-elem.gradient-btn
+					.gradient-btn-text До транспортной
+			
+		form(action="").shipment-form.shipment-form-pickup
+			.shipment-form-heading.shipment-form-wrap
+				.shipment-form-elem
+					.shipment-form-item 
+						.shipment-form-elem-title
+							span Адрес Самовывоза
+							span.shipment-form-elem-title-time с 9.00 до 20.00 (пн-сб), вс- вых.
+						.shipment-form-row
+							.shipment-form-input-wrap
+								input(type="text" value="Россия г. Москва ул. Ангарская вл. 8, стр. 15 д.").shipment-form-input
+							.shipment-form-btn.shipment-form-accept-btn Подтвердить
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Комментраий
+						textarea(name="").shipment-form-textarea
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Данные
+						.shipment-form-info
+							.shipment-form-info-input-wrap
+								span ФИО
+								input(type="text").shipment-form-info-input
+							.shipment-form-wrap
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Документ
+										input(type="text").shipment-form-info-input
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Серия
+										input(type="text").shipment-form-info-input
+										span №
+										input(type="text").shipment-form-info-input
+							.shipment-form-wrap
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Дата выдачи
+										input(type="text").shipment-form-info-input
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Кем выдан
+										input(type="text").shipment-form-info-input
+							.shipment-form-wrap
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Марка
+										input(type="text").shipment-form-info-input
+								.shipment-form-elem
+									.shipment-form-info-input-wrap
+										span Гос. номер
+										input(type="text").shipment-form-info-input
+					.shipment-form-doc.shipment-form-wrap
+						.shipment-form-doc-wrap
+							label(for="shipment_file").shipment-form-doc-label прикрепить доверенность
+							input(type="file")#shipment_file.shipment-form-doc-input
+							.shipment-form-doc-file
+								.shipment-form-doc-file-name 
+								.shipment-form-doc-file-delete
+						a(href="").shipment-form-doc-btn
+							img(src="style/img/icon/doc-file.svg", alt="")
+
+				.shipment-form-elem
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Дата отгрузки
+						.shipment-form-row
+							.shipment-form-date
+								input(type="text" placeholder="Выберите дату" name="date" autocomplete="off").shipment-form-input.shipment-form-date-input
+							.shipment-form-btn.shipment-form-urgently-btn Срочно
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Представление
+						.shipment-form-info.shipment-form-info-text
+							p Заказ №2435 от 03.04.2020
+							p Желаемая дата отгрузки: 05.04.2020
+							p Расстояние: 1124 км
+							p Количество едениц: 120
+							p Общий вес: 25 кг
+							p Общий объем: 23 м3 
+							p Адрес самовывоза: Россия г. Москва ул. Ангарская вл. 8, стр. 15 д.
+							p Комментрий: Нет
+							p Данные: Иванов Иван Иванович
+							p Документ: Паспорт Рф Серия 745 №256548
+							p Выдан 03.09.2015 ГУ МВД По гор. Москве
+							p Машина: Ивеко И500, М564АК77
+							p Довереность: есть
+							p Схема проезда: есть
+						.shipment-form-notion 
+							| Подтверждение заявки- запроса не несет за собой обязательство исполнения, 
+							| ожидайте ответ по стоимости, после чего вы сможете подтвердить доставку 
+							| и стоимость!
+			
+			.shipment-form-submit.gradient-btn
+				.gradient-btn-text Подтвердить

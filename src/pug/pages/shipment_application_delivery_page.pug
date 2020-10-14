@@ -1,0 +1,145 @@
+.wrapper
+	include ../var/sidebar.pug
+
+	.content.shipment
+		.top-line.product-page
+			.top-line-menu-btn
+				span
+				span
+				span
+			.top-line-card.scroll-elem
+				.top-line-card-more-info
+				.top-line-card-wrap
+					a(href="").top-line-card-item.orange ООО Столица
+					a(href="").top-line-card-item.green ООО Вектор
+					a(href="").top-line-card-item.green ООО Тристан
+					a(href="").top-line-card-item.orange ООО Лама
+					a(href="").top-line-card-item.red ИП Лавочкин
+					a(href="").top-line-card-add
+			.top-line-info 
+				.top-line-info-text Уважаемые клиенты, в связи с короновирусорм склад работает до 15600 
+				.top-line-info-close
+					svg(width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-info-close-img
+						rect(x="0.250031" y="2.07935" width="2.25351" height="22.5351" rx="1.12676" transform="rotate(-45 0.250031 2.07935)" fill="#A5A7A9")
+						rect(width="2.25351" height="22.5351" rx="1.12676" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.5282 2.07935)" fill="#A5A7A9")
+			.top-line-button
+				a(href="").top-line-link
+					svg(width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						rect(x="1" y="1" width="24" height="17.0667" rx="2" stroke="#A5A7A9" stroke-width="2").stroke
+						rect(x="1.91412" y="0.866699" width="15.4602" height="1.73333" rx="0.866667" transform="rotate(37.1759 1.91412 0.866699)" fill="#A5A7A9").fill
+						rect(width="15.4602" height="1.73333" rx="0.866667" transform="matrix(-0.796784 0.604264 0.604264 0.796784 24.1801 0.866699)" fill="#A5A7A9").fill
+				a(href="").top-line-link.top-line-notification.active
+					svg(width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg").top-line-link-img
+						path(d="M22.8411 21.7618L22.769 21.831L22.8411 21.7617C20.7863 19.6188 19.6547 16.8039 19.6547 13.8351V11.498C19.6547 8.06943 17.393 5.16002 14.2837 4.18163V3.19727C14.2837 1.93046 13.2532 0.9 11.9864 0.9C10.7196 0.9 9.68912 1.93046 9.68912 3.19727V4.18163C6.57977 5.16002 4.31803 8.06938 4.31803 11.498V13.8351C4.31803 16.804 3.18649 19.6188 1.13164 21.7617C0.900786 22.0025 0.835909 22.3577 0.966767 22.6645C1.09762 22.9713 1.39896 23.1703 1.73248 23.1703H8.3172C8.69703 24.8455 10.1977 26.1 11.9864 26.1C13.7751 26.1 15.2757 24.8455 15.6556 23.1703H22.2403C22.5738 23.1703 22.8751 22.9712 23.006 22.6645C23.1368 22.3577 23.0719 22.0025 22.8411 21.7618ZM11.354 3.19727C11.354 2.84864 11.6378 2.56484 11.9864 2.56484C12.335 2.56484 12.6188 2.84864 12.6188 3.19727V3.8559C12.4103 3.83871 12.1994 3.82969 11.9864 3.82969C11.7734 3.82969 11.5625 3.83871 11.354 3.8559V3.19727ZM11.9864 24.4352C11.1259 24.4352 10.3848 23.914 10.0619 23.1703H13.9109C13.588 23.914 12.8468 24.4352 11.9864 24.4352ZM3.50859 21.5055C5.1145 19.2837 5.98287 16.6182 5.98287 13.8351V11.498C5.98287 8.1878 8.67614 5.49453 11.9864 5.49453C15.2966 5.49453 17.9899 8.1878 17.9899 11.498V13.8351C17.9899 16.6182 18.8583 19.2837 20.4642 21.5055H3.50859Z" fill="#A5A7A9" stroke="#A5A7A9" stroke-width="0.2")
+					.top-line-notification-val
+						.top-line-notification-num 1
+				a(href="").top-line-account
+					.top-line-account-img-box
+						img(src="style/img/avatar.png", alt="").top-line-account-img
+		
+		nav.nav
+			ul.nav-list
+				li
+					a(href="").nav-link Заказы
+				li.active
+					a(href="").nav-link Отгрузки
+				li
+					a(href="").nav-link Возвраты
+				li
+					a(href="").nav-link Претензии
+				li
+					a(href="").nav-link Договора
+				li
+					a(href="").nav-link Взаиморасчеты
+		
+		.shipment-heading
+			.shipment-heading-elem 
+				a(href="").shipment-heading-back-btn
+				.shipment-heading-info
+					.shipment-title
+						span Заявка на отгрузку № 145 от 04.05.2020 по Заказу № 145 от 04.05.2020
+					.shipment-heading-select
+						span Основание:
+						.base-select-wrap
+							select(style="width: 100%").base-select
+								option(value="0" selected) Заказ № 123 от 02.02.20202
+								option(value="1") Заказ № 124 от 02.02.20202
+								option(value="2") Заказ № 125 от 02.02.20202
+								option(value="3") Заказ № 126 от 02.02.20202
+					.shipment-heading-info-wrap 
+						.shipment-heading-info-elem
+							| Количество единиц: 
+							span 120
+						.shipment-heading-info-elem
+							| Общий вес: 
+							span 25 кг
+						.shipment-heading-info-elem
+							| Общий обьем: 
+							span 73 м3
+
+			.shipment-heading-elem 
+				.shipment-product
+					span Название:
+					input(type="text" value="Кремень").shipment-product-input
+		
+		.nav-tab
+			span Вид отгрузки:
+			.nav-tab-wrap
+				a(href="").nav-tab-elem.gradient-btn
+					.gradient-btn-text Самовывоз
+				a(href="").nav-tab-elem.gradient-btn.active
+					.gradient-btn-text Доставка
+				a(href="").nav-tab-elem.gradient-btn
+					.gradient-btn-text До транспортной
+			
+		form(action="").shipment-form
+			.shipment-form-heading.shipment-form-wrap
+				.shipment-form-elem
+					.shipment-form-item 
+						.shipment-form-elem-title
+							span Адрес Доставки
+						.shipment-form-row
+							.shipment-form-input-wrap
+								input(type="text" value="Россия г. Москва ул. Ангарская вл. 8, стр. 15 д.").shipment-form-input
+								a(href="").shipment-form-map-btn 
+									svg(width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg").shipment-form-map-btn-img
+										path(d="M9.49968 25C8.95397 25 8.4653 24.717 8.19255 24.2429C8.18967 24.238 8.18688 24.2329 8.1841 24.2279L1.98479 12.8809C0.505001 10.1724 0.547432 6.95749 2.09831 4.28113C3.61555 1.66277 6.31047 0.0631103 9.30725 0.00197754C9.43527 -0.00065918 9.56398 -0.00065918 9.69191 0.00197754C12.6887 0.0631103 15.3837 1.66277 16.9009 4.28113C18.4518 6.95749 18.4943 10.1723 17.0145 12.8809L10.8152 24.2279C10.8124 24.2329 10.8096 24.238 10.8067 24.2429C10.534 24.717 10.0454 25 9.49968 25ZM9.49963 1.56252C9.44597 1.56252 9.39245 1.56306 9.33903 1.56414C6.89279 1.61404 4.69133 2.92258 3.45017 5.06453C2.17541 7.26448 2.14016 9.90642 3.35593 12.1317L9.49963 23.3768L15.6433 12.1318C16.8591 9.90642 16.8238 7.26448 15.549 5.06453C14.3078 2.92263 12.1064 1.61404 9.66013 1.56414C9.60685 1.56306 9.55329 1.56252 9.49963 1.56252Z" fill="#8D8D8D")
+										path(d="M9.5 11.3281C7.56147 11.3281 5.98438 9.75103 5.98438 7.8125C5.98438 5.87397 7.56147 4.29688 9.5 4.29688C11.4385 4.29688 13.0156 5.87397 13.0156 7.8125C13.0156 9.75103 11.4386 11.3281 9.5 11.3281ZM9.5 5.85938C8.42305 5.85938 7.54688 6.73555 7.54688 7.8125C7.54688 8.88945 8.42305 9.76563 9.5 9.76563C10.577 9.76563 11.4531 8.88945 11.4531 7.8125C11.4531 6.73555 10.577 5.85938 9.5 5.85938Z" fill="#8D8D8D")
+									span На карте
+							.shipment-form-btn.shipment-form-accept-btn Подтвердить
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Комментраий
+						textarea(name="").shipment-form-textarea
+
+				.shipment-form-elem
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Дата отгрузки
+						.shipment-form-row
+							.shipment-form-date
+								input(type="text" placeholder="Выберите дату" name="date" autocomplete="off").shipment-form-input.shipment-form-date-input
+							.shipment-form-btn.shipment-form-urgently-btn Срочно
+					.shipment-form-item
+						.shipment-form-elem-title
+							span Представление
+						.shipment-form-info.shipment-form-info-text
+							p Заказ №2435 от 03.04.2020
+							p Желаемая дата отгрузки: 05.04.2020
+							p Расстояние: 1124 км
+							p Количество едениц: 120
+							p Общий вес: 25 кг
+							p Общий объем: 23 м3 
+							p Адрес доставки: Россия г. Москва ул. Ангарская вл. 8, стр. 15 д.
+							p Комментрий: Нет
+							p Дополнительные условия: Ополечивание
+
+			.shipment-form-wrap.shipment-form-bottom
+				.shipment-form-elem
+					.shipment-form-notion 
+						| Подтверждение заявки- запроса не несет за собой обязательство исполнения, 
+						| ожидайте ответ по стоимости, после чего вы сможете подтвердить доставку 
+						| и стоимость!
+				.shipment-form-elem
+					.shipment-form-submit.gradient-btn
+						.gradient-btn-text Подтвердить

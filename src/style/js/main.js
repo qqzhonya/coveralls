@@ -184,7 +184,8 @@ $(function() {
 	$('.custom-select').each(function() {
 		$('.custom-select').select2({
 			minimumResultsForSearch: Infinity,
-			width: 'resolve'
+			width: 'resolve',
+			closeOnSelect: false
 		});
 	});
 
@@ -539,4 +540,45 @@ $(function() {
 	//
 	// Arrow help end
 	//
+
+	//
+	// Shipment application file
+	//
+
+	$('#shipment_file').on("change",  function() {
+		var name = $(this)[0].files[0].name;
+
+		if(name.length > 15) {
+			$(this).parent().find(".shipment-form-doc-file-name").text(name.substring(0, 5) + '...' + name.slice(name.length - 6));
+		} else {
+			$(this).parent().find(".shipment-form-doc-file-name").text(name);
+		}
+
+		$('.shipment-form-doc-file').addClass('active');
+	});
+
+	$('.shipment-form-doc-file-delete').click(function() {
+		$('#shipment_file').val();
+		$("#shipment_file").parent().find(".shipment-form-doc-file-name").empty();
+		$('.shipment-form-doc-file').removeClass('active');
+	})
+
+	//
+	// Shipment application file end
+	//
+
+	//
+	// Shipment date
+	//
+
+	$('.shipment-form-date-input').datepicker({
+		showOtherMonths: true,
+		selectOtherMonths: true,
+		minDate: 0
+	});
+
+	//
+	// Shipment date end 
+	//
+
 });
