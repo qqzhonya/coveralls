@@ -399,6 +399,10 @@ $(function() {
 		}
 	})
 
+	$('.table-checkbox, .table-checkbox-label').on('click', function (e) {
+		e.stopPropagation();
+	});
+
 	//
 	// Orders list end
 	//
@@ -580,5 +584,14 @@ $(function() {
 	//
 	// Shipment date end 
 	//
+
+	//
+	// Table checkbox
+	//
+
+	//
+	// Table checkbox end
+	//
+
 
 });

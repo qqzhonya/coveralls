@@ -124,6 +124,15 @@
 					&:nth-child(4)
 						width: 26.6%
 
+		.shipment
+			&-form
+				&:not(.shipment-form-pickup)
+					.shipment-form-heading
+						+flex-wrap(wrap)
+
+						.shipment-form-elem
+							width: 100%
+
 	.company
 		&-card
 			&-row
@@ -239,6 +248,39 @@
 				&:nth-child(4)
 					width: 26.6%
 
+	.sidebarOpen
+		.shipment
+			&-heading
+				+flex-wrap(wrap)
+
+				&-elem
+					width: 100%
+				
+				&-info
+					padding: 0
+
+			&-product
+				margin:
+					top: 30px
+		
+			&-form
+				&-body
+					+flex-wrap(wrap)
+
+					.shipment-form-elem
+						width: 100%
+
+				&-bottom
+					+flex-wrap(wrap)
+
+					.shipment-form-elem
+						width: 100%
+				
+				&-checkbox
+					&-box
+						padding:
+							bottom: 15px
+
 @media screen and (max-width: 1420px)
 	.company
 		&-head
@@ -322,6 +364,14 @@
 						order: 3
 						z-index: 10
 
+		.shipment
+			&-form.shipment-form-pickup
+				.shipment-form-heading
+					+flex-wrap(wrap)
+					
+					.shipment-form-elem
+						width: 100%
+
 	.product
 		&-slider
 			&-buttons
@@ -403,7 +453,6 @@
 				width: 25%
 
 @media screen and (max-width: 1230px)
-
 	.product
 		&-search
 			&-top
@@ -446,6 +495,60 @@
 			
 			&-btn 
 				width: 100%
+
+	.sidebarOpen
+		.nav-tab
+			+align-items(flex-start)
+			+flex-wrap(wrap)
+
+			&-wrap
+				margin:
+					top: 10px
+
+			&-elem
+				margin:
+					right: 15px
+
+@media screen and (max-width: 1120px)
+	.sidebarOpen
+		.shipment
+			&-heading
+				&-info
+					&-elem
+						margin:
+							right: 15px
+
+	.shipment
+		&-heading
+			+flex-wrap(wrap)
+
+			&-elem
+				&:nth-child(1),
+				&:nth-child(2)
+					width: 100%
+			
+			&-info
+				padding: 0
+
+		&-product
+			margin:
+				top: 30px
+	
+		&-form
+			&-body
+				+flex-wrap(wrap)
+
+				.shipment-form-elem
+					width: 100%
+			
+			&-bottom
+				margin: 0
+					top: 30px
+				+flex-wrap(wrap)
+				
+				.shipment-form-elem
+					padding: 7px 0
+					width: 100%
 
 @media screen and (max-width: 1100px)
 	.sidebarOpen
@@ -772,6 +875,14 @@
 			&-wrap
 				margin: 0
 
+	.shipment
+		&-form
+			&-heading
+				+flex-wrap(wrap)
+				
+				.shipment-form-elem
+					width: 100%
+
 @media screen and (max-width: 760px)
 	.order
 		&-list
@@ -797,7 +908,30 @@
 					padding: 5px
 					width: 100%
 					max-width: 150px
+	
+	.shipment
+		&-title
+			font-size: 24px
+			line-height: normal
+		
+		&-heading
+			&-info
+				&-elem
+					margin:
+						right: 15px
 
+@media screen and (max-width: 715px)
+	.nav-tab
+		+flex-wrap(wrap)
+
+		&-wrap
+			margin:
+				top: 10px
+		
+		&-elem
+			margin:
+				right: 15px
+		
 @media screen and (max-width: 690px)
 	.news
 		+flex-wrap(wrap)
@@ -882,6 +1016,33 @@
 					padding:
 						top: 0
 
+	.shipment
+		&-form
+			&-info
+				.shipment-form-wrap
+					margin:
+						top: 0
+					+flex-wrap(wrap)
+				
+				.shipment-form-elem
+					margin:
+						top: 15px
+					width: 100%
+			
+			&-row
+				+flex-wrap(wrap)
+			
+			&-date
+				max-width: 100%
+
+			&-btn
+				margin: 0
+					top: 15px
+				max-width: 100%		
+				
+	.ui-datepicker
+		max-width: calc(100% - 30px)
+
 @media screen and (max-width: 600px)
 	.orders
 		&-heading
@@ -907,6 +1068,37 @@
 		&:last-child
 			margin:
 				top: 15px
+
+	.shipment
+		&-heading
+			&-elem
+				+flex-wrap(wrap)
+
+			&-back-btn
+				margin:
+					right: 0
+				width: 100%
+				background-position: left 49% center
+		
+			&-info
+				margin:
+					top: 10px
+				width: 100%
+			
+				&-wrap
+					+flex-wrap(wrap)
+
+@media screen and (max-width: 520px)
+	.nav-tab
+		&-wrap
+			margin: 0
+			+flex-wrap(wrap)
+		
+		&-elem
+			margin:
+				top: 10px
+				right: 0
+			max-width: 100%
 
 @media screen and (max-width: 500px)
 	.content
@@ -992,6 +1184,17 @@
 				font-size: 24px
 				line-height: normal
 
+	.shipment
+		&-form
+			&-checkbox
+				&-box
+					margin: 0
+					+flex-wrap(wrap)
+				
+				&-wrap
+					padding: 5px 0
+					max-width: 100%
+
 @media screen and (max-width: 430px)
 	.top-line
 		&.order-page
@@ -1012,3 +1215,14 @@
 			.fc-toolbar-title
 				font-size: 24px
 				line-height: normal
+	
+	.shipment
+		&-form
+			&-input-wrap
+				+flex-wrap(wrap)
+
+			&-map-btn
+				margin: 0
+					top: 10px
+				width: 100%
+				+justify-content(flex-end)

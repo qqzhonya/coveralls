@@ -288,7 +288,7 @@
           </ul>
         </div>
       </div>
-      <div class="content shipment">
+      <div class="content">
         <div class="top-line product-page">
           <div class="top-line-menu-btn"><span></span><span></span><span></span></div>
           <div class="top-line-card scroll-elem">
@@ -321,114 +321,335 @@
         <nav class="nav">
           <ul class="nav-list">
             <li><a class="nav-link" href="">Заказы</a></li>
-            <li class="active"><a class="nav-link" href="">Отгрузки</a></li>
+            <li><a class="nav-link" href="">Отгрузки</a></li>
             <li><a class="nav-link" href="">Возвраты</a></li>
-            <li><a class="nav-link" href="">Претензии</a></li>
+            <li class="active"><a class="nav-link" href="">Претензии</a></li>
             <li><a class="nav-link" href="">Договора</a></li>
             <li><a class="nav-link" href="">Взаиморасчеты</a></li>
           </ul>
         </nav>
-        <div class="shipment-heading">
-          <div class="shipment-heading-elem"> <a class="shipment-heading-back-btn" href=""></a>
-            <div class="shipment-heading-info">
-              <div class="shipment-title"><span>Заявка на отгрузку № 145 от 04.05.2020 по Заказу № 145 от 04.05.2020</span></div>
-              <div class="shipment-heading-select"><span>Основание:</span>
-                <div class="base-select-wrap">
-                  <select class="base-select" style="width: 100%">
-                    <option value="0" selected>Заказ № 123 от 02.02.20202</option>
-                    <option value="1">Заказ № 124 от 02.02.20202</option>
-                    <option value="2">Заказ № 125 от 02.02.20202</option>
-                    <option value="3">Заказ № 126 от 02.02.20202</option>
-                  </select>
-                </div>
-              </div>
-              <div class="shipment-heading-info-wrap"> 
-                <div class="shipment-heading-info-elem">Количество единиц: <span>120</span></div>
-                <div class="shipment-heading-info-elem">Общий вес: <span>25 кг</span></div>
-                <div class="shipment-heading-info-elem">Общий обьем: <span>73 м3</span></div>
-              </div>
+        <div class="orders-heading">
+          <div class="orders-heading-elem">
+            <div class="orders-heading-item">
+              <div class="orders-heading-text">Контрагент:</div>
+              <select class="custom-select" style="width: 100%">
+                <option value="0" selected>ООО “Вектор”</option>
+                <option value="1">ООО “Вектор”</option>
+                <option value="2">ООО “Вектор”</option>
+                <option value="3">ООО “Вектор”</option>
+              </select>
             </div>
+            <div class="orders-heading-item">
+              <div class="orders-heading-text">Договор:</div>
+              <select class="custom-select" style="width: 100%">
+                <option value="0" selected>По умолчанию</option>
+                <option value="1">По умолчанию № 1</option>
+                <option value="2">По умолчанию № 2</option>
+                <option value="3">По умолчанию № 3</option>
+              </select>
+            </div>
+            <div class="orders-heading-item">
+              <div class="orders-heading-text">Период:</div>
+              <select class="custom-select" style="width: 100%">
+                <option value="0" selected>01.01.2020 - 31.01.2020</option>
+                <option value="1">01.01.2020 - 31.01.2020</option>
+                <option value="2">01.01.2020 - 31.01.2020</option>
+                <option value="3">01.01.2020 - 31.01.2020</option>
+              </select>
+            </div>
+            <div class="orders-heading-clean"></div>
           </div>
-          <div class="shipment-heading-elem"> 
-            <div class="shipment-product"><span>Название:</span>
-              <input class="shipment-product-input" type="text" value="Кремень">
+          <div class="orders-heading-elem">
+            <div class="content-heading-btn">
+              <svg class="content-heading-btn-img" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M3 2H18.75C19.3023 2 19.75 2.44772 19.75 3V11.5H21.75V3C21.75 1.34315 20.4069 0 18.75 0H3C1.34315 0 0 1.34315 0 3V21.8571C0 23.514 1.34315 24.8571 3 24.8571H16V22.8571H3C2.44772 22.8571 2 22.4094 2 21.8571V3C2 2.44772 2.44772 2 3 2Z" fill="#A5A7A9"></path>
+                <rect class="fill" x="17.6071" y="5.17871" width="1.7" height="13.4643" rx="0.85" transform="rotate(90 17.6071 5.17871)" fill="#A5A7A9"></rect>
+                <rect class="fill" x="10" y="13" width="1.7" height="6" rx="0.85" transform="rotate(90 10 13)" fill="#A5A7A9"></rect>
+                <rect class="fill" x="14" y="9" width="1.7" height="10" rx="0.85" transform="rotate(90 14 9)" fill="#A5A7A9"></rect>
+                <path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M20.8 15C20.2478 15 19.8 15.4477 19.8 16V19H16.8C16.2478 19 15.8 19.4477 15.8 20C15.8 20.5523 16.2478 21 16.8 21H19.8V24C19.8 24.5523 20.2478 25 20.8 25C21.3523 25 21.8 24.5523 21.8 24V21H24.8C25.3523 21 25.8 20.5523 25.8 20C25.8 19.4477 25.3523 19 24.8 19H21.8V16C21.8 15.4477 21.3523 15 20.8 15Z" fill="#A5A7A9"></path>
+              </svg>
+              <div class="content-heading-btn-text">Создать претензию</div>
             </div>
           </div>
         </div>
-        <div class="nav-tab"><span>Вид отгрузки:</span>
-          <div class="nav-tab-wrap"><a class="nav-tab-elem gradient-btn" href="">
-              <div class="gradient-btn-text">Самовывоз</div></a><a class="nav-tab-elem gradient-btn active" href="">
-              <div class="gradient-btn-text">Доставка</div></a><a class="nav-tab-elem gradient-btn" href="">
-              <div class="gradient-btn-text">До транспортной</div></a></div>
+        <div class="orders-heading-search">
+          <div class="orders-heading-search-elem">
+            <div class="product-search-text">Поиск по: </div>
+            <div class="orders-heading-search-select-wrap">
+              <div class="orders-heading-search-select-elem">
+                <select class="custom-select" style="width: 100%">
+                  <option value="0" selected>Статус</option>
+                  <option value="1">Статус №2</option>
+                  <option value="2">Статус №3</option>
+                  <option value="3">Статус №4</option>
+                </select>
+              </div>
+              <div class="orders-heading-search-select-elem">
+                <select class="custom-select" style="width: 100%">
+                  <option value="0" selected>Статус</option>
+                  <option value="1">Статус №2</option>
+                  <option value="2">Статус №3</option>
+                  <option value="3">Статус №4</option>
+                </select>
+              </div>
+            </div>
+            <div class="product-search-clear"></div>
+          </div>
+          <div class="orders-heading-search-elem">
+            <div class="orders-heading-search-btn gradient-btn">
+              <div class="gradient-btn-text">Поиск</div>
+            </div>
+          </div>
         </div>
-        <form class="shipment-form" action="">
-          <div class="shipment-form-heading shipment-form-wrap">
-            <div class="shipment-form-elem">
-              <div class="shipment-form-item"> 
-                <div class="shipment-form-elem-title"><span>Адрес Доставки</span></div>
-                <div class="shipment-form-row">
-                  <div class="shipment-form-input-wrap">
-                    <input class="shipment-form-input" type="text" value="Россия г. Москва ул. Ангарская вл. 8, стр. 15 д."><a class="shipment-form-map-btn" href=""> 
-                      <svg class="shipment-form-map-btn-img" width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.49968 25C8.95397 25 8.4653 24.717 8.19255 24.2429C8.18967 24.238 8.18688 24.2329 8.1841 24.2279L1.98479 12.8809C0.505001 10.1724 0.547432 6.95749 2.09831 4.28113C3.61555 1.66277 6.31047 0.0631103 9.30725 0.00197754C9.43527 -0.00065918 9.56398 -0.00065918 9.69191 0.00197754C12.6887 0.0631103 15.3837 1.66277 16.9009 4.28113C18.4518 6.95749 18.4943 10.1723 17.0145 12.8809L10.8152 24.2279C10.8124 24.2329 10.8096 24.238 10.8067 24.2429C10.534 24.717 10.0454 25 9.49968 25ZM9.49963 1.56252C9.44597 1.56252 9.39245 1.56306 9.33903 1.56414C6.89279 1.61404 4.69133 2.92258 3.45017 5.06453C2.17541 7.26448 2.14016 9.90642 3.35593 12.1317L9.49963 23.3768L15.6433 12.1318C16.8591 9.90642 16.8238 7.26448 15.549 5.06453C14.3078 2.92263 12.1064 1.61404 9.66013 1.56414C9.60685 1.56306 9.55329 1.56252 9.49963 1.56252Z" fill="#8D8D8D"></path>
-                        <path d="M9.5 11.3281C7.56147 11.3281 5.98438 9.75103 5.98438 7.8125C5.98438 5.87397 7.56147 4.29688 9.5 4.29688C11.4385 4.29688 13.0156 5.87397 13.0156 7.8125C13.0156 9.75103 11.4386 11.3281 9.5 11.3281ZM9.5 5.85938C8.42305 5.85938 7.54688 6.73555 7.54688 7.8125C7.54688 8.88945 8.42305 9.76563 9.5 9.76563C10.577 9.76563 11.4531 8.88945 11.4531 7.8125C11.4531 6.73555 10.577 5.85938 9.5 5.85938Z" fill="#8D8D8D"></path>
-                      </svg><span>На карте</span></a>
+        <div class="orders-list-wrap content-elem">
+          <div class="table orders-list-table scroll-elem">
+            <div class="table-more-info-arrow"></div>
+            <div class="orders-list-table-wrap">
+              <div class="table-row table-heading">
+                <div class="table-elem">№</div>
+                <div class="table-elem"> 
+                  <div class="table-elem-toggle">
+                     Наименование
+                    <svg class="table-elem-toggle-arrow" width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.00726 8.11117L12.7923 2.32601C12.9262 2.1922 13 2.01359 13 1.82313C13 1.63268 12.9262 1.45406 12.7923 1.32026L12.3664 0.894224C12.0888 0.616998 11.6378 0.616998 11.3606 0.894224L6.5027 5.75217L1.63936 0.888833C1.50545 0.755029 1.32694 0.681152 1.13659 0.681152C0.946033 0.681152 0.767522 0.755029 0.633507 0.888833L0.207681 1.31487C0.0737714 1.44878 -4.1357e-08 1.62729 -4.9682e-08 1.81774C-5.8007e-08 2.0082 0.0737714 2.18681 0.207681 2.32062L5.99802 8.11117C6.13236 8.24529 6.31171 8.31896 6.50238 8.31854C6.69378 8.31896 6.87303 8.24529 7.00726 8.11117Z" fill="#A5A7A9"></path>
+                    </svg>
                   </div>
-                  <div class="shipment-form-btn shipment-form-accept-btn">Подтвердить</div>
-                </div>
-              </div>
-            </div>
-            <div class="shipment-form-elem">
-              <div class="shipment-form-item">
-                <div class="shipment-form-elem-title"><span>Дата отгрузки</span></div>
-                <div class="shipment-form-row">
-                  <div class="shipment-form-date">
-                    <input class="shipment-form-input shipment-form-date-input" type="text" placeholder="Выберите дату" name="date" autocomplete="off">
+                  <div class="table-heading-dropdown">
+                    <div class="table-heading-dropdown-wrap"><a class="table-heading-dropdown-link" href="">ООО Столица</a><a class="table-heading-dropdown-link" href="">ООО Вектор</a><a class="table-heading-dropdown-link" href="">ООО Тристан</a><a class="table-heading-dropdown-link" href="">ООО Лама</a><a class="table-heading-dropdown-link" href="">ООО Лавочкин</a></div>
                   </div>
-                  <div class="shipment-form-btn shipment-form-urgently-btn">Срочно</div>
+                </div>
+                <div class="table-elem">
+                  <div class="table-elem-toggle">
+                     Контрагент
+                    <svg class="table-elem-toggle-arrow" width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.00726 8.11117L12.7923 2.32601C12.9262 2.1922 13 2.01359 13 1.82313C13 1.63268 12.9262 1.45406 12.7923 1.32026L12.3664 0.894224C12.0888 0.616998 11.6378 0.616998 11.3606 0.894224L6.5027 5.75217L1.63936 0.888833C1.50545 0.755029 1.32694 0.681152 1.13659 0.681152C0.946033 0.681152 0.767522 0.755029 0.633507 0.888833L0.207681 1.31487C0.0737714 1.44878 -4.1357e-08 1.62729 -4.9682e-08 1.81774C-5.8007e-08 2.0082 0.0737714 2.18681 0.207681 2.32062L5.99802 8.11117C6.13236 8.24529 6.31171 8.31896 6.50238 8.31854C6.69378 8.31896 6.87303 8.24529 7.00726 8.11117Z" fill="#A5A7A9"></path>
+                    </svg>
+                  </div>
+                  <div class="table-heading-dropdown">
+                    <div class="table-heading-dropdown-wrap"><a class="table-heading-dropdown-link" href="">ООО Столица</a><a class="table-heading-dropdown-link" href="">ООО Вектор</a><a class="table-heading-dropdown-link" href="">ООО Тристан</a><a class="table-heading-dropdown-link" href="">ООО Лама</a><a class="table-heading-dropdown-link" href="">ООО Лавочкин</a></div>
+                  </div>
+                </div>
+                <div class="table-elem">Номер</div>
+                <div class="table-elem">Дата создания</div>
+                <div class="table-elem">Статус</div>
+                <div class="table-elem">Инфо</div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     1
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ФРО</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     2
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     3
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     4
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     5
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     6
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-list-item">
+                <div class="table-row orders-list-title">
+                  <div class="table-elem">
+                     7
+                    <div class="table-arrow"></div>
+                  </div>
+                  <div class="table-elem">Заказ № 1232 от 02.02.2020</div>
+                  <div class="table-elem">ООО “Вектор”</div>
+                  <div class="table-elem">1232</div>
+                  <div class="table-elem">02.02.20</div>
+                  <div class="table-elem">Подтверждён</div>
+                  <div class="table-elem"> 
+                    <button class="orders-list-more">Подробно</button>
+                    <div class="orders-list-more-dropdown"><a class="orders-list-more-dropdown-link" href="">Повторить</a><a class="orders-list-more-dropdown-link" href="">Детали заказа</a><a class="orders-list-more-dropdown-link" href="">Скачать документы</a><a class="orders-list-more-dropdown-link" href="">Скачать сертификаты</a><a class="orders-list-more-dropdown-link" href="">Печать документов</a><a class="orders-list-more-dropdown-link" href="">Печать сертификатов</a></div>
+                  </div>
+                </div>
+                <div class="orders-list-info">
+                  <div class="orders-list-info-row">
+                    <div class="orders-list-info-elem">ЭС</div>
+                    <div class="orders-list-info-elem"> 
+                      <div class="orders-list-info-about">Счёт № 12 от 02.02.2020</div>
+                      <div class="orders-list-info-about">Реализация № 243 от 10.02.2020 + корректировка № 201 от 11.02.2020</div>
+                      <div class="orders-list-info-about">Счёт Фактура № 243 от 10.02.2020</div>
+                    </div>
+                    <div class="orders-list-info-elem orders-list-info-doc-wrap"><a class="orders-list-info-doc sc" href=""></a><a class="orders-list-info-doc upd" href=""></a><a class="orders-list-info-doc sf" href=""></a><a class="orders-list-info-doc kor" href=""></a></div>
+                    <div class="orders-list-info-elem"><a class="orders-list-info-link" href="">Сертификаты</a><a class="orders-list-info-link" href="">Скачать все</a></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="shipment-form-body shipment-form-wrap">
-            <div class="shipment-form-elem">
-              <div class="shipment-form-item">
-                <div class="shipment-form-elem-title"><span>Комментраий</span></div>
-                <textarea class="shipment-form-textarea" name=""></textarea>
-              </div>
-            </div>
-            <div class="shipment-form-elem">
-              <div class="shipment-form-item">
-                <div class="shipment-form-elem-title"><span>Представление</span></div>
-                <div class="shipment-form-info shipment-form-info-text">
-                  <p>Заказ №2435 от 03.04.2020</p>
-                  <p>Желаемая дата отгрузки: 05.04.2020</p>
-                  <p>Расстояние: 1124 км</p>
-                  <p>Количество едениц: 120</p>
-                  <p>Общий вес: 25 кг</p>
-                  <p>Общий объем: 23 м3 </p>
-                  <p>Адрес доставки: Россия г. Москва ул. Ангарская вл. 8, стр. 15 д.</p>
-                  <p>Комментрий: Нет</p>
-                  <p>Дополнительные условия: Ополечивание</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="shipment-form-wrap shipment-form-bottom">
-            <div class="shipment-form-elem">
-              <div class="shipment-form-notion">
-                 Подтверждение заявки- запроса не несет за собой обязательство исполнения, 
-                ожидайте ответ по стоимости, после чего вы сможете подтвердить доставку 
-                и стоимость!
-              </div>
-            </div>
-            <div class="shipment-form-elem">
-              <div class="shipment-form-submit gradient-btn">
-                <div class="gradient-btn-text">Подтвердить</div>
-              </div>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <script src="./style/js/plugin/jquery-3.5.1.min.js"></script>

@@ -572,9 +572,10 @@ a
 			padding:
 				top: 50px
 			top: 0
-			left: -25%
+			left: 25%
 			width: 100%
 			max-width: 250px
+			+prefix(transform, translateX(-50%))
 			z-index: 10
 
 			&-wrap
@@ -608,6 +609,54 @@ a
 		background-position: center center
 		background-repeat: no-repeat
 		+prefix(transition, $default-transition)
+
+	&-checkbox
+		display: none
+		
+		&-wrap
+			position: relative
+			width: 15px
+			height: 15px
+		
+		&-label
+			display: block
+			position: relative
+			width: 15px
+			height: 15px
+			cursor: pointer
+
+			&:before,
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				+prefix(transition, $default-transition)
+			
+			&:before
+				width: 15px
+				height: 15px
+				border: 1px solid #67696D
+				border-radius: 1px
+
+			&:after
+				margin:
+					top: -4px
+					left: -5px
+				top: 50%
+				left: 50%
+				width: 10px
+				height: 10px
+				background-image: url(../img/icon/table-checkmark.svg)
+				background-size: 100% auto
+				background-position: center center 
+				background-repeat: no-repeat
+				opacity: 0
+
+		&:checked + .table-checkbox-label:before
+			border-color: $white
+		
+		&:checked + .table-checkbox-label:after
+			opacity: 1
 
 	&.product-search-table
 
@@ -706,6 +755,55 @@ a
 					margin:
 						right: 4.49%
 	
+	&.claim-new-list-table
+		padding:
+			bottom: 0
+			
+		.table
+			
+			&-row
+				padding: 0 30px
+
+			&-elem
+				padding: 15px 0 15px 0
+				font-size: 14px
+				line-height: 20px
+				
+				&:nth-child(1)
+					margin:
+						right: 1.73%
+					width: 0.87%
+				
+				&:nth-child(2)
+					margin:
+						right: 1.5%
+					width: 3.87%
+				
+				&:nth-child(3)
+					margin:
+						right: 4.19%
+					width: 25.15%
+				
+				&:nth-child(4)
+					margin:
+						right: 4.79%
+					width: 14.97%
+				
+				&:nth-child(5),
+				&:nth-child(6),
+				&:nth-child(7),
+				&:nth-child(8)
+					width: 7.78%
+				
+				&:nth-child(5)
+					margin:
+						right: 2.99%
+				
+				&:nth-child(6),
+				&:nth-child(7)
+					margin:
+						right: 4.49%
+
 .sale
 
 	&-head
@@ -839,6 +937,7 @@ a
 	margin:
 		top: 25px
 		left: -105px
+		right: -15px
 	padding: 30px 15px
 		left: 105px
 	background-color: $bg-default-color
@@ -982,3 +1081,4 @@ a
 	.ui-datepicker-unselectable
 		color: $font-light-color
 		opacity: .35
+
