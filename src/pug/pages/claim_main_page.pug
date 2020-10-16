@@ -52,12 +52,8 @@
 				li
 					a(href="").nav-link Взаиморасчеты
 		
-		.claim-new-heading
-			a(href="").claim-new-heading-btn.claim-new-heading-back-btn
-				.claim-new-heading-btn-arrow
-				span  Журнал претензий
-
-			.claim-new-heading-elem
+		.orders-heading
+			.orders-heading-elem
 				.orders-heading-item
 					.orders-heading-text Контрагент:
 					select(style="width: 100%").custom-select
@@ -65,7 +61,6 @@
 						option(value="1") ООО “Вектор”
 						option(value="2") ООО “Вектор”
 						option(value="3") ООО “Вектор”
-					
 				.orders-heading-item
 					.orders-heading-text Договор:
 					select(style="width: 100%").custom-select
@@ -73,11 +68,24 @@
 						option(value="1") По умолчанию № 1
 						option(value="2") По умолчанию № 2
 						option(value="3") По умолчанию № 3
-
-			a(href="").claim-new-heading-btn.claim-new-heading-next-btn
-				.claim-new-heading-btn-arrow
-				span  Далее
-
+				.orders-heading-item
+					.orders-heading-text Период:
+					select(style="width: 100%").custom-select
+						option(value="0" selected) 01.01.2020 - 31.01.2020
+						option(value="1") 01.01.2020 - 31.01.2020
+						option(value="2") 01.01.2020 - 31.01.2020
+						option(value="3") 01.01.2020 - 31.01.2020
+				.orders-heading-clean
+			.orders-heading-elem
+				.content-heading-btn
+					svg(width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg").content-heading-btn-img
+						path(fill-rule="evenodd" clip-rule="evenodd" d="M3 2H18.75C19.3023 2 19.75 2.44772 19.75 3V11.5H21.75V3C21.75 1.34315 20.4069 0 18.75 0H3C1.34315 0 0 1.34315 0 3V21.8571C0 23.514 1.34315 24.8571 3 24.8571H16V22.8571H3C2.44772 22.8571 2 22.4094 2 21.8571V3C2 2.44772 2.44772 2 3 2Z" fill="#A5A7A9").fill
+						rect(x="17.6071" y="5.17871" width="1.7" height="13.4643" rx="0.85" transform="rotate(90 17.6071 5.17871)" fill="#A5A7A9").fill
+						rect(x="10" y="13" width="1.7" height="6" rx="0.85" transform="rotate(90 10 13)" fill="#A5A7A9").fill
+						rect(x="14" y="9" width="1.7" height="10" rx="0.85" transform="rotate(90 14 9)" fill="#A5A7A9").fill
+						path(fill-rule="evenodd" clip-rule="evenodd" d="M20.8 15C20.2478 15 19.8 15.4477 19.8 16V19H16.8C16.2478 19 15.8 19.4477 15.8 20C15.8 20.5523 16.2478 21 16.8 21H19.8V24C19.8 24.5523 20.2478 25 20.8 25C21.3523 25 21.8 24.5523 21.8 24V21H24.8C25.3523 21 25.8 20.5523 25.8 20C25.8 19.4477 25.3523 19 24.8 19H21.8V16C21.8 15.4477 21.3523 15 20.8 15Z" fill="#A5A7A9").fill
+					.content-heading-btn-text Создать претензию
+			
 		.orders-heading-search
 			.orders-heading-search-elem
 				.product-search-text Поиск по: 
@@ -100,11 +108,10 @@
 					.gradient-btn-text Поиск
 			
 		.orders-list-wrap.content-elem
-			.table.orders-list-table.claim-new-list-table.scroll-elem
+			.table.orders-list-table.scroll-elem
 				.table-more-info-arrow
 				.orders-list-table-wrap
 					.table-row.table-heading
-						.table-elem
 						.table-elem №
 						.table-elem 
 							.table-elem-toggle 
@@ -137,10 +144,6 @@
 					.orders-list-item
 						.table-row.orders-list-title
 							.table-elem 
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-1
-									label(for="table-checkbox-1").table-checkbox-label
-							.table-elem 
 								| 1
 								.table-arrow
 							.table-elem Заказ № 1232 от 02.02.2020
@@ -157,12 +160,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-8
-										label(for="table-checkbox-8").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -177,10 +176,6 @@
 									a(href="").orders-list-info-link Сертификаты
 									a(href="").orders-list-info-link Скачать все
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-9
-										label(for="table-checkbox-9").table-checkbox-label
 								.orders-list-info-elem ФРО
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -195,10 +190,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-2
-									label(for="table-checkbox-2").table-checkbox-label
 							.table-elem 
 								| 2
 								.table-arrow
@@ -216,12 +207,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-10
-										label(for="table-checkbox-10").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -237,10 +224,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-3
-									label(for="table-checkbox-3").table-checkbox-label
 							.table-elem 
 								| 3
 								.table-arrow
@@ -258,12 +241,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-11
-										label(for="table-checkbox-11").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -279,10 +258,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-4
-									label(for="table-checkbox-4").table-checkbox-label
 							.table-elem 
 								| 4
 								.table-arrow
@@ -300,12 +275,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-12
-										label(for="table-checkbox-12").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -321,10 +292,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-5
-									label(for="table-checkbox-5").table-checkbox-label
 							.table-elem 
 								| 5
 								.table-arrow
@@ -342,12 +309,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-13
-										label(for="table-checkbox-13").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -363,10 +326,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-6
-									label(for="table-checkbox-6").table-checkbox-label
 							.table-elem 
 								| 6
 								.table-arrow
@@ -384,12 +343,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-14
-										label(for="table-checkbox-14").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020
@@ -405,10 +360,6 @@
 									a(href="").orders-list-info-link Скачать все
 					.orders-list-item
 						.table-row.orders-list-title
-							.table-elem
-								.table-checkbox-wrap 
-									input(type="checkbox").table-checkbox#table-checkbox-7
-									label(for="table-checkbox-7").table-checkbox-label
 							.table-elem 
 								| 7
 								.table-arrow
@@ -426,12 +377,8 @@
 									a(href="").orders-list-more-dropdown-link Скачать сертификаты
 									a(href="").orders-list-more-dropdown-link Печать документов
 									a(href="").orders-list-more-dropdown-link Печать сертификатов
-						.orders-list-info.claim-list-info
+						.orders-list-info
 							.orders-list-info-row
-								.orders-list-info-elem
-									.table-checkbox-wrap 
-										input(type="checkbox").table-checkbox#table-checkbox-15
-										label(for="table-checkbox-15").table-checkbox-label
 								.orders-list-info-elem ЭС
 								.orders-list-info-elem 
 									.orders-list-info-about Счёт № 12 от 02.02.2020

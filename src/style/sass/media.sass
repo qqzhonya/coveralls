@@ -1,3 +1,42 @@
+@media screen and (max-width: 1900px)
+	.sidebarOpen
+		.claim
+			&-new
+				&-heading
+					+flex-wrap(wrap)
+
+					&-btn
+						width: 100%
+						order: 1
+
+					&-next-btn
+						margin: 0 0 0 auto
+					
+					&-elem
+						margin:
+							top: 15px
+						width: 100%
+						order: 2
+
+@media screen and (max-width: 1760px)
+	.sidebarOpen
+		.claim
+			&-heading
+				&.shipment-heading
+					+flex-wrap(wrap)
+
+					.shipment-heading-elem
+						&:nth-child(1)
+							width: 40%
+
+						&:nth-child(2)
+							width: 60%
+
+						&:nth-child(3)
+							margin:
+								top: 15px
+							width: 100%
+
 @media screen and (max-width: 1665px)
 	.sidebarOpen
 		.product
@@ -184,6 +223,31 @@
 				&-delete
 					right: 10px
 
+	.claim 
+		&-heading
+			&.shipment-heading
+				+flex-wrap(wrap)
+
+				.shipment-heading-elem
+					&:nth-child(1)
+						width: 40%
+
+					&:nth-child(2)
+						width: 60%
+
+					&:nth-child(3)
+						margin:
+							top: 15px
+						width: 100%
+				
+				.content-heading-btn
+					margin: 0 0 0 auto
+					max-width: 155px
+
+		&-info
+			.order-amount-table-input-wrap
+				max-width: 60px
+
 @media screen and (max-width: 1480px)
 	.sidebarOpen
 
@@ -310,6 +374,37 @@
 
 				&-text
 					width: 20%
+
+	.sidebarOpen
+		.orders
+			&-heading
+				&-search
+					+flex-wrap(wrap)
+					&-elem
+						width: 100%
+						+flex-wrap(wrap)
+					
+					.product-search-text
+						margin:
+							bottom: 10px
+					
+					&-btn
+						margin:
+							top: 15px
+
+		.claim
+			&-heading
+				&.shipment-heading
+					+flex-wrap(wrap)
+
+					.shipment-heading-elem
+						&:nth-child(1)
+							width: 100%
+
+						&:nth-child(2)
+							margin:
+								top: 15px
+							width: 100%
 
 @media screen and (max-width: 1370px)
 	.orders
@@ -587,6 +682,20 @@
 				top: 15px
 				right: 0
 
+	.claim 
+		&-heading
+			&.shipment-heading
+				+flex-wrap(wrap)
+
+				.shipment-heading-elem
+					&:nth-child(1)
+						width: 100%
+
+					&:nth-child(2)
+						margin:
+							top: 15px
+						width: 100%
+
 @media screen and (max-width: 1080px)
 
 	.company
@@ -659,6 +768,19 @@
 			
 			&.slick-next
 				right: 10px
+
+@media screen and (max-width: 1030px)
+	.sidebarOpen
+		.claim
+			&-heading
+				&.shipment-heading
+
+					.shipment-heading-elem
+						&:nth-child(2)
+							+flex-wrap(wrap)
+						
+						.orders-heading-item
+							padding: 5px 0
 
 @media screen and (min-width: 991px)
 	.sidebar
@@ -874,6 +996,23 @@
 
 			&-wrap
 				margin: 0
+		
+		&-new
+			&-heading
+				+flex-wrap(wrap)
+
+				&-btn
+					width: 100%
+					order: 1
+
+				&-next-btn
+					margin: 0 0 0 auto
+				
+				&-elem
+					margin:
+						top: 15px
+					width: 100%
+					order: 2
 
 	.shipment
 		&-form
@@ -1042,6 +1181,22 @@
 				
 	.ui-datepicker
 		max-width: calc(100% - 30px)
+	
+	.claim
+		&-new
+			&-heading
+
+				&-elem
+					margin: 0
+					+flex-wrap(wrap)
+
+				.orders-heading-item
+					padding: 10px 0
+					width: 100%
+					+justify-content(flex-start)
+
+					.select2-container
+						max-width: 100%
 
 @media screen and (max-width: 600px)
 	.orders
@@ -1088,6 +1243,34 @@
 				&-wrap
 					+flex-wrap(wrap)
 
+	.claim
+		&-heading
+
+			.shipment-heading-elem
+				.orders-heading-item
+					padding: 5px 0
+
+		&-bottom
+			+flex-wrap(wrap)
+		
+		&-add-basis
+			margin: 0 0 0 auto
+
+		&-submit
+			margin:
+				top: 15px
+			max-width: 100%
+
+@media screen and (max-width: 545px)
+	.claim
+		&-new
+			&-heading
+				&-btn
+					margin:
+						bottom: 10px
+					width: 100%
+					max-width: 100%
+
 @media screen and (max-width: 520px)
 	.nav-tab
 		&-wrap
@@ -1099,6 +1282,18 @@
 				top: 10px
 				right: 0
 			max-width: 100%
+	
+	.shipment
+		&-heading
+			&-select
+				font-size: 16px
+				+flex-wrap(wrap)
+
+				span
+					width: 100%
+			
+				.base-select
+					font-size: 18px
 
 @media screen and (max-width: 500px)
 	.content
@@ -1215,6 +1410,21 @@
 			.fc-toolbar-title
 				font-size: 24px
 				line-height: normal
+
+	.orders
+		&-heading
+			&-item
+				padding:
+					right: 30px
+				+flex-wrap(wrap)
+
+				&:nth-child(3)
+					padding:
+						right: 30px
+			
+			&-text
+				margin:
+					bottom: 10px
 	
 	.shipment
 		&-form
