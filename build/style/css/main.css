@@ -4511,6 +4511,44 @@ a {
   .shipment-form.shipment-form-pickup .shipment-form-textarea {
     min-height: 105px; }
 
+.shipment-datalist {
+  position: relative;
+  z-index: 10; }
+  .shipment-datalist.active .shipment-datalist-list {
+    display: block; }
+  .shipment-datalist-input {
+    position: relative;
+    z-index: 1; }
+  .shipment-datalist-list {
+    display: none;
+    position: absolute;
+    padding: 25px 0;
+      padding-top: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1F2227;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    list-style-type: none;
+    z-index: 0; }
+    .shipment-datalist-list li {
+      padding: 5px 20px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #ffffff;
+      cursor: pointer;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s; }
+      .shipment-datalist-list li:last-child {
+        margin: 0; }
+      .shipment-datalist-list li:hover {
+        background-color: #292c33; }
+
 @media screen and (max-width: 1900px) {
   .sidebarOpen .claim-new-heading {
     -webkit-flex-wrap: wrap;
@@ -5634,4 +5672,12 @@ a {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+  .shipment-form-elem-title {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .shipment-form-elem-title-time {
+      margin-top: 10px;
+      width: 100%; } }

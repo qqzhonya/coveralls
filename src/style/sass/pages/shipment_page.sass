@@ -453,3 +453,45 @@
 		&.shipment-form-pickup
 			.shipment-form-textarea
 				min-height: 105px
+		
+	&-datalist
+		position: relative
+		z-index: 10
+
+		&.active
+			.shipment-datalist-list
+				display: block
+
+		&-input
+			position: relative
+			z-index: 1
+
+		&-list
+			display: none
+			position: absolute
+			padding: 25px 0
+				top: 60px
+			top: 0
+			left: 0
+			width: 100%
+			background-color: $bg-default-color
+			border:
+				top-left-radius: 25px
+				top-right-radius: 25px
+			list-style-type: none
+			z-index: 0
+
+			li
+				padding: 5px 20px
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				color: $white
+				cursor: pointer
+				+prefix(transition, $default-transition)
+
+				&:last-child
+					margin: 0
+				
+				&:hover
+					background-color: #292c33
